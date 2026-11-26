@@ -1,0 +1,20 @@
+idea:
+  title: Can agents coordinating secretly without sharing a secret key?
+  domain: artificial_intelligence
+  hypothesis: One concern for multiple agents is that they develop a secret language
+    among themselves. Is this possible without having a shared key? Make this project
+    mostly theoretical, maybe with some light empirical tests.
+  background:
+    description: One concern for multiple agents is that they develop a secret language
+      among themselves. Is this possible without having a shared key? Make this project
+      mostly theoretical, maybe with some light empirical tests.
+  metadata:
+    source: IdeaHub
+    source_url: https://hypogenic.ai/ideahub/idea/Fp5dohbmGY8rJyVXAm5S
+    author: Chenhao Tan
+    idea_id: can_agents_coordinating_secret_20261126_023309_4fad5893
+    created_at: '2026-11-26T02:33:09.527750'
+    status: submitted
+    github_repo_name: can-agents-coordinating-secretly-e544
+    github_repo_url: https://github.com/Hypogenic-AI/can-agents-coordinating-secretly-e544
+    github_repo_private: false
