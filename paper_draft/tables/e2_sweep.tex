@@ -1,0 +1,18 @@
+\begin{table}[t]
+\centering
+\caption{Entropy vs.\ reliability (64-bit group, 10 sessions per row). Larger chunks or an entropy gate reduce the key-exchange bit-error rate (BER), at a linear cost in tokens.}
+\label{tab:sweep}
+\small
+\begin{tabular}{@{}cccccc@{}}
+\toprule
+$k$ (tokens/chunk) & gate $\tau$ & KE BER & Keys agreed & Tokens / KE bit \\
+\midrule
+1 & 0 & 0.098 & 0/10 & {\bf 1.0} \\
+1 & 1 & 0.015 & 1/10 & 2.2 \\
+2 & 1 & 0.0008 & 9/10 & 3.9 \\
+4 & 0 & 0.019 & 1/10 & 4.1 \\
+4 & 1 & {\bf 0} & {\bf 10/10} & 7.4 \\
+8 & 1 & {\bf 0} & {\bf 10/10} & 14.5 \\
+\bottomrule
+\end{tabular}
+\end{table}

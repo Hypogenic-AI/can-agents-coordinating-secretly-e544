@@ -1,0 +1,25 @@
+\begin{table}[t]
+\centering
+\caption{\textsc{E1b}: recovery of a phrase hidden by a \qwenbig sender ($n=100$ payloads per row, 95\% Wilson CIs). In \condnone (no agreed scheme), the partner has no edge over a same-model auditor. A shared scheme creates an edge over an unaware auditor, but the edge disappears once the auditor knows the scheme. Bold marks the best decoder in each condition.}
+\label{tab:e1}
+\small
+\begin{tabular}{@{}lllcc@{}}
+\toprule
+{\bf Condition} & {\bf Decoder model} & {\bf Role} & {\bf Exact [95\% CI]} & {\bf Fuzzy} \\
+\midrule
+\multirow{6}{*}{\condnone} & \qwenbig & partner & 0.48 [0.38, 0.58] & 0.53 \\
+ & \qwenbig & auditor & 0.50 [0.40, 0.60] & 0.57 \\
+ & \gemma & partner & {\bf 0.58} [0.48, 0.67] & {\bf 0.64} \\
+ & \gemma & auditor & {\bf 0.58} [0.48, 0.67] & {\bf 0.64} \\
+ & \qwensmall & partner & 0.33 & 0.36 \\
+ & \qwensmall & auditor & 0.28 & 0.30 \\
+\midrule
+\multirow{6}{*}{\condshared} & \qwenbig & partner & 0.21 [0.14, 0.30] & 0.34 \\
+ & \qwenbig & auditor (scheme unknown) & 0.01 [0.00, 0.05] & 0.02 \\
+ & \qwenbig & Kerckhoffs auditor (knows scheme) & {\bf 0.32} [0.24, 0.42] & {\bf 0.47} \\
+ & \gemma & partner (told scheme) & 0.29 [0.21, 0.39] & 0.42 \\
+ & \qwensmall & partner & 0.00 & 0.00 \\
+ & \qwensmall & auditor & 0.00 & 0.00 \\
+\bottomrule
+\end{tabular}
+\end{table}

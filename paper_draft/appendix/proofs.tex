@@ -1,0 +1,34 @@
+\section{Proofs}
+\label{app:proofs}
+
+\para{Proof of \lemref{lem:sim}.}
+$W$ samples $r'$ from the distribution of $r_B$, which is independent of $(x,T)$ given $I_B$, and outputs $\Dec(T, I_B, r')$. Since $I_B \subseteq \Know_W$, $W$ can do this. The joint law of $(x, T, I_B, r')$ equals that of $(x, T, I_B, r_B)$, so $\hat{x}_W$ and $\hat{x}_B$ have the same joint distribution with $x$. \qed
+
+\para{Proof of \corref{cor:oneway}.}
+In a one-way protocol, $T$ depends only on $(x, r_A, I_A)$. $B$'s coins never enter $T$, so they are independent of $(x,T)$ given $I_B$, and \lemref{lem:sim} applies. \qed
+
+\para{Proof of \corref{cor:schelling}.}
+Apply \lemref{lem:sim} twice. In the selection stage, $W$ computes $\sigma(\Shared, r')$ with fresh $r'$, which has the law of $\Pi_B = \sigma(\Shared, r_B)$. Hence $\Pr[\sigma(\Shared, r') = \Pi_A] = \Pr[\Pi_B = \Pi_A]$. In the decoding stage, no interactive key agreement takes place, so $B$'s decoding information is contained in $\Know_W \cup \{\Pi_B\}$, and $W$ decodes with the same probability. \qed
+
+\para{Proof sketch of \thmref{thm:keyless}.}
+The public bit channel turns each chunk into a bit computable by everyone. By \lemref{lem:bias}(i), when the target bits are uniform the chunk distribution equals the honest one up to the hash imbalance $|q_0-\tfrac12|$, which is negligible when per-chunk entropy is $\omega(\log\lambda)$ \citep{vonahn2004public}, or can be handled with bundle sampling at constant entropy \citep{vaikuntanathan2026undetectable}. The key-exchange transcript is pseudorandom, so the warden's view, including all public bits, is indistinguishable from honest by a hybrid argument over chunks. After key agreement, the channel is keyed steganography with a PRF~\citep{hopper2002provably}. Secrecy of $x$ follows from key-exchange security and PRF security. \qed
+
+\para{Proof of \lemref{lem:bias}.}
+(i) For target $b$, $P(c\mid b) = p(c)\mathbf{1}[h(c)=b]\sum_{j<B}(1-q_b)^j + p(c)\mathbf{1}[h(c)\neq b](1-q_b)^{B-1}$. With $q_b=\tfrac12$, this equals $2p(c)(1-2^{-B})$ on $\{h(c)=b\}$ and $2^{1-B}p(c)$ otherwise. Averaging over $b \sim U\{0,1\}$ gives $p(c)$.
+(ii) As $B\to\infty$, $P(c) = \tfrac12 p(c)/q_{h(c)}$, so $\mathrm{TV} = \tfrac12\sum_c p(c)\,|1/(2q_{h(c)}) - 1| = \tfrac12(|\tfrac12-q_0| + |\tfrac12-q_1|) = |q_0-\tfrac12|$. For a random hash, $q_0-\tfrac12 = \tfrac12\sum_c p(c)s_c$ with independent signs $s_c\in\{\pm1\}$. By Jensen, $\E|\cdot| \leq \tfrac12(\sum_c p(c)^2)^{1/2} = \tfrac12 2^{-H_2(p)/2}$.
+(iii) Failure means all $B$ candidates have the wrong bit. With probability $\tfrac12$ the atom of mass $p_{\max}$ has the wrong bit, and then each candidate equals the atom with probability $p_{\max}$. \qed
+
+\para{Proof of \lemref{lem:legendre}.}
+For $p \equiv 3 \pmod 4$, $-1$ is a non-residue, so exactly one of $y, p-y$ is a quadratic residue. The map $y\mapsto\min(y,p-y)$ is therefore a bijection from the residues onto $[1,q]$. Every $n$-bit string in the encoded range decodes to a residue, so the Legendre symbol of the decoded value is constant under both hypotheses and carries no information. In plain encoding, honest uniform strings are residues with probability about $\tfrac12$ while DH values always are, giving advantage $\tfrac12$ per value. \qed
+
+\para{Proof sketch of \propref{prop:learn}.}
+Before key agreement completes, $B$ holds no information that $W$ lacks except its own coins. By undetectability, the transcript prefix $B$ observes under any $\pi$ is computationally indistinguishable from the honest transcript, so any efficient procedure that maps it to a guess of $\pi_A$ behaves (up to negligible error) as it would on an honest transcript, which is independent of $\pi_A$. $B$'s commitment $\pi_B$ is thus computationally independent of $\pi_A$, and $\Pr[\pi_B=\pi_A] \leq \sum_\pi p_A(\pi)p_B(\pi) + \negl(\lambda)$. With independent uniform priors over $N$ protocols, this equals $1/N$. \qed
+
+\para{Proof sketch of \propref{prop:bsc}.}
+An unchanged chunk keeps its bit. A changed chunk receives a fresh uniform bit, which is wrong with probability $\tfrac12$. Hence each bit is flipped independently with probability $q_{\mathrm{eff}} = \tfrac12\Pr[\text{chunk changed}] \leq q/2$ for single-token chunks, and the $n$ uncoded bits all survive with probability $(1-q_{\mathrm{eff}})^n$. \qed
+
+\para{Proof sketch of \propref{prop:desync}.}
+The gate decision at position $t$ is a function of the prefix. An edit at position $s$ changes the prefix for all $t > s$, so the entropy at later positions changes, and any position whose entropy crosses $\tau$ flips its gate decision. This inserts or deletes a channel bit. The receiver aligns bits by index, so after the first insertion or deletion every later bit is compared with the wrong target bit. These later bits are approximately independent of their targets, giving error rate approaching $\tfrac12$ on the remainder of the stream. A code designed for substitutions cannot correct a shift, since a single deletion changes the Hamming distance between the sent and received suffixes by about half their length. \qed
+
+\para{Proof of \propref{prop:mitm}.}
+$W$ runs $\Pi_B$ with $A$ using fresh coins and $\Pi_A$ with $B$. Since $I_B \subseteq \Know_W$, $W$ can compute every message $B$ would send, and by \lemref{lem:sim} the distribution of $A$'s view is identical whether it talks to $B$ or to $W$. No test available to $A$ distinguishes the two cases, so $A$ accepts $W$ as $B$ with the same probability it accepts $B$, and $W$ shares the resulting key with $A$. \qed

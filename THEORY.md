@@ -222,6 +222,20 @@ without error correction survives with probability (1 − q_eff)ⁿ, which decay
 coding, the rate is ≤ 1 − h₂(q_eff). A *full* paraphrase (q = 1) leaves only the entropy of what
 the paraphraser preserves (meaning-level entropy: "conceptual steganography", Zhou & May 2026).
 
+**Proposition 7′ (data-dependent bit positions turn edits into desynchronization)** *(new; confirmed in
+E2, `src/warden_sync.py`).* Suppose the position of channel bits depends on the transcript itself, as with
+an entropy gate ("embed only where next-token entropy ≥ τ"). Gates like this are what make
+low-entropy text usable at all (Lemma 3(iii)). Then one edited token also changes the gate decisions
+at every later position whose entropy crosses τ. Bits are **inserted or deleted**, not just flipped. Every
+later bit of that party's stream is shifted, so the post-edit BER jumps to ≈ ½, not q_eff. The
+channel is then an insertion/deletion channel. Its zero-error capacity under adversarial edits is far
+smaller, and plain error-correcting codes do not repair it. Synchronization codes or per-message
+re-anchoring are needed. In E2, a warden resampling only 0.25% of tokens raised the KE bit-error
+rate from 0 to 0.17 with the gate, but only from 0.019 to 0.023 without it. The ungated value matches the
+BSC prediction of Prop 7 to within 0.002 at every q tested. So there is a **reliability-versus-robustness
+trade-off**. The gate that rescues low-entropy text is exactly what makes the covert channel brittle
+against the cheapest active warden.
+
 **Proposition 8 (no authentication without asymmetric knowledge)** *(new framing; classical MITM).*
 Suppose an active warden controls the channel and 𝒦_W ⊇ I_B. Then W can run the protocol with A
 while posing as B, and with B while posing as A. By Lemma 1, A's view when talking to W has the

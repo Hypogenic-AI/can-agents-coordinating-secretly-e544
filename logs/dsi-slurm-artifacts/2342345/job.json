@@ -1,0 +1,11 @@
+{
+  "job_id": "2342345",
+  "status": "completed",
+  "slurm_state": "COMPLETED",
+  "exit_code": "0:0",
+  "script": "scripts/slurm/e2_array.sbatch",
+  "description": "E2 keyless KE configs",
+  "tasks": "2342345_0|COMPLETED|0:0;2342345_1|COMPLETED|0:0;2342345_2|COMPLETED|0:0;2342345_3|COMPLETED|0:0;2342345_4|COMPLETED|0:0;2342345_5|COMPLETED|0:0;2342345_6|COMPLETED|0:0;2342345_7|COMPLETED|0:0;2342345_8|COMPLETED|0:0;2342345_9|COMPLETED|0:0",
+  "submitted_at_utc": "2026-11-27T14:50:34Z",
+  "recorded_at_utc": "2026-11-27T15:28:52Z"
+}

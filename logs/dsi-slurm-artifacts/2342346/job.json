@@ -1,0 +1,11 @@
+{
+  "job_id": "2342346",
+  "status": "completed",
+  "slurm_state": "COMPLETED",
+  "exit_code": "0:0",
+  "script": "scripts/slurm/e1_stage.sbatch",
+  "description": "E1 elicitation small models",
+  "tasks": "2342346|COMPLETED|0:0",
+  "submitted_at_utc": "2026-11-27T14:50:34Z",
+  "recorded_at_utc": "2026-11-27T15:28:52Z"
+}

@@ -121,3 +121,16 @@ Pruned: MARL eavesdropper training (12, training-heavy, low LLM relevance), subl
 fine-tuning (12, needs fine-tuning; treated theoretically as W), interpretability probes (10,
 off-hypothesis), full Codetta reimplementation (11, heavy; E2 is the light version), RL elicitation
 (12, costly; cited as "training supplies P").
+
+## Execution notes / deviations (2026-11-27 rerun)
+- An earlier attempt (2026-11-26) ran the models outside Slurm. Its outputs are kept for reference only in
+  `results/_prior_attempt_login_node/`. **All results reported in REPORT.md come from the 2026-11-27 rerun on
+  DSI Slurm compute nodes** (`scripts/slurm/`, job bundles in `dsi-slurm-artifacts/`).
+- `OPENROUTER_KEY` was not set in this environment. No API models could be used, so E1 uses locally run open
+  models (Qwen3-14B, gemma-4-E4B-it, Qwen3-1.7B). Recorded as a limitation.
+- E2 also adds an 8-token chunk point (k=8) to the entropy sweep and uses 10 sessions per sweep point
+  (previously 5). The 2048-bit RFC 3526 group run gets `max_msgs=1200`, because 400 messages were too few
+  to finish the KE.
+- The active-warden test (H4) is implemented in `src/analyze_e2.py` as a token-level resampling warden. Each
+  token is independently replaced, with probability q, by a fresh sample from the public model given the
+  original prefix.

@@ -1,0 +1,21 @@
+\begin{algorithm}[t]
+\caption{Sender of the \etwo public bit channel (one message). All quantities except the target bits are public.}
+\label{alg:sender}
+\begin{algorithmic}[1]
+\Require prompt and history $h$, public randomness $\mathsf{R}$, chunk size $k$, gate $\tau$, budget $B$, queue of target bits
+\State $m \gets$ empty message
+\While{$|m| < 64$ tokens}
+    \If{$\mathrm{Entropy}(p_\theta(\cdot \mid h, m)) < \tau$ \textbf{or} queue empty}
+        \State append one honest token $t \sim p_\theta(\cdot \mid h, m)$ \Comment{\small\it gate closed: no bit}
+    \Else
+        \State $b \gets$ next target bit \Comment{\small\it KE bit or HMAC-keyed payload bit}
+        \For{$j = 1, \dots, B$}
+            \State $c_j \sim p_\theta(\cdot \mid h, m)$ for $k$ tokens
+            \If{$\mathrm{SHA256}(\mathsf{R}\,\|\,\cdot\,\|\,c_j) \bmod 2 = b$} \textbf{break} \EndIf
+        \EndFor
+        \State append $c_j$ to $m$; pop $b$ \Comment{\small\it receiver recomputes the same gate and hash}
+    \EndIf
+\EndWhile
+\State \Return $m$
+\end{algorithmic}
+\end{algorithm}

@@ -1,0 +1,18 @@
+\begin{table}[t]
+\centering
+\caption{Active warden that resamples each token with probability $q$. Without the gate ($\tau=0$), the warden acts as a binary symmetric channel (BSC) and the BER matches the BSC prediction within 0.002. With the gate ($\tau=1$), the warden changes the number of channel bits per message, so the stream desynchronizes and the BER is 30--70$\times$ the BSC value.}
+\label{tab:warden}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{@{}lccccccc@{}}
+\toprule
+Warden resample rate $q$ & 0 & 0.0025 & 0.005 & 0.01 & 0.02 & 0.05 & 0.1 \\
+\midrule
+Gated ($\tau=1$): KE BER & 0 & 0.17 & 0.25 & 0.31 & 0.40 & 0.45 & 0.47 \\
+Gated: keys agreed & 10/10 & 2/10 & 0/10 & 0/10 & 0/10 & 0/10 & 0/10 \\
+Gated: messages whose bit count changed & 0\% & 2\% & 5\% & 9\% & 19\% & 37\% & 53\% \\
+\midrule
+Ungated ($\tau=0$): KE BER & 0.019 & 0.023 & 0.026 & 0.032 & 0.042 & 0.069 & 0.111 \\
+Ungated: BSC prediction & 0.019 & 0.022 & 0.024 & 0.030 & 0.041 & 0.069 & 0.109 \\
+\bottomrule
+\end{tabular}}
+\end{table}

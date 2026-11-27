@@ -1,0 +1,320 @@
+{
+ "decoding": {
+  "rank_code": {
+   "n_sessions": 10,
+   "receiver_payload_ok": [
+    1.0,
+    0.7224598312333834,
+    1.0
+   ],
+   "payload_bit_errors_mean": 0.0,
+   "auditor_payload_ok": [
+    1.0,
+    0.7224598312333834,
+    1.0
+   ],
+   "auditor_char_accuracy_mean": 1.0,
+   "alice_tokens_per_payload_bit": 1.1851851851851851
+  },
+  "public_plain": {
+   "n_sessions": 10,
+   "receiver_payload_ok": [
+    0.9,
+    0.5958436145024278,
+    0.9821242504842788
+   ],
+   "payload_bit_errors_mean": 0.1,
+   "auditor_payload_ok": [
+    0.9,
+    0.5958436145024278,
+    0.9821242504842788
+   ],
+   "auditor_char_accuracy_mean": null,
+   "alice_tokens_per_payload_bit": 6.518518518518518
+  },
+  "keyless_ke": {
+   "n_sessions": 10,
+   "receiver_payload_ok": [
+    1.0,
+    0.7224598312333834,
+    1.0
+   ],
+   "payload_bit_errors_mean": 0.0,
+   "key_agree": [
+    1.0,
+    0.7224598312333834,
+    1.0
+   ],
+   "ke_tokens_mean": 3526.4,
+   "ke_bits": 508,
+   "tokens_per_ke_bit": 6.941732283464567,
+   "auditor_payload_ok": [
+    0.0,
+    -2.7755575615628914e-17,
+    0.2775401687666166
+   ],
+   "auditor_char_accuracy_mean": 0.0,
+   "alice_tokens_per_payload_bit": 6.5777777777777775
+  }
+ },
+ "detection": {
+  "rank_code": {
+   "n_stego_msgs": 40,
+   "n_honest_msgs": 80,
+   "nll_mean_stego": 1.6134364604949951,
+   "nll_mean_honest": 1.650242881476879,
+   "auroc_nll_honest_gt_stego": 0.4475,
+   "auroc_ci": [
+    0.34748437499999996,
+    0.5481328124999999
+   ],
+   "mwu_p": 0.35109047627785084,
+   "ks_stat": 0.22500000000000003,
+   "ks_p": 0.1279742354561745,
+   "frac_tokens_rank_le1_stego": 0.9515625,
+   "frac_tokens_rank_le1_honest": 0.742578125
+  },
+  "public_plain": {
+   "n_stego_msgs": 220,
+   "n_honest_msgs": 80,
+   "nll_mean_stego": 1.7520033944736828,
+   "nll_mean_honest": 1.650242881476879,
+   "auroc_nll_honest_gt_stego": 0.43022727272727274,
+   "auroc_ci": [
+    0.3581803977272727,
+    0.5028437499999999
+   ],
+   "mwu_p": 0.06468204148295176,
+   "ks_stat": 0.17386363636363633,
+   "ks_p": 0.05089467295592107,
+   "frac_tokens_rank_le1_stego": 0.7200994318181818,
+   "frac_tokens_rank_le1_honest": 0.742578125
+  },
+  "keyless_ke": {
+   "n_stego_msgs": 751,
+   "n_honest_msgs": 80,
+   "nll_mean_stego": 1.6882900357960702,
+   "nll_mean_honest": 1.650242881476879,
+   "auroc_nll_honest_gt_stego": 0.4646970705725699,
+   "auroc_ci": [
+    0.3994578062583222,
+    0.530618758322237
+   ],
+   "mwu_p": 0.2988195042780881,
+   "ks_stat": 0.11672769640479358,
+   "ks_p": 0.25589062137847557,
+   "frac_tokens_rank_le1_stego": 0.7300474367509987,
+   "frac_tokens_rank_le1_honest": 0.742578125
+  },
+  "bit_tests": {
+   "honest": {
+    "n_sessions": 10,
+    "mean_frac_ones": 0.5292904722934095,
+    "monobit_p_median": 0.4563860072664454,
+    "ascii_topbit_zero_frac_mean": 0.3916666666666667,
+    "ascii_test_detect_rate_p<0.01": 0.0
+   },
+   "public_plain": {
+    "n_sessions": 10,
+    "mean_frac_ones": 0.4089315285241207,
+    "monobit_p_median": 0.00871845904058699,
+    "ascii_topbit_zero_frac_mean": 1.0,
+    "ascii_test_detect_rate_p<0.01": 1.0
+   },
+   "keyless_ke": {
+    "n_sessions": 10,
+    "mean_frac_ones": 0.49850591697557656,
+    "monobit_p_median": 0.5002661326213353,
+    "ascii_topbit_zero_frac_mean": 0.4666666666666667,
+    "ascii_test_detect_rate_p<0.01": 0.0
+   }
+  },
+  "ke_sender_fail_rate": 0.0
+ },
+ "legendre_test": {
+  "naive_encoding_frac_QR": 1.0,
+  "uniform_encoding_frac_QR": 0.5055,
+  "random_string_frac_QR": 0.488,
+  "n": 2000
+ },
+ "entropy_sweep": {
+  "sw_k1_t0": {
+   "k": 1,
+   "tau": 0.0,
+   "n_sessions": 10,
+   "ke_ber": 0.09838709677419355,
+   "sender_fail_rate": 0.09838709677419355,
+   "key_agree": [
+    0.0,
+    -2.7755575615628914e-17,
+    0.2775401687666166
+   ],
+   "payload_ok": [
+    0.0,
+    -2.7755575615628914e-17,
+    0.2775401687666166
+   ],
+   "tokens_per_ke_bit": 1.032258064516129
+  },
+  "sw_k1_t1": {
+   "k": 1,
+   "tau": 1.0,
+   "n_sessions": 10,
+   "ke_ber": 0.014516129032258065,
+   "sender_fail_rate": 0.014516129032258065,
+   "key_agree": [
+    0.1,
+    0.01787574951572113,
+    0.4041563854975721
+   ],
+   "payload_ok": [
+    0.0,
+    -2.7755575615628914e-17,
+    0.2775401687666166
+   ],
+   "tokens_per_ke_bit": 2.2193548387096773
+  },
+  "sw_k2_t1": {
+   "k": 2,
+   "tau": 1.0,
+   "n_sessions": 10,
+   "ke_ber": 0.0008064516129032258,
+   "sender_fail_rate": 0.0008064516129032258,
+   "key_agree": [
+    0.9,
+    0.5958436145024278,
+    0.9821242504842788
+   ],
+   "payload_ok": [
+    0.8,
+    0.49015684672072335,
+    0.9433190520193067
+   ],
+   "tokens_per_ke_bit": 3.870967741935484
+  },
+  "sw_k4_t0": {
+   "k": 4,
+   "tau": 0.0,
+   "n_sessions": 10,
+   "ke_ber": 0.01935483870967742,
+   "sender_fail_rate": 0.01935483870967742,
+   "key_agree": [
+    0.1,
+    0.01787574951572113,
+    0.4041563854975721
+   ],
+   "payload_ok": [
+    0.0,
+    -2.7755575615628914e-17,
+    0.2775401687666166
+   ],
+   "tokens_per_ke_bit": 4.129032258064516
+  },
+  "sw_k4_t1": {
+   "k": 4,
+   "tau": 1.0,
+   "n_sessions": 10,
+   "ke_ber": 0.0,
+   "sender_fail_rate": 0.0,
+   "key_agree": [
+    1.0,
+    0.7224598312333834,
+    1.0
+   ],
+   "payload_ok": [
+    1.0,
+    0.7224598312333834,
+    1.0
+   ],
+   "tokens_per_ke_bit": 7.432258064516129
+  },
+  "sw_k8_t1": {
+   "k": 8,
+   "tau": 1.0,
+   "n_sessions": 10,
+   "ke_ber": 0.0,
+   "sender_fail_rate": 0.0,
+   "key_agree": [
+    1.0,
+    0.7224598312333834,
+    1.0
+   ],
+   "payload_ok": [
+    1.0,
+    0.7224598312333834,
+    1.0
+   ],
+   "tokens_per_ke_bit": 14.503225806451614
+  }
+ },
+ "retokenization_identical_frac": {
+  "keyless_ke+honest": 0.9408450704225352,
+  "n_msgs": 1065
+ },
+ "active_warden": {
+  "0.0": {
+   "ber_mean": 0.0,
+   "key_agree": [
+    1.0,
+    0.7224598312333834,
+    1.0
+   ],
+   "predicted_survival_(1-q/2)^n": 1.0
+  },
+  "0.01": {
+   "ber_mean": 0.2572834645669292,
+   "key_agree": [
+    0.0,
+    -2.7755575615628914e-17,
+    0.2775401687666166
+   ],
+   "predicted_survival_(1-q/2)^n": 0.0783655198371748
+  },
+  "0.02": {
+   "ber_mean": 0.38661417322834646,
+   "key_agree": [
+    0.0,
+    -2.7755575615628914e-17,
+    0.2775401687666166
+   ],
+   "predicted_survival_(1-q/2)^n": 0.0060628783672166935
+  },
+  "0.05": {
+   "ber_mean": 0.44133858267716536,
+   "key_agree": [
+    0.0,
+    -2.7755575615628914e-17,
+    0.2775401687666166
+   ],
+   "predicted_survival_(1-q/2)^n": 2.5962396299149314e-06
+  },
+  "0.1": {
+   "ber_mean": 0.46929133858267713,
+   "key_agree": [
+    0.0,
+    -2.7755575615628914e-17,
+    0.2775401687666166
+   ],
+   "predicted_survival_(1-q/2)^n": 4.826046329098541e-12
+  },
+  "0.25": {
+   "ber_mean": 0.48287401574803146,
+   "key_agree": [
+    0.0,
+    -2.7755575615628914e-17,
+    0.2775401687666166
+   ],
+   "predicted_survival_(1-q/2)^n": 3.4680946001651095e-30
+  }
+ },
+ "rfc2048": {
+  "key_agree": true,
+  "ke_tokens": 27264,
+  "ke_bits": 4092,
+  "tokens_per_ke_bit": 6.6627565982404695,
+  "payload_ok": true,
+  "bit_errors": 0,
+  "tokens_total": 30272,
+  "seconds": 524.5592217445374
+ }
+}

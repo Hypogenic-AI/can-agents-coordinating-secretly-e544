@@ -1,0 +1,17 @@
+\begin{table}[t]
+\centering
+\caption{\etwo: keyless covert communication through \qwenchan sampling (10 sessions per condition). The auditor knows the model, prompts, protocol, and public randomness. Naive keyless schemes are decoded or detected. The full scheme is neither. Detection statistics compare stego messages to 80 honest messages (AUROC with 95\% bootstrap CI).}
+\label{tab:e2}
+\small
+\begin{tabular}{@{}>{\raggedright}p{0.2\textwidth}cc>{\raggedright}p{0.38\textwidth}c@{}}
+\toprule
+{\bf Condition} & {\bf Receiver} & {\bf Auditor} & {\bf Detected by auditor?} & {\bf Tokens} \\
+ & {\bf decodes} & {\bf decodes} & & {\bf per bit} \\
+\midrule
+\rankcode (naive keyless) & 10/10 & 10/10 & yes: rank$\leq$1 fraction 0.95 vs.\ 0.74; AUROC 0.92 [0.86, 0.97] & 1.2 \\
+\publicplain (protocol, no KE) & 9/10 & 9/10 & yes: ASCII top-bit test flags 10/10 sessions; monobit median $p=0.009$ & 6.5 \\
+\keylesske (full scheme) & {\bf 10/10} & {\bf 0/10} & {\bf no}: NLL AUROC 0.46 [0.40, 0.53], KS $p=0.26$; rank AUROC 0.45 [0.39, 0.51]; ASCII test 0/10 & 6.9 \\
+\keylesske, 2048-bit group & key agreed & -- & -- & 6.7 \\
+\bottomrule
+\end{tabular}
+\end{table}

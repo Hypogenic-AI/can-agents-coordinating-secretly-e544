@@ -1,0 +1,11 @@
+{
+  "job_id": "2342358",
+  "status": "completed",
+  "slurm_state": "COMPLETED",
+  "exit_code": "0:0",
+  "script": "scripts/slurm/analyze.sbatch",
+  "description": "E2 analysis + active warden",
+  "tasks": "2342358|COMPLETED|0:0",
+  "submitted_at_utc": "2026-11-27T14:51:11Z",
+  "recorded_at_utc": "2026-11-27T15:28:52Z"
+}

@@ -1,17 +1,17 @@
 # Research State
 
 - Current phase: `None`
-- Pipeline completed: `False`
+- Pipeline completed: `True`
 
 ## Previous phases
 
-resource_finder (succeeded), experiment_runner (failed)
+resource_finder (succeeded), experiment_runner (succeeded)
 
 ## Current phase context
 
 - Phase: `experiment_runner`
-- Status: `failed`
-- Started: `2026-11-27T03:41:34.588673Z`
+- Status: `completed`
+- Started: `2026-11-27T14:40:44.080721Z`
 - Next steps:
   - Validate the report and experimental artifacts before finalizing.
 
@@ -22,9 +22,9 @@ resource_finder (succeeded), experiment_runner (failed)
 
 ## Output validation
 
-- Valid: `False`
+- Valid: `True`
 - Expected: `REPORT.md`
-- Missing: `REPORT.md`
+- Missing: None
 - Outside workspace: None
 
 ## Agent notes
@@ -57,7 +57,25 @@ Pruned: MARL eavesdropper training, subliminal fine-tuning, interpretability pro
 
 ### experiment_runner
 <!-- NEURICO_AGENT_NOTES_START:experiment_runner -->
-Update this section at the end of the `experiment_runner` phase.
+**Phase**: experiment_runner — COMPLETE (2026-11-27). All phases done; REPORT.md, README.md, THEORY.md written.
+
+**Done**: Rebuilt `.venv` on shared FS (old one was a /tmp symlink). Moved earlier non-Slurm outputs to
+`results/_prior_attempt_login_node/` (not used). Reran everything on DSI Slurm. Jobs: 2342345 (E2 array 0-9),
+2342346/2342347/2342357 (E1), 2342358/2342360/2342365/2342372 (analysis). All COMPLETED, each with
+`dsi-slurm-artifacts/<id>/job.json`. IDs are in `logs/slurm_job_ids.txt`. No jobs of mine are left running.
+
+**Key results** (see REPORT.md §5):
+- E1: none-condition partner 0.48 vs same-model auditor 0.50 (McNemar p=0.75). Shared scheme: partner 0.21,
+  unaware auditor 0.01, Kerckhoffs auditor 0.32. Suspicion AUROC 0.93 (Qwen3-14B).
+- E2: keyless KE 10/10 key agreement, auditor 0/10 decoded, NLL AUROC 0.46 [0.40, 0.53]. Naive codes were
+  decoded and detected. 2048-bit KE: 27k tokens.
+- New Prop 7': the entropy gate turns warden edits into bit insertions/deletions. q=0.25% gives key
+  agreement 2/10; the ungated channel matches the BSC prediction (src/warden_sync.py).
+
+**Deviations / limitations**: No OPENROUTER_KEY, so only local open models were used (no frontier API
+models). Toy 256-bit DH. Tokens rather than text (94% re-tokenization stability).
+
+**Next**: none required. Possible follow-ups are in REPORT.md §8.
 <!-- NEURICO_AGENT_NOTES_END:experiment_runner -->
 
 <!-- NEURICO_AGENT_NOTES_END -->

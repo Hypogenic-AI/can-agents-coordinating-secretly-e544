@@ -1,0 +1,174 @@
+{
+ "gated_tau1_k4_254bit": {
+  "0.0": {
+   "ber_mean": 0.0,
+   "key_agree": [
+    1.0,
+    0.7224598312333834,
+    1.0
+   ],
+   "frac_msgs_bitcount_changed": 0.0,
+   "frac_chunks_tokens_changed": 0.0,
+   "bsc_prediction_ber": 0.0,
+   "n_sessions": 10
+  },
+  "0.0025": {
+   "ber_mean": 0.17047244094488187,
+   "key_agree": [
+    0.2,
+    0.056680947980693314,
+    0.5098431532792765
+   ],
+   "frac_msgs_bitcount_changed": 0.021778584392014518,
+   "frac_chunks_tokens_changed": 0.004764065335753176,
+   "bsc_prediction_ber": 0.002382032667876588,
+   "n_sessions": 10
+  },
+  "0.005": {
+   "ber_mean": 0.2468503937007874,
+   "key_agree": [
+    0.0,
+    -2.7755575615628914e-17,
+    0.2775401687666166
+   ],
+   "frac_msgs_bitcount_changed": 0.04900181488203267,
+   "frac_chunks_tokens_changed": 0.010549001814882032,
+   "bsc_prediction_ber": 0.005274500907441016,
+   "n_sessions": 10
+  },
+  "0.01": {
+   "ber_mean": 0.31122047244094486,
+   "key_agree": [
+    0.0,
+    -2.7755575615628914e-17,
+    0.2775401687666166
+   ],
+   "frac_msgs_bitcount_changed": 0.09437386569872959,
+   "frac_chunks_tokens_changed": 0.020530852994555353,
+   "bsc_prediction_ber": 0.010265426497277677,
+   "n_sessions": 10
+  },
+  "0.02": {
+   "ber_mean": 0.39980314960629926,
+   "key_agree": [
+    0.0,
+    -2.7755575615628914e-17,
+    0.2775401687666166
+   ],
+   "frac_msgs_bitcount_changed": 0.19419237749546278,
+   "frac_chunks_tokens_changed": 0.0426497277676951,
+   "bsc_prediction_ber": 0.02132486388384755,
+   "n_sessions": 10
+  },
+  "0.05": {
+   "ber_mean": 0.449015748031496,
+   "key_agree": [
+    0.0,
+    -2.7755575615628914e-17,
+    0.2775401687666166
+   ],
+   "frac_msgs_bitcount_changed": 0.3666061705989111,
+   "frac_chunks_tokens_changed": 0.0992513611615245,
+   "bsc_prediction_ber": 0.04962568058076225,
+   "n_sessions": 10
+  },
+  "0.1": {
+   "ber_mean": 0.4694881889763779,
+   "key_agree": [
+    0.0,
+    -2.7755575615628914e-17,
+    0.2775401687666166
+   ],
+   "frac_msgs_bitcount_changed": 0.5281306715063521,
+   "frac_chunks_tokens_changed": 0.18738656987295826,
+   "bsc_prediction_ber": 0.09369328493647913,
+   "n_sessions": 10
+  }
+ },
+ "ungated_tau0_k4_62bit": {
+  "0.0": {
+   "ber_mean": 0.01935483870967742,
+   "key_agree": [
+    0.1,
+    0.01787574951572113,
+    0.4041563854975721
+   ],
+   "frac_msgs_bitcount_changed": 0.0,
+   "frac_chunks_tokens_changed": 0.0,
+   "bsc_prediction_ber": 0.01935483870967742,
+   "n_sessions": 10
+  },
+  "0.0025": {
+   "ber_mean": 0.02258064516129032,
+   "key_agree": [
+    0.0,
+    -2.7755575615628914e-17,
+    0.2775401687666166
+   ],
+   "frac_msgs_bitcount_changed": 0.0,
+   "frac_chunks_tokens_changed": 0.0046875,
+   "bsc_prediction_ber": 0.02169858870967742,
+   "n_sessions": 10
+  },
+  "0.005": {
+   "ber_mean": 0.025806451612903226,
+   "key_agree": [
+    0.0,
+    -2.7755575615628914e-17,
+    0.2775401687666166
+   ],
+   "frac_msgs_bitcount_changed": 0.0,
+   "frac_chunks_tokens_changed": 0.009375,
+   "bsc_prediction_ber": 0.02404233870967742,
+   "n_sessions": 10
+  },
+  "0.01": {
+   "ber_mean": 0.031451612903225803,
+   "key_agree": [
+    0.0,
+    -2.7755575615628914e-17,
+    0.2775401687666166
+   ],
+   "frac_msgs_bitcount_changed": 0.0,
+   "frac_chunks_tokens_changed": 0.0203125,
+   "bsc_prediction_ber": 0.02951108870967742,
+   "n_sessions": 10
+  },
+  "0.02": {
+   "ber_mean": 0.041935483870967745,
+   "key_agree": [
+    0.0,
+    -2.7755575615628914e-17,
+    0.2775401687666166
+   ],
+   "frac_msgs_bitcount_changed": 0.0,
+   "frac_chunks_tokens_changed": 0.04375,
+   "bsc_prediction_ber": 0.04122983870967742,
+   "n_sessions": 10
+  },
+  "0.05": {
+   "ber_mean": 0.06854838709677419,
+   "key_agree": [
+    0.0,
+    -2.7755575615628914e-17,
+    0.2775401687666166
+   ],
+   "frac_msgs_bitcount_changed": 0.0,
+   "frac_chunks_tokens_changed": 0.09921875,
+   "bsc_prediction_ber": 0.06896421370967742,
+   "n_sessions": 10
+  },
+  "0.1": {
+   "ber_mean": 0.11048387096774195,
+   "key_agree": [
+    0.0,
+    -2.7755575615628914e-17,
+    0.2775401687666166
+   ],
+   "frac_msgs_bitcount_changed": 0.0,
+   "frac_chunks_tokens_changed": 0.17890625,
+   "bsc_prediction_ber": 0.10880796370967741,
+   "n_sessions": 10
+  }
+ }
+}

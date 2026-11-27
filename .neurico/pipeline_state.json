@@ -4,7 +4,7 @@
     "resource_finder": {
       "status": "completed",
       "started_at": "2026-11-26T02:45:31.601602Z",
-      "completed_at": "2026-11-27T03:41:34.475546Z",
+      "completed_at": "2026-11-27T14:40:43.933265Z",
       "success": true,
       "outputs": {
         "skipped": true
@@ -43,17 +43,18 @@
       }
     },
     "experiment_runner": {
-      "status": "failed",
-      "started_at": "2026-11-27T03:41:34.588673Z",
-      "completed_at": "2026-11-27T03:41:37.299444Z",
-      "success": false,
+      "status": "completed",
+      "started_at": "2026-11-27T14:40:44.080721Z",
+      "completed_at": "2026-11-27T15:34:21.274846Z",
+      "success": true,
       "outputs": {
-        "success": false,
-        "return_code": 1,
-        "elapsed_time": 2.3332583904266357,
+        "success": true,
+        "return_code": 0,
+        "elapsed_time": 3216.1050107479095,
         "log_file": "/net/spaces/scratch/chenhao/NeuriCo/workspaces/can-agents-coordinating-secretly-e544/logs/execution_claude.log",
         "transcript_file": "/net/spaces/scratch/chenhao/NeuriCo/workspaces/can-agents-coordinating-secretly-e544/logs/execution_claude_transcript.jsonl",
-        "background_processes_terminated": false
+        "background_processes_terminated": false,
+        "dsi_slurm_artifacts": "/net/spaces/scratch/chenhao/NeuriCo/workspaces/can-agents-coordinating-secretly-e544/logs/dsi-slurm-artifacts"
       },
       "expected_outputs": [
         "REPORT.md"
@@ -74,19 +75,20 @@
         "healthy": true
       },
       "output_validation": {
-        "valid": false,
+        "valid": true,
         "expected": [
           "REPORT.md"
         ],
-        "present": [],
-        "missing": [
+        "present": [
           "REPORT.md"
         ],
+        "missing": [],
         "outside_workspace": []
       }
     }
   },
   "current_stage": null,
-  "completed": false,
-  "workspace_mode": "native"
+  "completed": true,
+  "workspace_mode": "native",
+  "completed_at": "2026-11-27T15:34:21.420548Z"
 }

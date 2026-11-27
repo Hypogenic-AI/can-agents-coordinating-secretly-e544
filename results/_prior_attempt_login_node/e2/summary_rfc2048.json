@@ -1,0 +1,33 @@
+{
+ "args": {
+  "conds": "keyless_ke",
+  "sessions": 1,
+  "k": 4,
+  "B": 32,
+  "tau": 1.0,
+  "Bmax": 256,
+  "M": 64,
+  "pbits": 2048,
+  "payload": "meet at the north gate 0300",
+  "tag": "rfc2048",
+  "s0": 0
+ },
+ "model": "Qwen/Qwen2.5-0.5B-Instruct",
+ "p_bits": 2048,
+ "sessions": [
+  {
+   "cond": "keyless_ke",
+   "session": 0,
+   "k": 4,
+   "B": 32,
+   "Bmax": 256,
+   "tau": 1.0,
+   "tokens_total": 25600,
+   "seconds": 1481.865953207016,
+   "payload_recv": "\ufffd\u0019}9\ufffd\ufffd\ufffd\uf143\ufffd{\ufffd\f\u0004KW\ufffd\ufffd)\ufffd\ufffd5p\u04a6",
+   "payload_ok": false,
+   "payload_bit_errors": 121,
+   "pbits": 2048
+  }
+ ]
+}

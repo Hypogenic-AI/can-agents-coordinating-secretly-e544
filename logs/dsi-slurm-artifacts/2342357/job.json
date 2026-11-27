@@ -1,0 +1,11 @@
+{
+  "job_id": "2342357",
+  "status": "completed",
+  "slurm_state": "COMPLETED",
+  "exit_code": "0:0",
+  "script": "scripts/slurm/e1_stage.sbatch",
+  "description": "E1 decode_small + classify",
+  "tasks": "2342357|COMPLETED|0:0",
+  "submitted_at_utc": "2026-11-27T14:51:11Z",
+  "recorded_at_utc": "2026-11-27T15:28:52Z"
+}

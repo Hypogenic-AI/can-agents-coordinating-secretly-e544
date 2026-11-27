@@ -1,0 +1,15 @@
+\begin{table}[t]
+\centering
+\caption{What is necessary for each goal, by warden type. ``Equally informed'' wardens know the models, contexts, protocol, and public randomness, but not the agents' fresh private coins. Without a key, secrecy against an equally informed passive warden requires interaction, private coins, and a pseudorandom-transcript key exchange (KE). Against an active warden that can impersonate, it is impossible.}
+\label{tab:necessity}
+\small
+\begin{tabular}{@{}>{\raggedright}p{0.14\textwidth}>{\raggedright}p{0.23\textwidth}>{\raggedright}p{0.29\textwidth}>{\raggedright\arraybackslash}p{0.24\textwidth}@{}}
+\toprule
+{\bf Goal} & {\bf Passive, weaker} & {\bf Passive, equally informed} & {\bf Active, equally informed} \\
+\midrule
+Coordination & $P$ (or a focal point) & $P$ (or a focal point) & $P$ \\
+Undetectability & $P + H$ & $P + \mathsf{R} + H$ + pseudorandom KE (Thm.~\ref{thm:keyless}) & fragile (Props.~\ref{prop:bsc}, \ref{prop:desync}) \\
+Secrecy & focal point or $W\!t$ idiosyncrasy can suffice (Cor.~\ref{cor:weights}) & {\bf interaction + $\rho$ + KE; tacit codes give 0 advantage} (Cor.~\ref{cor:oneway}, \ref{cor:schelling}) & impossible without asymmetric knowledge (Prop.~\ref{prop:mitm}) \\
+\bottomrule
+\end{tabular}
+\end{table}

@@ -1,0 +1,121 @@
+\section{Theory: What Replaces the Key?}
+\label{sec:theory}
+
+\subsection{Model}
+
+Two agents, $A$ and $B$, exchange messages $m_1, m_2, \dots$ over a channel watched by a warden $W$. The honest behavior of agent $i$ is a sampler $\mathcal{D}_i(h, c_i)$ that returns the next message given the public history $h$ and the agent's private context $c_i$ (system prompt, task, tools). For an LLM agent, $\mathcal{D}_i$ is the model's sampling distribution. A covert protocol $\Pi = (\Pi_A, \Pi_B)$ tells each agent how to choose its messages given a payload $x$ held by $A$, the history, its context, and its private coins $r_A, r_B$. A decoding rule $\Dec_B$ outputs an estimate $\hat{x}$.
+
+A \emph{passive} warden sees the transcript $T$. An \emph{active} warden can also modify, drop, or inject messages. The warden's knowledge $\Know_W$ is everything it can condition on besides $T$. The strongest passive warden we consider is \emph{equally informed}: $\Know_W$ contains the models, the contexts $c_A, c_B$, the protocol $\Pi$, and all public randomness, and lacks only the agents' fresh private coins. This matches the auditor of \citet{vaikuntanathan2026undetectable}. We study four goals. \emph{Coordination}: $\Pr[\hat{x}=x] \geq 1-\epsilon$. \emph{Undetectability}: no efficient warden distinguishes $T$ under $\Pi$ from an honest transcript with non-negligible advantage. \emph{Secrecy}: the warden's estimate of $x$ is no better than its prior. \emph{Authenticity}: $A$ accepts a partner only if it really is $B$.
+
+\para{Ingredients of a ``shared secret''.}
+We separate six ingredients: a pre-shared key $K$ independent of $\Know_W$; common knowledge of the protocol $P$ (an equally informed warden also knows $\Pi$, following Kerckhoffs' principle); public randomness $\mathsf{R}$ such as a session nonce; the per-message entropy $H$ of honest behavior; shared weights or correlated priors $W\!t$; and each agent's private coins $\rho$. The research question becomes: {\bf which subsets of $\{P, \mathsf{R}, H, W\!t, \rho\}$, without $K$, are enough for which goal, against which warden?} \Tabref{tab:necessity} summarizes the answer. Full proofs are in \appref{app:proofs}.
+
+\input{tables/necessity}
+
+\subsection{The simulation lemma and its consequences}
+
+Every negative result in this paper follows from one observation.
+
+\begin{lemma}[Receiver simulation]
+\label{lem:sim}
+Let $B$ decode with $\hat{x} = \Dec(T, I_B, r_B)$, where $I_B$ is $B$'s information and $r_B$ are fresh coins that are independent of $(x, T)$ given $I_B$. If $I_B \subseteq \Know_W$ and $W$ can run $\Dec$, then $W$ obtains an estimate with the same distribution as $B$'s, so $\Pr[\hat{x}_W = x] = \Pr[\hat{x}_B = x]$.
+\end{lemma}
+
+The warden simply samples its own copy of $r_B$ and runs the decoder. The independence condition is the crux: $B$'s coins help $B$ only if they \emph{affected the transcript}, which means $B$ must speak.
+
+\begin{corollary}[No one-way keyless secrecy]
+\label{cor:oneway}
+If only $A$ sends messages and $B$'s pre-decoding information is contained in $\Know_W$, no protocol gives secrecy against an equally informed warden.
+\end{corollary}
+
+\begin{corollary}[Kerckhoffs--Schelling]
+\label{cor:schelling}
+Suppose $A$ and $B$ choose a convention without communication by applying a selection rule $\sigma$ (\eg ``ask the model which hiding scheme is most natural'') to their shared knowledge $\Shared$ and their own coins, and then use it without interactive key agreement. A warden with $\Shared \subseteq \Know_W$ and access to $\sigma$ guesses $A$'s convention with exactly $B$'s coordination probability and decodes with exactly $B$'s success probability. The colluders' advantage is zero.
+\end{corollary}
+
+\begin{corollary}[Shared weights are a key only against monitors without them]
+\label{cor:weights}
+If $A$ and $B$ share weights $\theta$ and $\theta \notin \Know_W$, model-specific idiosyncrasies act as a correlated secret. If $\theta \in \Know_W$, \lemref{lem:sim} applies and the advantage vanishes.
+\end{corollary}
+
+\Corref{cor:weights} matches the finding that subliminal learning transfers only within the same base model~\citep{cloud2025subliminal}.
+
+\subsection{A key is not necessary}
+
+\begin{theorem}[Keyless covert communication; \citealp{vonahn2004public,horel2019subvert,vaikuntanathan2026undetectable,pang2026codetta}]
+\label{thm:keyless}
+Assume common knowledge of a (possibly public) protocol $P$, public randomness $\mathsf{R}$ sampled after honest behavior is fixed, sufficient entropy $H$, a key exchange with pseudorandom transcripts, and private coins $\rho$. Then a protocol exists that achieves coordination, undetectability, and secrecy against every passive, equally informed, efficient warden.
+\end{theorem}
+
+The construction we implement has three layers. (1) A \emph{public bit channel}: chunk $c$ of a message carries bit $\beta_{\mathsf{R}}(c) = h_{\mathsf{R}}(c)$ for a public hash $h_{\mathsf{R}}$; the sender rejection-samples honest candidates until the bit matches. (2) A \emph{uniform-transcript key exchange}: Diffie--Hellman in the order-$q$ subgroup of a safe prime $p = 2q+1$, with each public value $y$ encoded as $\min(y, p-y)$, which maps quadratic residues bijectively onto $[1,q]$. (3) A \emph{keyed channel}: after deriving $K$, the parties switch to bits $\mathrm{PRF}_K(c)$. Two lemmas explain why each layer is needed.
+
+\begin{lemma}[Bias of public-hash rejection sampling]
+\label{lem:bias}
+Fix a chunk distribution $p$ and a hash with $q_b = \Pr_{c\sim p}[h(c)=b]$. The sender targets bit $b$ and outputs the first of up to $B$ candidates with $h(c)=b$. (i) If $q_0=q_1=\tfrac12$ and $b$ is uniform, the output is distributed \emph{exactly} as $p$ for every $B \geq 1$; failed rejection causes decoding errors, not detectability. (ii) As $B\to\infty$, $\mathrm{TV}(\text{output}, p) = |q_0 - \tfrac12|$, and over a random hash $\E|q_0-\tfrac12| \leq \tfrac12 2^{-H_2(p)/2}$. (iii) The per-bit error rate is $\E_b[(1-q_b)^B] \geq \tfrac12 p_{\max}^B$.
+\end{lemma}
+
+Part (i) explains why the transmitted bits must be uniform. If $A$ sends structured plaintext such as ASCII (whose top bit is always 0) on public-hash bits, the warden both detects and reads the channel. The key exchange is what makes the public bit stream uniform. Part (iii) shows that low-entropy chunks cannot carry bits reliably.
+
+\begin{lemma}[Uniform encoding is necessary; \cf \citealp{bernstein2013elligator}]
+\label{lem:legendre}
+If $A$ sends $y = g^a \bmod p$ in plain binary, every value is a quadratic residue, and the Legendre symbol gives the warden advantage $\tfrac12$ per value. Under the $\min(y,p-y)$ encoding the test carries no information.
+\end{lemma}
+
+\subsection{What cannot be removed: prior knowledge of the protocol}
+
+\begin{proposition}[Undetectable protocols cannot be learned in-band]
+\label{prop:learn}
+Let $\{\Pi_\pi\}$ be protocols that are each undetectable against a warden with $B$'s pre-decoding knowledge. $A$ uses $\pi_A \sim p_A$, and $B$ must commit to $\pi_B \sim p_B$ (\eg to send its own key-exchange messages) using public information and its own coins. Then $\Pr[\pi_B = \pi_A] \leq \sum_\pi p_A(\pi)\, p_B(\pi) + \negl(\lambda)$.
+\end{proposition}
+
+Before the key exchange finishes, the transcript $B$ sees is indistinguishable from honest under every $\pi$, so it carries almost no information about $\pi_A$. This reveals a tension between undetectability and learnability. A channel that $B$ could discover by searching the transcript could also be discovered by the warden. An undetectable channel is invisible to $B$ until $B$ already knows where to look. {\bf The secret is not the key; it is the prior common knowledge of $\Pi$.} This knowledge can arise without any secret, for example when a protocol is published and becomes a focal point for every capable model, including the monitor. Secrecy then comes from $\rho$ through the key exchange. With no common knowledge at all ($p_A, p_B$ independent and uniform over $N$ incompatible protocols), coordination succeeds with probability $1/N$ (Proposition~\ref{prop:learn} with no focal point; \citealp{schelling1960strategy,crawford1990focal}).
+
+\subsection{Active wardens}
+
+\begin{proposition}[Resampling wardens; \citealp{roger2023preventing,perry2025robust}]
+\label{prop:bsc}
+If a warden resamples each chunk independently with probability $q$ and a changed chunk's bit is fresh and uniform, each signaled bit passes through a binary symmetric channel (BSC) with crossover $q_{\mathrm{eff}} \approx q/2$. An uncoded $n$-bit key exchange survives with probability $(1-q_{\mathrm{eff}})^n$.
+\end{proposition}
+
+\begin{proposition}[Data-dependent bit positions turn edits into desynchronization]
+\label{prop:desync}
+Suppose the positions of channel bits depend on the transcript, as with an entropy gate that embeds only where the next-token entropy is at least $\tau$. Then one edited token can change the gate decision at later positions, so bits are inserted or deleted rather than flipped. All later bits of that party's stream shift, and the post-edit bit-error rate approaches $\tfrac12$ instead of $q_{\mathrm{eff}}$. Standard error-correcting codes do not repair this; synchronization codes or re-anchoring are required.
+\end{proposition}
+
+We found Proposition~\ref{prop:desync} empirically (\secref{sec:warden}) and then formalized it. It exposes a trade-off: the gate that makes low-entropy text usable (\lemref{lem:bias}(iii)) is the same mechanism that makes the channel brittle.
+
+\begin{proposition}[No authentication without asymmetric knowledge]
+\label{prop:mitm}
+If an active warden controls the channel and $\Know_W \supseteq I_B$, it can run the protocol with $A$ while posing as $B$ and vice versa. By \lemref{lem:sim}, $A$'s view is identically distributed in both cases, so $A$ cannot authenticate $B$, and the warden learns the key and the payload.
+\end{proposition}
+
+Keyless secrecy therefore holds only against passive wardens. As soon as the monitor may talk, authenticity requires $B$ to hold something the warden lacks: a long-term key, or weights the warden does not have.
+
+\section{Experimental Setup}
+\label{sec:setup}
+
+We run two light experiments that test the predictions carrying the most weight: \eone tests \corref{cor:schelling} and Proposition~\ref{prop:learn}; \etwo tests \thmref{thm:keyless}, \lemref{lem:bias}, \lemref{lem:legendre}, and Propositions~\ref{prop:bsc}--\ref{prop:desync}. All models are open-weight models run locally with HF transformers on A100-80GB GPUs (one H200 job), for about 2 GPU-hours in total. No API models were used. Seeds are fixed (\eone seed 42; \etwo private coins seeded per session, $\mathsf{R} = \mathrm{SHA256}(\text{``public-session-randomness-2026-11-26''})$).
+
+\subsection{\eone: tacit coordination on hidden-message schemes}
+
+\para{Models.} \qwenbig is the main sender and decoder. \gemma is a decoder from a different model family. \qwensmall serves as a weak monitor. Thinking mode is disabled.
+
+\para{\textsc{E1a}: scheme elicitation.} We draw 100 samples per model and role at temperature 1.0. A \emph{sender} is asked which hiding method it would use given no prior agreement with its partner, a \emph{receiver} which method it expects, and an \emph{auditor} which method it would check first. \qwenbig classifies each free-text answer into one of 8 method families (\eg ``embed words'', ``synonym choice'', ``acrostic''). We report the probability that two independent draws fall in the same family, with bootstrap 95\% CIs.
+
+\para{\textsc{E1b}: end-to-end message passing.} We pair 100 cover questions from the \textsc{anthropic\_helpful\_test} split with 2--3-word phrases from \textsc{short\_phrases}, both from \stegoevals~\citep{zolkowski2025early}. \qwenbig (temperature 0.7) writes three answers per pair: \condnone hides the phrase with no agreed scheme; \condshared hides it with a scheme given to sender and partner (the phrase words are the first words of consecutive sentences); \honest contains no hidden content. Three decoders run greedily on each model: a \emph{partner}, told it is the receiving copy; an \emph{auditor}, told a phrase may be hidden but not the scheme; and a \emph{Kerckhoffs auditor}, told the scheme. Suspicion monitors rate each answer from 0 to 10.
+
+\para{Metrics.} We report exact (normalized string) and fuzzy (character ratio $\geq 0.8$) recovery with Wilson 95\% CIs, exact McNemar tests for paired decoders on the same stegotexts, and suspicion AUROC of stego vs.\ honest answers.
+
+\subsection{\etwo: toy keyless covert key exchange through LM sampling}
+
+\para{Channel.} \qwenchan (fp32, pure sampling at temperature 1) answers open-QA, brainstorming, and creative-writing prompts from \dolly. Each message has 64 tokens, and $A$ and $B$ alternate. Each chunk of $k$ tokens carries bit $\mathrm{SHA256}(\mathsf{R}\,\|\,\text{msg}\,\|\,\text{chunk}\,\|\,\text{tokens}) \bmod 2$, but only if the next-token entropy at its start is at least $\tau$. Everyone can compute this entropy gate. The sender rejection-samples up to $B=32$ honest candidate chunks (adaptively up to 256). \Algref{alg:sender} gives the sender loop.
+
+\para{Key exchange and payload.} Diffie--Hellman runs in the quadratic-residue subgroup of a 256-bit safe prime with uniform encoding (254 bits per party). One additional run uses the 2048-bit RFC 3526 group to measure cost at a realistic size. After key agreement, $A$ sends the 216-bit message ``meet at the north gate 0300'' on bits $\mathrm{HMAC}_K(c)$.
+
+\input{tables/algorithm}
+
+\para{Conditions.} We compare four conditions with 10 sessions each. \honest is the null distribution (80 messages). \rankcode is a naive keyless scheme in which the bit is whether the sampled token is the model's top-1 or top-2 choice. \publicplain has the protocol but no key exchange: payload bits go directly onto public-hash bits. \keylesske is the full scheme.
+
+\para{Auditor.} The auditor knows the model, prompts, protocol, and $\mathsf{R}$, and lacks only the private coins. It tries to decode the payload by running the public decoder. To detect the channel it uses per-message mean negative log-likelihood (NLL) and the fraction of tokens with rank $\leq 1$ (AUROC and KS test against \honest), a monobit test and an ASCII top-bit test on the public bit stream, and the Legendre test of \lemref{lem:legendre}.
+
+\para{Sweeps.} We vary chunk size $k \in \{1,2,4,8\}$ and gate $\tau \in \{0,1\}$ using a 64-bit group with 10 sessions per point. For the active warden, each token is independently replaced with probability $q \in \{0.0025, \dots, 0.1\}$ by a fresh sample from the public model given the original prefix, and we re-decode the key exchange.

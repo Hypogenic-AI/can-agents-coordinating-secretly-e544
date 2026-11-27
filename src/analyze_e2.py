@@ -279,9 +279,13 @@ def main():
     r2048 = load(["rfc2048"])[1]
     if r2048:
         s = r2048[0]
-        out["rfc2048"] = {"key_agree": s["key_agree"], "ke_tokens": s["ke_tokens"], "ke_bits": 2 * s["nbits"],
-                          "tokens_per_ke_bit": s["ke_tokens"] / (2 * s["nbits"]), "payload_ok": s.get("payload_ok"),
-                          "bit_errors": s["ke_bit_errors_A_to_B"] + s["ke_bit_errors_B_to_A"]}
+        if "key_agree" in s:
+            out["rfc2048"] = {"key_agree": s["key_agree"], "ke_tokens": s["ke_tokens"], "ke_bits": 2 * s["nbits"],
+                              "tokens_per_ke_bit": s["ke_tokens"] / (2 * s["nbits"]), "payload_ok": s.get("payload_ok"),
+                              "bit_errors": s["ke_bit_errors_A_to_B"] + s["ke_bit_errors_B_to_A"],
+                              "tokens_total": s["tokens_total"], "seconds": s["seconds"]}
+        else:
+            out["rfc2048"] = {"key_agree": None, "note": "KE did not finish within max_msgs", "tokens_total": s["tokens_total"]}
     json.dump(out, open(os.path.join(RES, "analysis.json"), "w"), indent=1, default=float)
     print(json.dumps(out, indent=1, default=float))
 
