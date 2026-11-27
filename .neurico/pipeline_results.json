@@ -1,0 +1,18 @@
+{
+  "success": false,
+  "stages": {
+    "resource_finder": {
+      "success": true,
+      "skipped": true
+    },
+    "experiment_runner": {
+      "success": false,
+      "return_code": 1,
+      "elapsed_time": 2.3332583904266357,
+      "log_file": "/net/spaces/scratch/chenhao/NeuriCo/workspaces/can-agents-coordinating-secretly-e544/logs/execution_claude.log",
+      "transcript_file": "/net/spaces/scratch/chenhao/NeuriCo/workspaces/can-agents-coordinating-secretly-e544/logs/execution_claude_transcript.jsonl",
+      "background_processes_terminated": false
+    }
+  },
+  "work_dir": "/net/spaces/scratch/chenhao/NeuriCo/workspaces/can-agents-coordinating-secretly-e544"
+}

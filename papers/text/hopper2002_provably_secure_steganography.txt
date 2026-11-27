@@ -1,0 +1,752 @@
+Provably Secure Steganography
+Nicholas J. Hopper John Langford Luis von Ahn
+September 6, 2002
+CMU-CS-02-149
+School of Computer Science
+Carnegie Mellon University
+Pittsburgh, PA 15213
+Abstract
+Informally, steganography is the process of sending a secret message from Alice to Bob in such a way that an eaves-
+dropper (who listens to all communications) cannot even tell that a secret message is being sent. In this work, we
+initiate the study of steganography from a complexity-theoretic point of view. We introduce deﬁnitions based on com-
+putational indistinguishability and we prove that the existence of one-way functions implies the existence of secure
+steganographic protocols.
+Keywords: Steganography, Cryptography, Provable Security
+1 Introduction
+The scientiﬁc study of steganography began in 1983 when Simmons [17] stated the problem in terms of
+communication in a prison. In his formulation, two inmates, Alice and Bob, are trying to hatch an escape
+plan. The only way they can communicate with each other is through a public channel, which is carefully
+monitored by the warden of the prison, Ward. If Ward detects any encrypted messages or codes, he will
+throw both Alice and Bob into solitary conﬁnement. The problem of steganography is, then: how can Alice
+and Bob cook up an escape plan by communicating over the public channel in such a way that Ward doesn’t
+suspect anything ﬁshy is going on. (Notice how steganography is diﬀerent from classical cryptography, which
+is about hiding the content of secret messages: steganography is about hiding the very existence of the secret
+messages.)
+Steganographic “protocols” have a long and intriguing history that goes back to antiquity. There are
+stories of secret messages written in invisible ink or hidden in love letters (the ﬁrst character of each sentence
+can be used to spell a secret, for instance). More recently, steganography was used by prisoners and soldiers
+during World War II because all mail in Europe was carefully inspected at the time [9]. Postal censors
+crossed out anything that looked like sensitive information (e.g. long strings of digits), and they prosecuted
+individuals whose mail seemed suspicious. In many cases, censors even randomly deleted innocent-looking
+sentences or entire paragraphs in order to prevent secret messages from going through. Over the last few
+years, steganography has been studied in the framework of computer science, and several algorithms have
+been developed to hide secret messages in innocent looking data.
+The main goal of this paper is to put steganography on a solid complexity-theoretic foundation. We
+deﬁne steganographic secrecy in terms of computational indistinguishability, and we deﬁne steganographic
+robustness, which deals with the case of active wardens (ones that cross out innocent-looking sentences or
+modify the messages just to prevent secrets from going through). Our main result is a positive one: secret
+and robust steganographic protocols exist within our model, given that one-way functions exist.
+Related Work
+There has been considerable work on digital steganography. The ﬁrst International Workshop on Information
+Hiding occurred in 1996, with ﬁve subsequent workshops, and even books have been published about the
+subject [10]. Surprisingly, though, very little work has attempted to formalize steganography, and most of the
+literature consists of heuristic approaches: steganography using digital images [8, 10], steganography using
+video systems [10, 12, 18], etc. A few papers have given information theoretic models for steganography [3,
+13, 15, 19], but these are limited in the same way that information theoretic cryptography is limited. We
+believe complexity theory is the right framework in which to view steganography and, to the best of our
+knowledge, this is the ﬁrst paper to treat steganography from a complexity-theoretic point of view (and to
+achieve provably positive results).
+Organization of the Paper
+In section 2 we deﬁne the basic cryptographic quantities used throughout the paper, as well as the notions
+of a cover channel and a stegosystem. In section 3 we deﬁne steganographic secrecy and state protocols
+which are steganographically secret assuming the existence of one-way functions. In section 4 we deﬁne
+robust steganographic secrecy for adversaries with bounded power to perturb stegotext messages and state
+protocols which satisfy this deﬁnition. Section 5 closes the paper with a discussion of implications.
+2 Deﬁnitions
+2.1 Preliminaries
+A function µ : N → (0, 1) is said to be negligible if for every c > 0, for all suﬃciently large n, µ(n) <
+1/nc. The concatenation of string s1 and string s2 will be denoted by s1||s2, and when we write “Parse
+s as st 1||st 2||···||st l” we mean to separate s into strings s1,...sl where each |si| = t, l = ⌈|s|/t⌉, and s =
+s1||s2||···||sl. We will let U(k) denote the uniform distribution on k bit strings, and U(L,l) denote the
+uniform distribution on functions from L bit strings to l bit strings. If X is ﬁnite a set, we let U(X) denote
+the uniform distribution on X.
+2.2 Cryptographic notions
+Let F : {0, 1}k ×{0, 1}L →{0, 1}l denote a family of functions. Let A be an oracle probabilistic adversary.
+Deﬁne the prf-advantage of A over F as
+Advprf F (A) =
+⏐⏐⏐⏐ Pr K←U(k),r←{0,1}∗ [AFK(·) r = 1] − Pr g←U(L,l),r←{0,1}∗ [Ag r = 1] ⏐⏐⏐⏐ .
+where r is the string of random bits used by adversary A. Deﬁne the insecurity of F as
+InSecprf F (t,q) = max A∈A(t,q)
+{
+Advprf F (A) }
+where A(t,q) denotes the set of adversaries taking at most t steps and making at most q oracle queries. Then
+F is a (t,q,ϵ)-pseudorandom function if InSecprf F (t,q) ≤ ϵ. Suppose that l(k) and L(k) are polynomials.
+A sequence {Fk}k∈N of families Fk : {0, 1}k ×{0, 1}L(k) → {0, 1}l(k) is called pseudorandom if for all
+polynomially bounded adversaries A, Advprf Fk (A) is negligible in k. We will sometimes write Fk(K,·) as FK(·).
+Let E : K×R×P→C be a probabilistic private key encryption scheme, which maps a random number
+and an |m|-bit plaintext to a ciphertext. Consider a game in which an adversary A is given access to an
+oracle which is either:
+– EK for K ← U(K); that is, an oracle which given a message m, uniformly selects random bits R and
+returns EK(R,m); or
+– g(·) = U(|EK(·)|); that is, an oracle which on any query ignores its input and returns a uniformly selected
+output of the appropriate length.
+Let A(t,q,l) be the set of adversaries A which make q queries to the oracle of at most l bits and run for
+t time steps. Deﬁne the CPA advantage of A against E as
+Advcpa E (A) =
+⏐⏐⏐⏐ Pr K←U(K),s,r←{0,1}∗ [AEK,s r = 1] − Pr g,r←{0,1}∗ [Ag r = 1] ⏐⏐⏐⏐
+where EK,s denotes EK with random bit source s. Deﬁne the insecurity of E as
+InSeccpa E (t,q,l) = max A∈A(t,q,l)
+{
+Advcpa E (A) } .
+Then E is (t,q,l,ϵ)-indistinguishable from random bits under chosen plaintext attack if InSeccpa E (t,q,l) ≤ϵ.
+A sequence of cryptosystems {Ek}k∈N is called indistinguishable from random bits under chosen plaintext
+attack (IND$-CPA) if for every PPTM A, Advcpa Ek (A) is negligible in k.
+Let C be a distribution with ﬁnite support X. Deﬁne the minimum entropy of C, H∞(C), as
+H∞(C) = min x∈X
+{
+log2
+1
+PrC[x]
+}
+.
+2.3 Steganography
+Steganography will be thought of as a game between the warden, Ward, and the inmate, Alice. The goal of
+Alice is to pass a secret message to Bob over a communication channel (known to Ward). The goal of Ward
+is to detect whether a secret message is being passed. In this and the following sections we will formalize
+this game. We start by deﬁning a communication channel.
+Deﬁnition. A channel is a distribution on bit sequences where each bit is also timestamped with mono-
+tonically increasing time value. Formally, a channel is a distribution with support ({0, 1},t1), ({0, 1},t2),...,
+where ∀i> 0 : ti+1 ≥ti.
+This deﬁnition of a channel is suﬃciently general to encompass nearly any form of communication. It is
+important to note that our protocols may depend upon the timing information as well as the actual bits sent
+on a channel. For example, it may be possible to do steganography over email using only the timing of the
+emails rather than the contents of the message. It may also be possible for an enemy to detect steganography
+via timing analysis.
+Anyone communicating on a channel can be regarded as implicitly drawing from the channel, so we will
+assume the existence of an oracle capable of drawing from the channel. In fact, we will assume something
+stronger: an oracle that can partially draw from the channel a (ﬁnite, ﬁxed length) sequence of bits. This
+oracle can draw from the channel in steps and at any point the draw is conditioned on what has been drawn
+so far. We let Ch be the channel distribution conditional on the history h of already drawn timestamped bits.
+We also let Cb h be the marginal channel distribution over the next block of b timestamped bits conditional
+on the history h. Intuitively, Cb h is a distribution on the next b timestamped bits conditioned on the history
+h.
+Fix b. We assume the existence of an oracle which can draw from Cb h. We will call such a partial draw a
+“block”. We will require that the channel satisfy a minimum entropy constraint for all blocks:
+∀h drawn from C : H∞(Cb h) > 1
+This partial draw will be conditional on all past draws and so we can regard a sequence of partial draws as
+a draw from the channel. This notion of randomness is similar to Martingale theory where random variable
+draws are conditional on previous random variable draws (and we use Martingale theory in our analysis).
+It is important to note that a “block” might (for example) contain timestamped bits which span multiple
+emails. We will overload the deﬁnition of the concatenation operator || for sequences of timestamped bits.
+Thus c1||c2 will consist of the timestamped bits of c1 followed by the timestamped bits of c2.
+One example of a channel might be electronic mail. We can map an email system allowing communication
+from Alice to Bob to a channel by considering all of the bits used to encode a particular email as a sequence of
+channel bits, each with the same timestamp. The timestamp of emailed bits would be the time of transmission.
+The complete channel consists of a distribution over sequences of emails.
+Remark. In the remainder of this paper, we will assume that cryptographic primitives remain secure
+with respect to an oracle which draws from a channel distribution Cb h. Thus channels which can be used to
+solve the hard problems that standard primitives are based on must be ruled out. In practice this is of little
+concern, since the existence of such channels would have previously led to the conclusion that the primitive
+in question was insecure.
+Deﬁnition 1. (Stegosystem) A steganographic protocol, or stegosystem, is a pair of probabilistic algorithms
+S = (SE,SD). SE takes a key K ∈{0, 1}k, a string m ∈{0, 1}∗ (the hiddentext), a message history h,
+and an oracle M(h) which samples blocks according to a channel distribution Cb h. SEM(K,m,h) returns a
+sequence of blocks c1||c2||...||cl (the stegotext) from the support of Cl∗b h . SD takes a key K, a sequence of
+blocks c1||c2||...||cl, a message history h, and an oracle M(h), and returns a hiddentext m. There must be
+a polynomial p(k) >k such that SEM and SDM also satisfy the relationship:
+∀m,|m|<p(k) : Pr(SDM(K,SEM(K,m,h),h) = m) ≥ 2 3
+where the randomization is over any coin tosses of SEM, SDM, and M. (In the rest of the paper we will
+use (SE,SD) instead of (SEM,SDM).)
+Note that we choose a probability of failure for the stegosystem of 1/3 in order to include a wide range of
+possible stegosystems. In general, given a protocol with any reasonable probability of failure, we can boost
+the system to a very low probability of failure using error-correcting codes.
+Although all of our oracle-based protocols will work with the oracle M(h), we will always use it in a
+particular way. Consequently, it will be convenient for us to deﬁne the rejection sampling function RSM,F :
+{0, 1}∗×N→{0, 1}.
+Procedure RSM,F :
+Input: target x, iteration count
+i = 0
+repeat: c←M; increment i
+until F(c) = x or i = count
+Output: c
+The function RS simply samples from the distribution provided by the sample oracle M until F(M) = x.
+The function will return c satisfying F(c) = x or the count-th sample from M. Note that we use an iteration
+count to bound the worst case running time of RS and that RS may fail to return a c satisfying F(c) = x.
+Comment. We have taken the approach of assuming a channel which can be drawn from freely by the
+stegosystem; most current proposals for stegosystems act on a single sample from the channel (one exception
+is [3]). While it may be possible to deﬁne a stegosystem which is steganographically secret or robust and
+works in this style, this is equivalent to a system in our model which merely makes a single draw on the
+channel distribution. Further, we believe that the lack of reference to the channel distribution may be one
+of the reasons for the failure of many such proposals in the literature.
+It is also worth noting that we assume that a stegosystem has very little knowledge of the channel
+distribution—SE and SD may only sample from an oracle according to the distribution. This is because in
+many cases the full distribution of the channel has never been characterized; for example, the oracle may be
+a human being, or a video camera focused on some complex scene. However, our deﬁnitions do not rule out
+encoding procedures which have more detailed knowledge of the channel distribution.
+Sampling from Cb h might not be trivial. In some cases M(h) is a human, and in others a simple randomized
+program. We stress that it is important to minimize the use of such an oracle, because oracle queries can be
+extremely expensive. In practice, this oracle is also the weakest point of all our constructions. We assume
+the existence of a perfect oracle: one that can perform independent draws, one that can be rewound, etc.
+This assumption can be justiﬁed in some cases, but not in others. If the oracle is a human, the human may
+not be able to perform independent draws from the channel as is required by the function RS. A real world
+Warden would use this to his advantage. We therefore stress the following cautionary remark: our protocols
+will be shown to be secure under the assumption that the oracle is perfect.
+Our decoding algorithm, SD, is deﬁned to have access to the oracle M(h). This is a general deﬁnition,
+and there are cases in which this access will not be necessary. Protocols in which SD needs no access to
+M(h) are clearly preferred.
+Finally, note that timing is very important for all of our protocols. The encoding algorithm, SE must
+output bits at a time consistent with the drawn timestamps. For example, SE might choose a stegotext
+that sends the bits of a block over 3 months of time. Also note that SD must recieve the bits with a known
+latency with respect to SE.
+3 Steganographic Secrecy
+A passive warden, W , is an adversary which plays the following game:
+1. W is given access to an oracle M(h) which samples blocks (one at a time) from the distribution Cb h, for
+past histories h drawn from the channel. W makes as many draws from M(h) as it likes.
+2. W is given access to a second oracle which is either SE(K,·,·) or O(·,·) deﬁned by O(m,h) ←C|SE(K,m,h)| h .
+Ward W makes at most q queries totaling l bits (of hiddentext) to this oracle.
+3. W outputs a bit.
+We deﬁne W ’s advantage against a stegosystem S by
+Advss S,C(W ) =
+⏐⏐⏐⏐ Pr K,r,M,SE [WM,SE(K,·,·) r = 1] − Pr r,M,O [WM,O(·,·) r = 1] ⏐⏐⏐⏐ ,
+where the warden uses random bits r. Deﬁne the insecurity of S by
+InSecss S,C(t,q,l) = max W∈W(t,q,l) { Advss S,C(W ) } ,
+where W(t,q,l) denotes the set of all adversaries which make at most q queries totaling at most l bits (of
+hiddentext) and running in time at most t.
+Deﬁnition 2. (Steganographic secrecy) A Stegosystem S = (SE,SD) is called (t,q,l,ϵ) steganographically
+secret against chosen hiddentext attack for the channel C ((t,q,l,ϵ)-SS-CHA-C) if InSecss S,C(t,q,l) ≤ϵ.
+Deﬁnition 3. (Universal Steganographic Secrecy) A Stegosystem S is called (t,q,l,ϵ)-universally stegano-
+graphically secret against chosen hiddentext attack ((t,q,l,ϵ)-USS-CHA) if it is (t,q,l,ϵ)-SS-CHA-C for every
+channel distribution C that satisﬁes H∞(Cb h) > 1 for all h drawn from C. A sequence of stegosystems {Sk}k∈N
+is called universally steganographically secret if for every channel distribution C and for every PPTM W ,
+Advss Sk,C(W ) is negligible in k.
+Note that steganographic secrecy can be thought of roughly as encryption which is indistinguishable from
+arbitrary distributions C.
+3.1 Construction: Stateful Universal Steganographic Secrecy
+We now show a stateful protocol which is universally steganographically secret. This protocol is not new and
+can be found (up to small diﬀerences) in [1], for instance. The novel aspect is the proof of steganographic
+secrecy within our model.
+Assume Alice and Bob share a channel and let C denote the channel distribution. We let M(h) be
+an oracle which draws blocks (one at a time) from the conditional distribution Cb h. Let FK(·,·) denote a
+pseudorandom function family indexed by k = |K| key bits which maps a pair consisting of a d-bit number
+and b timestamped bits to the set {0, 1}, i.e., F : {0, 1}k ×{0, 1}d× ({0, 1},t)b →{0, 1}. Let Alice and Bob
+share a secret key K ∈{0, 1}k and a synchronized d bit counter N. Let Enc and Dec be the encoding and
+decoding procedures, respectively, for an error-correcting code which corrects up to a 3/8+InSecprf F (O(l), 2l)
+fraction of errors, and which has stretch function 𝓁(·). The following procedures allow Alice and Bob to encode
+and decode a hiddentext and to send it via their shared channel.
+Construction 1. (Steganographic Secrecy)
+Procedure S1.Encode:
+Input: key K, hiddentext m′, history h
+Let m = Enc(m′)
+Parse m as m1 1||m1 2||···||m1 l
+for i = 1 ...l do
+ci ←RSM(h),FK(N,·)(mi, 2)
+set h = h||ci
+increment N
+Output: c1||c2||...||cl
+Procedure S1.Decode:
+Input: key K, Stegotext c
+Parse c as cb 1||cb 2||...||cb l
+for i = 1 ...l do
+set mi = FK(N,ci)
+increment N
+let m = m1||m2||···||ml
+Output: Dec(m)
+The idea behind this construction is simple. First, the encoding algorithm splits m = Enc(m′) into single
+bits. Then it draws blocks from the channel at most twice, trying to ﬁnd a block c1 such that FK(N,c1) = m1.
+After that it tries to ﬁnd c2 such that FK(N + 1,c2) = m2, and c3, and so on. This continues until all bits
+of m have been encoded. The decoding algorithm simply applies FK(N + i− 1,·) to all the ci’s.
+Note that the encoding procedure actually has some probability of failure per bit. In particular, RS might
+not return a ci such that FK(N + i− 1,ci) = mi, because RS “gives up” after 2 tries. The probability of
+failure is dependent on the sampling oracle M and the evaluation oracle F.
+Lemma 1. The probability of failure of RS in the above procedure is bounded above by 3/8+InSecprf FK (O(l), 2l).
+Proof. Assume the channel has symbols {S1,...,Sk} with probabilities p1,...,pk, and assume F is a truly
+random function. Consider the following experiment:
+Draw from the channel to get a symbol S. If F(S,N) = 0 output S. Otherwise draw again from the
+channel and output the result.
+Denote the outcome of this experiment by SE. Let D be the event that after drawing twice from the channel
+you get a diﬀerent symbol (a non-collision), and let D denote the event that after drawing twice from the
+channel you get the same symbol. Then:
+Pr
+F,C
+[f(SE,N) = 0] = 1 2 + 1 4 Pr F,C [D]
+This is because the right side is the sum of the probabilities of the following disjoint events:
+– The ﬁrst draw results in a symbol that maps to zero.
+– The ﬁrst draw results in a symbol that maps to 1 and the second draw results in a diﬀerent symbol that
+maps to 0.
+Let Si be a symbol with highest probability (pi ≥pj for all j), then
+Pr
+f,C
+[D] = p2 1 + ... + p2 k ≤pi(p1 + ... + pk)
+So Prf,C[D] ≥ (1 −pi), and we have that
+Pr
+f,C
+[f(SE) = 0] ≥ 1 2 + 1 4(1 −pi)
+> 1 2 + 1 8
+(since we are assuming that H∞(C) > 1).
+In practice F is not a random function, but rather a pseudorandom function so the probability of failure
+of RS is bounded above by 3/8 + InSecprf FK (O(l), 2l).
+Since the probability of failure is approximately 3/8, we will at worst require a code with a stretch
+function 𝓁(n) approximately 2n. We will assume for simplicity that the running times of Enc and Dec are
+linear.
+Theorem 1. Let k = |K|. For any l≤ 2d:
+InSecss S1,C(t,q,l) ≤ InSecprf F (t + O(𝓁(l)),𝓁(l))
+Proof. For any warden, W , running in time t and making q queries totaling l bits, we construct a corre-
+sponding PRF adversary A, where
+Advss S1,C(W ) = Advprf F (A)
+The running time of A is the running time of warden W plus the time of rejection sampling (RS): O(𝓁(l))
+in the worst case. The number of calls to the sampling oracle, M(h), is at most 2𝓁(l).
+Af simply runs W , emulating the encoding procedure S1.Encode using the function oracle f in place
+of FK(·,·). Note that when f is a uniformly chosen random function, the output of RSM(h),f(·, 2) is dis-
+tributed identically to the channel distribution Cb h. Similarly, when f is chosen from FK(·,·), the output of
+RSM(h),f(·, 2) is distributed identically to the output of Construction 1, by the deﬁnition of the construction.
+So the advantage is:
+Advprf F (A) =
+⏐⏐⏐⏐ Pr K←U(k),r←{0,1}∗ [AFK(·,·) r = 1] − Pr g,r←{0,1}∗ [Ag r = 1] ⏐⏐⏐⏐
+=
+⏐⏐⏐⏐ Pr K,r,M,SE [WM,SE(K,·,·) r = 1] − Pr r,M,O [WM,O(·,·) r = 1] ⏐⏐⏐⏐
+= Advss S1,C(W )
+And the theorem follows by the deﬁnition of insecurity.
+Corollary 1. If FK(·,·) is pseudorandom then construction 1 is universally steganographically secret against
+chosen-hiddentext attacks.
+Proof. FK(·,·) pseudorandom implies that for all polynomially bounded adversaries A, Advprf Fk (A) is negli- gible in k. The deﬁnition of insecurity and theorem 1 implies that for any cover channel, C, the advantage
+of a warden will be negligible in k. This, in turn, implies the corollary.
+3.2 Stateless Steganographic Secrecy
+The following protocol also satisﬁes our deﬁnition for steganographic secrecy. Once again, this protocol (up
+to small diﬀerences) is not new and can be found in [1]; an information theoretic version of the protocol can
+also be found in [3].
+We will say that a function f : D → R is an unbiased function on a distribution C if for all r ∈ R,h,
+Prd←Cb h [f(d) = r] = 1 |R|. Let f : ({0, 1},t)b →{0, 1} be a public function which is unbiased on C. Note that
+the assumption that there exists an f satisfying this deﬁnition does not hold for all channels.
+Let EK(·,·) and DK(·) denote the encryption and decryption functions for a cryptosystem which is
+indistinguishable from random bits under chosen plaintext attack (i.e., IND$-CPA) [16]. Suppose Alice and
+Bob share a key K ∈{0, 1}k. The following procedures allow encoding and decoding of messages in a manner
+which is steganographically secret under chosen hiddentext attack for the channel distribution C.
+Construction 2. (Stateless Steganographic Secrecy)
+Procedure S2.Encode:
+Input: key K, hiddentext m, history h
+Let s = EK(m)
+Parse s as s1 1||s1 2||···||s1 l
+for i = 1 ...l do
+ci ←RSM(h),f(·)(si,|K|)
+set h = h||ci
+Output: c1||c2||...||cl
+Procedure S2.Decode:
+Input: key K, Stegotext c
+Parse c as cb 1||cb 2||...||cb l
+for i = 1 ...l do
+set si = f(ci)
+set s = s1||s2||···||sl.
+Output: D(K,s)
+Note that the execution time for SD is essentially linear in l and the execution time for SE is an
+expected O(l). Also note that our assumption of an unbiased function implies that an error correcting code
+as in construction 1 is unnecessary: the probability of failure here is l/2|K|. Clearly, the assumption of an
+unbiased f is quite strong. In practice, perfect unbiasedness may be hard to meet and stronger assumptions
+may be required. For example, when f is a pseudorandom function, under the assumption of a large minimum
+entropy in the channel, f will be nearly unbiased.
+Lemma 2. For any warden W ∈W(t,q,l), we can construct a corresponding adversary A where
+Advss S2,C(W ) = Advcpa E (A) .
+The running time of A is at most t+O(kl), and A makes q encryption queries for a total of l bits of plaintext.
+Proof. We are given a program W for distinguishing between the output of construction 2 and the ordinary
+traﬃc of the channel, and an oracle for sampling blocks from that channel. We construct a program A which
+plays the CPA game — distinguishing an EK(R,·) oracle from a uniform g oracle — with the same advantage
+as W . A simply runs the encoding procedure S2.Encode using its oracle in place of EK(R,·). Consider the
+following two cases:
+– O(m) = EK(m). Then the stegotexts output by the encoding procedure will be identically distributed
+to stegotexts resulting from the normal use of construction 2.
+– O(m) = g(m) is chosen uniformly from strings of appropriate length. Then the stegotexts output by
+the encoding procedure will be identically distributed to a history-dependent sample from the channel
+distribution Cb h. This follows by the fact that f is unbiased on C and the parsed substrings g(m)i are
+uniformly distributed on {0, 1}.
+Thus A can simply use the decision of W to gain advantage identical to that of W . More formally,
+Advcpa E (A) =
+⏐⏐⏐⏐ Pr K←U(k),s,r←{0,1}∗ [AEK,s r = 1] − Pr g,r←{0,1}∗ [Ag r = 1] ⏐⏐⏐⏐
+=
+⏐⏐⏐⏐ Pr K,r,SE,M [WM,SE(K,·,·) r = 1] − Pr O,r,M [WM,O(·,·) r = 1] ⏐⏐⏐⏐
+= Advss S2,C(W )
+Theorem 2. InSecss S2,C(t,q,l) ≤ InSeccpa E (t + O(kl),q,l).
+Proof. The theorem follows from Lemma 2 and the deﬁnition of insecurity.
+Generalization. The assumption that the balanced function, f, is unbiased can be weakened to the as-
+sumption of an ϵ-biased function where the probability of any value is within ϵ of uniform. The same proofs
+work with the insecurity increased by at most ϵ (however, error correcting codes might be necessary in this
+case).
+A few easy corollaries follow from Theorem 2. If E is indistinguishable from random bits under chosen
+plaintext attack then construction 2 is SS-CHA-C secure. Additionally, if E is replaced by a public key
+cryptosystem which is indistinguishable from random bits under chosen plaintext attack, then construction 2
+is a public key stegosystem which is steganographically secret under chosen hiddentext attack (under an
+appropriate generalization of our deﬁnitions to a public-key scenario).
+4 Robust Steganography
+4.1 Deﬁnitions for Robust Steganography
+Robust steganography will be modelled as a game between Alice and Ward in which Ward is allowed to
+make some alterations to Alice’s messages. Alice wins if she can pass a message with high probability, even
+when Ward alters her message. For example, if Alice passes a single bit per channel message and Ward is
+unable to change the bit with probability at least 1 2 , Alice can use error correcting codes to reliably transmit
+her message. It will be important to state the limitations we impose on Ward, since otherwise he can replace
+all messages with a new draw from the channel distribution, eﬀectively destroying any hidden information.
+In this section we give a formal deﬁnition of robust steganography with respect to a limited adversary.
+We will model Ward’s power as deﬁned by a relation R which is constrained to not corrupt the channel
+too much. This general notion of constraint is suﬃcient to include many simpler notions such as (for example)
+“only alter at most 1% of the bits”.
+Let D be a ﬁnite distribution with support X and let R be a relation between the set X and the set Y
+such that for every x∈X, there exists a y ∈Y where (x,y) ∈R. Consider a game which an active warden
+plays with the following rules:
+1. The warden draws x according to D.
+2. The warden chooses an arbitrary y such that (x,y) ∈R.
+3. The warden makes an independent draw x′ from D.
+The warden wins if (x′,y) ∈R. Deﬁne the obfuscation probability of R for D by
+O(R,D) = max
+y
+∑
+(x′,y)∈R
+Pr
+D
+[x′] .
+This function represents an upper bound on the warden’s winning probability. In particular, for any y
+the warden chooses in step 2, O(R,D) bounds the probability ∑ (x′,y)∈R PrD[x′] of winning. Note that the
+log2 O(R,D) gives the minimum amount of conditional information retained about draws from D when they
+are substituted arbitrarily amongst possibilities which satisfy R. The obfuscation probability is therefore a
+worst-case conditional entropy (just as minimum entropy is a worst-case entropy), except that logarithms
+have been removed.
+Now let R be an eﬃciently computable relation on blocks and let R(x) = {y : (x,y) ∈R}. We say that
+the pair (R,Cb h) is δ-admissible if O(R,Cb h) ≤δ and a pair (R,C) is δ-admissible if ∀h (R,Cb h) is δ-admissible.
+An R-bounded active warden W can be thought of as an adversary which plays the following game against
+a stegosystem S = (SE,SD):
+1. W is given oracle access to the channel distribution C and makes as many draws as it likes.
+2. W is given oracle access to SE(K,·,·), and makes at most q queries totaling at most l1 bits to SE.
+3. W presents an arbitrary message m∈{0, 1}l2 and history h.
+4. W is then given a sequence of blocks c = c1||c2||...||cu from the support of C(u∗b) h , and returns a sequence
+c′ = c′ 1||c′ 2||...||c′ u where c′ i ∈ R(ci) for each 1 ≤ i ≤ u. Here u is the number of blocks of stegotext
+output by SE(K,m,h).
+Deﬁne the success of W against S by
+SuccR S (W ) = Pr K←U(k),r←{0,1}∗,o←{0,1}∗ [SDo(K,Wr(SEo(K,m,h)),h) ⁄= m]
+Here, r and o are the random bits used by Ward and the protocol, respectively. Deﬁne the failure rate of S
+by
+FailR S (t,q,l) = max W∈W(R,t,q,l)
+{
+SuccR S (W ) } ,
+where W(R,t,q,l) denotes the set of all R-bounded active wardens that submit at most q queries of total
+length at most l1, produce a plaintext of length at most l2 = l−l1 and run in time at most t.
+Deﬁnition 4. (Robust Steganography) A stegosystem S = (SE,SD) is called (t,q,l,ϵ,δ) steganographi-
+cally robust against R-bounded adversaries for the distribution C (denoted (t,q,l,ϵ,δ)-SR-CHA-(C,R)) if the
+following conditions hold:
+– (Secrecy): S is (t,q,l,ϵ)-SS-CHA-C.
+– (Robustness): FailR S (t,q,l) ≤δ.
+A stegosystem is called (t,q,l,ϵ,δ) steganographically robust (SR-CHA) if it is (t,q,l,ϵ,δ)-SR-CHA-(C,R)
+for every δ-admissible pair (C,R).
+Deﬁnition 5. (Universal Robust Steganography) A sequence of stegosystems {Sk}k∈N is called universally
+steganographically robust if it is universally steganographically secret and there exists a polynomial q(·) and
+a constant δ ∈ [0, 1 2 ) such that for every PPTM W , every δ-admissible (R,C), and all suﬃciently large k,
+SuccR Sk(W ) < 1/q(k).
+4.2 Universally Robust Stegosystem
+In this section we give a stegosystem which is Steganographically robust against any bounding relation
+R, under a slightly modiﬁed assumption on the channel oracles, and assuming that Alice and Bob know
+some eﬃciently evaluable, δ-admissible relation R′ such that R′ is a superset of R. For several reasons,
+this stegosystem appears impractical but it serves as a proof that robust steganography is possible for any
+admissible relation.
+Suppose that the channel distribution C is eﬃciently sampleable, that is, there is an eﬃcient algorithm M
+which, given a uniformly chosen string s∈{0, 1}m and history h produces a block distributed according to
+Cb h (or statistically close to Cb h). We will assume that Alice, Bob, and Ward all have access to this algorithm.
+Furthermore, we assume Alice and Bob share a key K to a pseudorandom function; and have a synchronized
+counter N. Let n be a robustness parameter.
+Construction 3. (Universally Robust Steganography)
+Procedure S3.Encode:
+Input: K, m, h
+Parse m as m1 1||m1 2||···||m1 l
+for i = 1 ...l do
+for j = 1 ...n do
+set ci,j = M(FK(N,mi),h)
+increment N
+set h = h||ci,j
+Output: c1,1||c1,2||...||cl,n
+Procedure S3.Decode:
+Input: key K, stegotext c, history h
+Parse c as cb 1||cb 2||...||cb ln
+for i = 1 ...l do
+set h0 = h1 = h
+for j = 1 ...n do
+for σ∈{0, 1} do
+set mσ = M(FK(N,σ),hσ)
+set hσ = hσ||mσ
+increment N
+if (∀j.(h0,j,ci,j) ∈R′)
+then pi = 0; else pi = 1
+set h = hpi
+set p = p1||p2||···||pl.
+Output: p
+Suppose that instead of sharing a key to a pseudorandom function F, Alice and Bob shared two secret blocks
+b0,b1 drawn independently from Cb h. Then Alice could send Bob the message bit σ by sending block bσ, and
+Bob could recover σ by checking to see if the block he received was related (by R′) to b0 or b1. Since the
+adversary is R bounded and (C,R′) is δ-admissible, the probability of a decoding error — caused either
+by the adversary, or by accidental draw of b0,b1 — would be at most δ. Intuitively, Construction 3 simply
+extends this notion to multiple bits by replacing the b0,b1 by draws from M(·) with shared pseudorandom
+inputs; and reduces the probability of decoding error to δn by encoding each hiddentext bit n times.
+Lemma 3. InSecss S3,C(t,q,l) ≤ InSecprf F (t + O(nl),nl).
+Proof. Let W be a passive warden which runs in time t, and makes at most q queries of total length at most
+l. We construct a PRF adversary A which runs in time t + 𝓁(l) and makes at most 𝓁(l) queries to F, such
+that
+Advprf F (A) = Advss S,C(W ) .
+The PRF adversary takes a function oracle f and emulates the calls W makes to the encoder SE by using
+f in place of FK(·,·). More formally, we deﬁne the subroutine SSEf : {0, 1}∗×{0, 1}∗→{0, 1}∗ as follows:
+Procedure SSEf:
+Input: A plaintext message m, history h
+Parse m as m1 1||m1 2||···||m1 l
+for i = 1 ...l do
+for j = 1 ...n do
+set ci,j = M(f(N,pi),h)
+increment N
+set h = h||ci,j
+Output: c1,1||c1,2||...||cl,n
+Then we deﬁne Af = WSSEf,M; A’s advantage over F is then:
+Advprf F (A) =
+⏐⏐⏐⏐ Pr K←U(k) [AFK(·,·) = 1] − Pr f←U(L,l) [Af(·,·) = 1] ⏐⏐⏐⏐
+=
+⏐⏐⏐⏐ Pr SE,K←U(k) [WSE(K,·,·),M = 1] − Pr f←U(L,l) [Af = 1] ⏐⏐⏐⏐
+=
+⏐⏐⏐⏐ Pr SE,K←U(k),r [WSE(K,·,·),M r = 1] − Pr C,M,r [WM,C r = 1] ⏐⏐⏐⏐
+= Advss S,C(W ) .
+Where the following cases for f justify the substitutions:
+– f is chosen from FK(·,·). Then the output of SSEf is distributed identically to the encoding function
+of Construction 3. That is, PrK←U(k)[AFK = 1] = PrK←U(k)[WSE,M = 1].
+– f is chosen uniformly. Then by assumption on M, the output of SSEf is distributed identically to a
+history dependent sample from C; that is, Prf←U(L,l)[Af = 1] = PrC[WC,M = 1].
+The claim follows by the deﬁnition of insecurity.
+Lemma 4. FailR S3(t,q,l1,l2) ≤ InSecprf F (t + O(nl),nl) + l2δn.
+Proof. Let W be an active R-bounded (t,q,l1,l2) warden. We construct a PRF adversary A which runs in
+time t + O(nl), makes at most nl PRF queries, and satisﬁes Advprf F (A) ≥ SuccR S (W ) −l2δn. Af works by
+running W , using its function oracle f in place of FK(·,·) to emulate Construction 3 in responding to the
+queries of W . Let m,c′ be the hiddentext and the stegotext sequence returned by W , respectively. Then Af
+returns 1 iﬀ SD(K,c′,h) ⁄= m. Consider the following two cases for f:
+– f is chosen uniformly from all appropriate functions. Then, for each i,j, the stegotexts ci,j = M(f(Ni +
+j,pi),hi,j) are distributed independently according to Cb hi,j. Consider the sequence of “alternative ste-
+gotexts” di,j = M(f(Ni + j, 1 −pi),hi,j); each of these is also distributed independently according to
+Cb hi,j; and since W is never given access to the di,j, the c′ i,j are independent of the di,j. Now SD will
+fail (causing Af to output 1) only if the event ∀j.(di,j,c′ i,j) ∈ R′ occurs for some i. Because the di are
+independent of the actions of W , and because (C,R′) is δ-admissible, each event (di,j,c′ i,j) ∈R′ happens
+independently with probability at most δ. So for any ﬁxed i, the probability of failure is at most δn. The
+union bound then gives
+Pr
+f←U(b,n)
+[Af = 1] ≤l2δn.
+– f is chosen uniformly from FK(·,·). Then AF outputs 1 exactly when W succeeds against S, by the
+deﬁnition of S:
+Pr
+K←U(k),r←{0,1}∗
+[AFK r = 1] = SuccR S (W ) .
+Taking the diﬀerence of these probabilities, we get:
+Advprf F (A) = Pr K←U(k),r←{0,1}∗ [AFK r = 1] − Pr f←U(b,n),r←{0,1}∗ [Af r = 1]
+≥ SuccR S (W ) −l2δn .
+Theorem 3. If F is (t + O(nl),nl,ϵ)-pseudorandom then Construction 3 is (t,l1,l2,ϵ,ϵ + l2δn)-SR-CHA.
+Proof. Conjunction of the previous two lemmas.
+4.3 Robust Steganography for text-like channels
+We provide a protocol which is steganographically robust against R-bounded adversaries for a particular class
+of admissible relations R on particular channels. For some channel distributions this class of relations may
+provide an accurate model of the limitations of real wardens; in particular it seems reasonable to suppose
+that a predominantly text-based channel might limit the power of an active warden by such a relation.
+A text based channel (such as email) might consist of “documents” built out of many bits with the
+same timestamp (= sending time). Fix a symbol alphabet Σ = {0, 1}s, and represent every document d
+in the support of C by a string of symbols d = d0d1 ···dl and a single timestamp. The n-shingling of
+d, denoted by ssn(d) is the set {d0d1 ···dn−1,d1d2 ···dn,d2d3 ···dn+1,... ,dl−ndl−n+1 ···dl}. Deﬁne the
+family of relations Rn δ for 0 ≤δ≤ 1 by
+(x,y) ∈Rn δ ⇔|ssn(x) ∩ssn(y)| |ssn(x) ∪ssn(y)|≥ 1 −δ .
+Let FK(·,·) denote a pseudorandom function family indexed by |K| bits which maps n-shingles to the
+set {0, 1}p. Let EK be a length-preserving, stateful (rather than randomized), IND$-CPA encryption scheme
+which works by producing a pseudorandom stream s and outputs EK(m) = s⊕m, (such a scheme can be
+produced using a pseudorandom function in (stateful) CTR mode, for example) and let D be the correspond-
+ing decryption function. Let Enc and Dec be the encoding and decoding algorithms for an error-correcting
+code which can correct up to a δ + ξ fraction of symbol errors; and let 𝓁(·) be the stretch function of this
+code. We will assume Enc and Dec work in linear time for simplicity. Deﬁne the function maxf(d) as the
+shingle in d which maximizes f, that is
+maxf(d) = argmaxs∈ssn(d) {f(s)} .
+Let g : {0, 1}∗ →{0, 1} be unbiased for the distribution on shingles induced by maxFK(C). Let Alice and
+Bob share secret keys Kf,Ke. The following procedures allow Alice and Bob to robustly encode and decode
+a message.
+Construction 4. (Robust Steganographic Protocol)
+Procedure S4.Encode:
+Input: m, h, keys Kf,Ke
+Let p = EKe(Enc(m))
+Parse p as p1 1||p1 2||···||p1 l
+for i = 1 ...l do
+set ci = RS
+M(h),g◦maxFKf (pi)
+set h = h||ci
+Output: c1||c2||...||cl
+Procedure S4.Decode:
+Input: stegotext c, keys Kf,Ke
+Parse c as cb 1||cb 2||...||cb l
+for i = 1 ...l do
+set si = maxFKf (·)(ci)
+set pi = g(si)
+set p = p1||p2||···||pl.
+Output: Dec(DKe(p))
+Note that it is important that encryption and bit errors commute here which holds for only some encryp-
+tion techniques.
+In the following, Let 𝓁q be the maximum size of q encoded strings with total length l1 plus 𝓁(l2).
+Lemma 5. InSecss S4(t,q,l) ≤ InSeccpa E (t + O(k𝓁q),q,𝓁q).
+Proof. Given a passive warden W which runs in time t and makes at most q queries which encode to a total
+of l bits, we construct a CPA adversary A such that
+Advss S,C(W ) = Advcpa E (A) ,
+where A runs in time at most t + kl, and submits at most q queries totaling l bits of plaintext to the
+encryption oracle.
+A uses the simulated encryption subroutine SSEE(Kf,m,h) deﬁned by:
+Procedure SSEE:
+Input: key K, plaintext message m, history h
+Let p = E(Enc(m))
+Parse p as p1 1||p1 2||···||p1 l
+for i = 1 ...l do
+set ci = RS
+M(h),g◦maxFKf (·) (pi) .
+set h = h||ci
+Output: c1||c2||...||cl
+A then simulates a chosen-hiddentext attack by choosing a random key Kf and running WSSEE(Kf,·,·).
+Consider the two cases for E:
+1. E = EK for a uniformly chosen K. Then the stegotexts returned by SSE are distributed identically to
+documents constructed from S. In this case,
+Pr
+Ke←U(ke),s,r←{0,1}∗
+[AEKe,s r = 1] = Pr
+K←U(ke+kf),M,SE,r
+[WM,SE(K,·,·) r = 1] .
+2. The encryption oracle returns uniformly chosen strings In this case, the stegotexts returned by SSEE
+are sampled identically to the distribution Ch. This follows by the unbiasedness of g◦ maxFKf and the
+fact that the parsed substrings pi are uniformly distributed on {0, 1}. So
+Pr
+g,r
+[Ag(·) r = 1] = Pr M,r,O [WM,O(·,·) r = 1] .
+Then the CPA advantage of A is:
+Advcpa E (A) =
+⏐⏐⏐⏐ Pr Ke,s,r [AEKe,s r = 1] − Pr g,r [Ag = 1] ⏐⏐⏐⏐
+=
+⏐⏐⏐⏐ Pr K←U(ke+kf),M,SE,r [WM,SE(K,·,·) r = 1] − Pr M,r,O [WM,O(·,·) r = 1] ⏐⏐⏐⏐
+= Advss S,C(W ) .
+This gives the required bound.
+Lemma 6. FailRn δ S4 (t,q,l1,l2) ≤ 2e−ξ2𝓁(l2)/2 + InSecprf F (t + O(k𝓁q),k𝓁q).
+Proof. Given an Rn δ -bounded active warden W which runs in time t against a message of length l2, we will
+produce an adversary A which runs in time t + k𝓁qb, makes at most k𝓁qb queries to F and satisﬁes
+Advprf F (A) ≥ SuccRn δ S (W ) − 2e−ξ2𝓁(l2)/2 .
+Af uses two subroutines SSEf,SSDf deﬁned as follows:
+Procedure SSEf:
+Input: Key Ke, message m, history h
+Let p = EKe(R,Enc(m))
+Parse p as p1 1||p1 2||···||p1 l
+for i = 1 ...l do
+set ci = RSM(h),g◦maxf(·)(pi,k).
+set h = h||ci
+Output: c1||c2||...||cl
+Procedure SSDf:
+Input: Key Ke, Covertext c
+Parse c as cb 1||cb 2||...||cb l
+for i = 1 ...l do
+set si = maxf(ci)
+set pi = g(si)
+set p = p1||p2||···||pl.
+Output: Dec(DKe(p))
+Af then uses these subroutines to simulate W :
+1. A picks a key Ke ←U(ke).
+2. A computes (mW,hW ) = WSSEf(Ke,·,·).
+3. A computes c = SSEf(Ke,mW,hW ).
+4. A returns 1 if SSDf(Ke,W (c)) ⁄= mW .
+Consider the two separate cases for A’s function oracle:
+– If f is a random function, then the probability that W alters the shingle maxf(ci) for any single stegotext
+ci is at most δ, since W alters at most a δ fraction of the shingles from each ci, and maxf(ci) is chosen
+uniformly from these shingles. A can return 1 only when this event happens on more than (ξ + δ)𝓁(l2)
+covertexts (otherwise Dec can correct the symbol errors). Deﬁne the indicator random variables Xi to
+be 1 if W alters the shingle maxf(ci) and 0 otherwise. By considering the martingale sequence given by
+Y0 = E[∑Xi], Yj = E[∑Xi|X1,... ,Xj] we can use Azuma’s inequality [14] to obtain the bound
+Pr
+[∑
+Xi ≥ (δ + ξ)𝓁(l2)
+]
+< 2e−ξ2𝓁(l2)/2
+Which by deﬁnition of the Xi gives us
+Pr
+f←U(n,1),r←{0,1}∗
+[Af r = 1] ≤ 2e−ξ2𝓁(l2)/2 .
+– If F is sampled from FK(·) then AF returns 1 exactly when W succeeds. Thus
+Pr
+K←U(k),r
+[AFK r = 1] = SuccRn δ S (W ) .
+Combining these cases, we have that
+Advprf F (A) = Pr K,r [AFK r = 1] − Pr f,r [Af r = 1]
+≥ SuccRn δ S (W ) − 2e−ξ2𝓁(l2)/2
+Which satisﬁes the desired bound. As to the time and query parameters, note that every call to RSM(h),g◦maxf(·)(·,k)
+makes at most b calls to f per call to maxf, and makes at most k calls to maxf; since Af makes at most
+𝓁q calls to RS, the total number of calls to f is at most k𝓁qb (and is an expected O(𝓁qb)); and the running
+time is at most the running time of W plus the time consumed in RS.
+Theorem 4. If F is (t + O(k𝓁q),k𝓁q,ϵ)-pseudorandom and E is (t + 𝓁q,q,𝓁q,µ) - IND$-CPA, then Con-
+struction 4 is (t,l1,l2,ϵ + µ, 2e−ξ2𝓁(l2)/2 + ϵ) - SR-CHA against Rn δ -bounded adversaries.
+Proof. Follows from lemmas 5 and 6.
+Note that the error term resulting from the tail bound in this construction can be made arbitrarily small by
+setting a minimum message size in the encoding routine.
+5 Discussion
+5.1 Rate and Eﬃciency
+The steganographic literature is often concerned with the rate of a stegosystem. We can deﬁne the rate of a
+stegosystem S as the number of bits of plaintext divided by the number of bits in the covertexts. Ignoring
+the probability of failure and the use of error correcting codes, the expected rate of our constructions is 1/b.
+5.2 Alternative security conditions
+There are several conceivable alternatives to our security conditions; we will brieﬂy examine these alternatives
+and justify our choices.
+Find-Then-Guess: This is the standard model in which an attacker submits two plaintexts p0 and p1,
+receives SE(pb), and attempts to guess b. Security in our attack model implies ﬁnd-then-guess security;
+moreover the essence of steganographic secrecy is not merely the inability to distinguish between messages
+(as in the ﬁnd-then-guess model) but the inability to detect a message.
+Fixed History: In this model the adversary may not submit alternate histories to the encryption model.
+Security under a chosen-history attacks implies security against a ﬁxed-history attacks. This notion may
+be of interest however, especially because in many situations a chosen-history attack may not be physically
+realizable. Our attacks can be considered chosen-history attacks.
+Integrity of Hiddentexts. Intuitively, Integrity of Hiddentexts requires that an active warden is unable to
+create a sequence of covertexts which decodes to a valid, new hiddentext. Suppose we amend the description
+of a stego system to allow the decoding algorithm to output the “fail” symbol ⊥. Then suppose we give the
+adversary oracle access to SE and allow the adversary to make at most q queries p0,... ,pq to SE(K,·,·)
+totaling l bits. The adversary then produces a sequence of covertexts c = c1||...||cm. Denote the advantage
+of A against S by
+Advint S,C(A) = Pr [SD(K,c,h) ⁄=⊥∧∀i.SD(K,c,h) ⁄= pi] ,
+and denote the integrity failure of a stegosystem by
+Failint S,C(t,q,l) = max A∈A(t,q,l)
+{
+Advint S,C(A) } .
+A stegosystem has (t,q,l,ϵ) integrity of hiddentexts if Failint S,C(t,q,l) ≤ϵ.
+Note that in practice this notion by itself is too weak because it allows the possibility for the warden
+to disrupt the communication between Alice and Bob. Finally, we note that if the symmetric encryption
+scheme E is INT-CTXT secure as deﬁned by Bellare and Namprempre [2], then construction 2 also provides
+integrity of hiddentexts.
+5.3 Complexity theoretic ramiﬁcations
+Construction 1 gives a stegosystem which is steganographically secret for any channel distribution C which
+has minimum entropy greater than 1, assuming the existence of a pseudorandom function family. Goldreich
+et al [5] show how to construct a pseudorandom function from a pseudorandom generator, which in turn can
+be constructed from any one-way function, as demonstrated by Hastad et al [6]. Thus in an asymptotic sense,
+our constructions show that one-way functions are suﬃcient for steganography. Conversely, it is easy to see
+that a stegosystem which is steganographically secret for some C is a secure weak private key encryption
+protocol in the sense of Impagliazzo and Luby [7]; and they prove that the existence of such a protocol
+implies the existence of a one-way function. Thus the existence of secure steganography is equivalent to the
+existence of one-way functions.
+Acknowledgments We are greatful to Manuel Blum for his suggestions and his unconditional encour-
+agment. We also thank Steven Rudich and the anonymous CRYPTO reviewers for helpful discussions and
+comments. Lea Kissner, Tal Malkin, and Omer Reingold also provided valuable critical comments. This work
+was partially supported by the National Science Foundation (NSF) grants CCR-0122581 and CCR-0085982
+(The Aladdin Center). Nicholas Hopper is also partially supported by an NSF graduate research fellowship.
+References
+1. Ross J. Anderson and Fabien A. P. Petitcolas. On The Limits of Steganography. IEEE Journal of Selected Areas
+in Communications, 16(4). May 1998.
+2. Mihir Bellare and Chanathip Namprempre. Authenticated Encryption: Relations among notions and analysis of
+the generic composition paradigm. In: Advances in Cryptology – Asiacrypt ’00. December 2000.
+3. C. Cachin. An Information-Theoretic Model for Steganography. In: Information Hiding – Second International
+Workshop, Preproceedings. April 1998.
+4. S. Craver. On Public-Key Steganography in the Presence of an Active Warden. In: Information Hiding – Second
+Internaitonal Workshop, Preproceedings. April 1998.
+5. Oded Goldreich, Shaﬁ Goldwasser and Silvio Micali. How to Construct Random Functions. Journal of the ACM,
+33(4):792 – 807, 1986.
+6. Johan Hastad, Russell Impagliazzo, Leonid A. Levin, and Michael Luby. A pseudorandom generator from any
+one-way function. SIAM Journal on Computing, 28(4):1364–1396, 1999.
+7. Russell Impagliazzo and Michael Luby. One-way Functions are Essential for Complexity Based Cryptography. In:
+30th FOCS, November 1989.
+8. G. Jagpal. Steganography in Digital Images Thesis, Cambridge University Computer Laboratory, May 1995.
+9. D. Kahn. The Code Breakers. Macmillan 1967.
+10. Stefan Katzenbeisser and Fabien A. P. Petitcolas. Information hiding techniques for steganography and digital
+watermarking. Artech House Books, 1999.
+11. Michael Luby and Charles Rackoﬀ. How to construct pseudorandom permutations from pseudorandom functions.
+SIAM Journal on Computing, 17(2):373 – 386, 1988.
+12. K. Matsui and K. Tanaka. Video-steganography. In: IMA Intellectual Property Project Proceedings, volume 1,
+pages 187–206, 1994.
+13. T. Mittelholzer. An Information-Theoretic Approach to Steganography and Watermarking In: Information Hiding
+– Third International Workshop. 2000.
+14. Rajeev Motwani and Prabhakar Raghavan. Randomized Algorithms. Cambridge University Press, 1995.
+15. J. A. O’Sullivan, P. Moulin, and J. M. Ettinger Information theoretic analysis of Steganography. In: Proceedings
+ISIT ‘98. 1998.
+16. Phillip Rogaway, Mihir Bellare, John Black and Ted Krovetz. OCB: A Block-Cipher Mode of Operation for Eﬃ-
+cient Authenticated Encryption. In: Proceedings of the Eight ACM Conference on Computer and Communications
+Security (CCS-8). November 2001.
+17. G.J. Simmons. The Prisoner’s Problem and the Subliminal Channel. In: Proceedings of CRYPTO ’83. 1984.
+18. A. Westfeld, G. Wolf. Steganography in a Video Conferencing System. In: Information Hiding – Second Interna-
+tional Workshop, Preproceedings. April 1998.
+19. J Zollner, H.Federrath, H.Klimant, A.Pftizmann, R. Piotraschke, A.Westﬁeld, G.Wicke, G.Wolf. Modeling the
+security of steganographic systems. In: Information Hiding – Second International Workshop, Preproceedings. April
+1998.

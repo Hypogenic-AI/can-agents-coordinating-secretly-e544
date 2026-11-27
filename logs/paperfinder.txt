@@ -1,0 +1,48 @@
+=== steganographic collusion between LLM agents without shared key
+{
+  "error": "Paper-finder service not running at localhost:8000",
+  "fallback": true,
+  "message": "Proceeding with manual search (arXiv, Semantic Scholar, Papers with Code)"
+}
+
+Results saved to: paper_search_results/steganographic_collusion_between_LLM_agents_without_shared_key_20261126_023353.jsonl
+=== secret collusion among AI agents steganography
+{
+  "error": "Paper-finder service not running at localhost:8000",
+  "fallback": true,
+  "message": "Proceeding with manual search (arXiv, Semantic Scholar, Papers with Code)"
+}
+
+Results saved to: paper_search_results/secret_collusion_among_AI_agents_steganography_20261126_023354.jsonl
+=== keyless steganography public-key steganography provably secure
+{
+  "error": "Paper-finder service not running at localhost:8000",
+  "fallback": true,
+  "message": "Proceeding with manual search (arXiv, Semantic Scholar, Papers with Code)"
+}
+
+Results saved to: paper_search_results/keyless_steganography_public-key_steganography_provably_secure_20261126_023354.jsonl
+=== LLM steganography encoded reasoning monitoring
+{
+  "error": "Paper-finder service not running at localhost:8000",
+  "fallback": true,
+  "message": "Proceeding with manual search (arXiv, Semantic Scholar, Papers with Code)"
+}
+
+Results saved to: paper_search_results/LLM_steganography_encoded_reasoning_monitoring_20261126_023354.jsonl
+=== emergent communication referential games compositional language
+{
+  "error": "Paper-finder service not running at localhost:8000",
+  "fallback": true,
+  "message": "Proceeding with manual search (arXiv, Semantic Scholar, Papers with Code)"
+}
+
+Results saved to: paper_search_results/emergent_communication_referential_games_compositional_language_20261126_023355.jsonl
+=== Schelling points focal points coordination language models
+{
+  "error": "Paper-finder service not running at localhost:8000",
+  "fallback": true,
+  "message": "Proceeding with manual search (arXiv, Semantic Scholar, Papers with Code)"
+}
+
+Results saved to: paper_search_results/Schelling_points_focal_points_coordination_language_models_20261126_023355.jsonl

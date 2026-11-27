@@ -1,0 +1,520 @@
+{
+ "all:\"secret collusion\" AND all:agents": [
+  {
+   "id": "2402.07510v5",
+   "title": "Secret Collusion among AI Agents: Multi-Agent Deception via Steganography",
+   "year": 2024,
+   "authors": [
+    "Sumeet Ramesh Motwani",
+    "Mikhail Baranchuk",
+    "Martin Strohmeier",
+    "Vijay Bolina"
+   ],
+   "abstract": "Recent capability increases in large language models (LLMs) open up applications in which groups of communicating generative AI agents solve joint tasks. This poses privacy and security challenges concerning the unauthorised sharing of information, or other unwanted forms of agent coordination. Modern steganographic techniques could render such dynamics hard to detect. In this paper, we comprehens"
+  },
+  {
+   "id": "2605.27593v2",
+   "title": "Voluntary Collusion with Secret Tools in Competing LLM Agents",
+   "year": 2026,
+   "authors": [
+    "Xijie Zeng",
+    "Frank Rudzicz"
+   ],
+   "abstract": "Even when a tool is explicitly described as unfair and harmful to others, ostensibly safety-aligned LLM agents still voluntarily engage in secret collusion whenever doing so confers a strategic advantage. To investigate this phenomenon, we introduce an empirical framework built on two strategic multi-agent environments: Liar's Bar, a competitive deception scenario, and Cleanup, a mixed-motive reso"
+  },
+  {
+   "id": "2505.02077v2",
+   "title": "Open Challenges in Multi-Agent Security: Towards Secure Systems of Interacting AI Agents",
+   "year": 2025,
+   "authors": [
+    "Christian Schroeder de Witt",
+    "Klaudia Krawiecka",
+    "Igor Krawczuk",
+    "Ben Hagag"
+   ],
+   "abstract": "AI agents are beginning to interact with each other directly and across internet platforms and physical environments, creating security challenges beyond traditional cybersecurity and AI safety frameworks. Free-form protocols are essential for AI's task generalization but enable new threats like secret collusion and coordinated swarm attacks. Network effects can rapidly spread privacy breaches, di"
+  },
+  {
+   "id": "2604.01151v6",
+   "title": "Detecting Multi-Agent Collusion Through Multi-Agent Interpretability",
+   "year": 2026,
+   "authors": [
+    "Aaron Rose",
+    "Carissa Cullen",
+    "Sahar Abdelnabi",
+    "Philip Torr"
+   ],
+   "abstract": "Non-verbalised or secret collusion may impose a ceiling on transcript-level monitoring in multi-agent deployments. Internal model activations are known to provide an additional monitoring surface for single-agent phenomena such as deception, but detecting collusion within an unknown subgroup is ultimately a joint inference task over multiple agents. This paper derives collusion detection statistic"
+  },
+  {
+   "id": "2611.10620v1",
+   "title": "What Do Collusion Probes Read? Three Pitfalls in Evaluating Multi-Agent Collusion Monitors",
+   "year": 2026,
+   "authors": [
+    "Mainul Hasan Mohsin",
+    "Mohammad Shahidur Rahman"
+   ],
+   "abstract": "Activation probes look like near-perfect monitors for secret collusion among large language model (LLM) agents. We show that they mostly detect that an agent was told to collude, not that it decided to. Our benchmark (2,500 committee and 1,476 code-review episodes) adds agents who receive the collusion instruction and refuse it, separating instruction from decision. Published detectors barely tell"
+  },
+  {
+   "id": "2606.28425v1",
+   "title": "Tool Use Enables Undetectable Steganography in Multi-Agent LLM Systems",
+   "year": 2026,
+   "authors": [
+    "Jimmy Laurence Rippin",
+    "Simon C. Marshall",
+    "David Demitri Africa",
+    "Christian Schroeder de Witt"
+   ],
+   "abstract": "Increasingly autonomous agentic AI systems pose novel multi-agent risks, such as secret collusion via covert communication channels. The natural defence to these collusion attempts is to monitor plain-text communication, but the efficacy of monitors has been called into doubt by increasingly sophisticated model steganography; indeed, some theoretical schemes have been proposed that are information"
+  },
+  {
+   "id": "2510.04303v2",
+   "title": "Audit the Whisper: Detecting Steganographic Collusion in Multi-Agent LLMs",
+   "year": 2025,
+   "authors": [
+    "Om Tailor"
+   ],
+   "abstract": "Multi-agent deployments of large language models (LLMs) are increasingly embedded in market, allocation, and governance workflows, yet covert coordination among agents can silently erode trust and social welfare. Existing audits are dominated by heuristics that lack theoretical guarantees, struggle to transfer across tasks, and seldom ship with the infrastructure needed for independent replication"
+  }
+ ],
+ "all:steganography AND all:\"language models\" AND all:collusion": [
+  {
+   "id": "2402.07510v5",
+   "title": "Secret Collusion among AI Agents: Multi-Agent Deception via Steganography",
+   "year": 2024,
+   "authors": [
+    "Sumeet Ramesh Motwani",
+    "Mikhail Baranchuk",
+    "Martin Strohmeier",
+    "Vijay Bolina"
+   ],
+   "abstract": "Recent capability increases in large language models (LLMs) open up applications in which groups of communicating generative AI agents solve joint tasks. This poses privacy and security challenges concerning the unauthorised sharing of information, or other unwanted forms of agent coordination. Modern steganographic techniques could render such dynamics hard to detect. In this paper, we comprehens"
+  },
+  {
+   "id": "2609.28900v3",
+   "title": "Codetta: High-Capacity, Keyless, and Undetectable Multi-Agent Collusion",
+   "year": 2026,
+   "authors": [
+    "Qi Pang",
+    "Virginia Smith",
+    "Wenting Zheng"
+   ],
+   "abstract": "Multi-agent systems built on large language models (LLMs) are increasingly deployed in high-stakes settings such as finance, healthcare, and software engineering, where agents coordinate through natural-language messages. The same channels, however, let colluding agents exfiltrate confidential information or coordinate unauthorized actions, and steganography can hide such communication inside outp"
+  }
+ ],
+ "all:\"provably secure steganography\"": [
+  {
+   "id": "2604.21394v3",
+   "title": "Provably Secure Steganography Based on List Decoding",
+   "year": 2026,
+   "authors": [
+    "Kaiyi Pang",
+    "Minhao Bai"
+   ],
+   "abstract": "Steganography embeds secret messages in seemingly innocuous carriers for covert communication under surveillance. Current Provably Secure Steganography (PSS) schemes based on language models can guarantee computational indistinguishability between the covertext and stegotext. However, achieving high embedding capacity remains a challenge for existing PSS. The inefficient entropy utilization render"
+  },
+  {
+   "id": "2504.12579v3",
+   "title": "Provable Secure Steganography Based on Adaptive Dynamic Sampling",
+   "year": 2025,
+   "authors": [
+    "Kaiyi Pang",
+    "Minhao Bai"
+   ],
+   "abstract": "The security of private communication is increasingly at risk due to widespread surveillance. Steganography, a technique for embedding secret messages within innocuous carriers, enables covert communication over monitored channels. Provably Secure Steganography (PSS), which ensures computational indistinguishability between the normal model output and steganography output, is the state-of-the-art "
+  },
+  {
+   "id": "2503.19499v1",
+   "title": "SparSamp: Efficient Provably Secure Steganography Based on Sparse Sampling",
+   "year": 2025,
+   "authors": [
+    "Yaofei Wang",
+    "Gang Pei",
+    "Kejiang Chen",
+    "Jinyang Ding"
+   ],
+   "abstract": "Steganography embeds confidential data within seemingly innocuous communications. Provable security in steganography, a long-sought goal, has become feasible with deep generative models. However, existing methods face a critical trade-off between security and efficiency. This paper introduces SparSamp, an efficient provably secure steganography method based on sparse sampling. SparSamp embeds mess"
+  },
+  {
+   "id": "2603.06169v1",
+   "title": "Alkaid: Resilience to Edit Errors in Provably Secure Steganography via Distance-Constrained Encoding",
+   "year": 2026,
+   "authors": [
+    "Zhihan Cao",
+    "Gaolei Li",
+    "Jun Wu",
+    "Jianhua Li"
+   ],
+   "abstract": "While provably secure steganography provides strong concealment by ensuring stego carriers are indistinguishable from natural samples, such systems remain vulnerable to real-world edit errors (e.g., insertions, deletions, substitutions) because their decoding depends on perfect synchronization and lacks error-correcting capability. To bridge this gap, we propose Alkaid, a provably secure steganogr"
+  },
+  {
+   "id": "1707.00074v1",
+   "title": "Achieving Efficient and Provably Secure Steganography in Practice",
+   "year": 2017,
+   "authors": [
+    "Aubrey Alston"
+   ],
+   "abstract": "Steganography is the task of concealing a message within a medium such that the presence of the hidden message cannot be detected. Though the prospect of steganography is conceivably interesting in many contexts, and though work has been done both towards formalizing steganographic security and providing provably secure constructions, little work exists attempting to provide efficient and provably"
+  },
+  {
+   "id": "2412.12206v1",
+   "title": "Provably Secure Robust Image Steganography via Cross-Modal Error Correction",
+   "year": 2024,
+   "authors": [
+    "Yuang Qi",
+    "Kejiang Chen",
+    "Na Zhao",
+    "Zijin Yang"
+   ],
+   "abstract": "The rapid development of image generation models has facilitated the widespread dissemination of generated images on social networks, creating favorable conditions for provably secure image steganography. However, existing methods face issues such as low quality of generated images and lack of semantic control in the generation process. To leverage provably secure steganography with more effective"
+  },
+  {
+   "id": "2504.19454v1",
+   "title": "Provably Secure Public-Key Steganography Based on Admissible Encoding",
+   "year": 2025,
+   "authors": [
+    "Xin Zhang",
+    "Kejiang Chen",
+    "Na Zhao",
+    "Weiming Zhang"
+   ],
+   "abstract": "The technique of hiding secret messages within seemingly harmless covertext to evade examination by censors with rigorous security proofs is known as provably secure steganography (PSS). PSS evolves from symmetric key steganography to public-key steganography, functioning without the requirement of a pre-shared key and enabling the extension to multi-party covert communication and identity verific"
+  },
+  {
+   "id": "2403.17524v2",
+   "title": "Provably Secure Disambiguating Neural Linguistic Steganography",
+   "year": 2024,
+   "authors": [
+    "Yuang Qi",
+    "Kejiang Chen",
+    "Kai Zeng",
+    "Weiming Zhang"
+   ],
+   "abstract": "Recent research in provably secure neural linguistic steganography has overlooked a crucial aspect: the sender must detokenize stegotexts to avoid raising suspicion from the eavesdropper. The segmentation ambiguity problem, which arises when using language models based on subwords, leads to occasional decoding failures in all neural language steganography implementations based on these models. Cur"
+  },
+  {
+   "id": "2407.13499v2",
+   "title": "Provably Robust and Secure Steganography in Asymmetric Resource Scenario",
+   "year": 2024,
+   "authors": [
+    "Minhao Bai",
+    "Jinshuai Yang",
+    "Kaiyi Pang",
+    "Xin Xu"
+   ],
+   "abstract": "To circumvent the unbridled and ever-encroaching surveillance and censorship in cyberspace, steganography has garnered attention for its ability to hide private information in innocent-looking carriers. Current provably secure steganography approaches require a pair of encoder and decoder to hide and extract private messages, both of which must run the same model with the same input to obtain iden"
+  }
+ ],
+ "ti:\"public-key steganography\"": [
+  {
+   "id": "0811.4700v1",
+   "title": "Trellis-coded quantization for public-key steganography",
+   "year": 2008,
+   "authors": [
+    "Ga\u00ebtan Le Guelvouit"
+   ],
+   "abstract": "  This paper deals with public-key steganography in the presence of a passive warden. The aim is to hide secret messages within cover-documents without making the warden suspicious, and without any preliminar secret key sharing. Whereas a practical attempt has been already done to provide a solution to this problem, it suffers of poor flexibility (since embedding and decoding steps highly depend o"
+  },
+  {
+   "id": "1211.0086v1",
+   "title": "Public key Steganography Using Discrete Cross-Coupled Chaotic Maps",
+   "year": 2012,
+   "authors": [
+    "Sodeif Ahadpour",
+    "Mahdiyeh Majidpour",
+    "Yaser Sadra"
+   ],
+   "abstract": "By cross-coupling two logistic maps a novel method is proposed for the public key steganography in JPEG image. Chaotic maps entail high complexity in the used algorithm for embedding secret data in a medium. In this paper, discrete cross- coupled chaotic maps are used to specifying the location of the different parts of the secret data in the image. Modifying JPEG format during compressing and dec"
+  },
+  {
+   "id": "2504.19454v1",
+   "title": "Provably Secure Public-Key Steganography Based on Admissible Encoding",
+   "year": 2025,
+   "authors": [
+    "Xin Zhang",
+    "Kejiang Chen",
+    "Na Zhao",
+    "Weiming Zhang"
+   ],
+   "abstract": "The technique of hiding secret messages within seemingly harmless covertext to evade examination by censors with rigorous security proofs is known as provably secure steganography (PSS). PSS evolves from symmetric key steganography to public-key steganography, functioning without the requirement of a pre-shared key and enabling the extension to multi-party covert communication and identity verific"
+  }
+ ],
+ "all:\"emergent communication\" AND all:eavesdropper": [
+  {
+   "id": "2004.05279v1",
+   "title": "Towards Green Mobile Edge Computing Offloading Systems with Security Enhancement",
+   "year": 2020,
+   "authors": [
+    "Haijian Sun",
+    "Qun Wang",
+    "Xiang Ma",
+    "Yongjun Xu"
+   ],
+   "abstract": "Mobile edge computing (MEC) is an emerging communication scheme that aims at reducing latency. In this paper, we investigate a green MEC system under the existence of an eavesdropper. We use computation efficiency, which is defined as the total number of bits computed divided by the total energy consumption, as our main metric. To alleviate stringent latency requirement, a joint secure offloading "
+  },
+  {
+   "id": "1805.09260v1",
+   "title": "On the Secrecy Capacity of Fisher-Snedecor F Fading Channels",
+   "year": 2018,
+   "authors": [
+    "Osamah S. Badarneh",
+    "Paschalis C. Sofotasios",
+    "Sami Muhaidat",
+    "Simon L. Cotton"
+   ],
+   "abstract": "The performance of physical-layer security of the classic Wyner's wiretap model over Fisher-Snedecor F composite fading channels is considered in this work. Specifically, the main channel (i.e., between the source and the legitimate destination) and the eavesdropper's channel (i.e., between the source and the illegitimate destination) are assumed to experience independent quasi-static Fisher-Snede"
+  }
+ ],
+ "all:schelling AND all:\"language models\" AND all:coordination": [
+  {
+   "id": "2607.11363v1",
+   "title": "Beyond Sally-Anne: Evaluating Theory of Mind in LLMs using Epistemic Schelling Points",
+   "year": 2026,
+   "authors": [
+    "Roberta Rocca",
+    "Sami Boukortt",
+    "Geoff Keeling",
+    "Winnie Street"
+   ],
+   "abstract": "Text-based evaluations of Theory of Mind (ToM) in Large Language Models (LLMs) often involve cognitive tests akin to the Sally-Anne task that can be gamed due to exposure to relevantly similar tasks in pre-training and do not obviously test models' functional ToM abilities in ways that generalize to naturalistic settings. To address these issues, we introduce the Epistemic Asymmetry Schelling Task"
+  },
+  {
+   "id": "2609.33871v1",
+   "title": "Population Physics, Population Problems: Safety and Emergence in LLM Societies",
+   "year": 2026,
+   "authors": [
+    "Adrian de Wynter"
+   ],
+   "abstract": "The collective behaviour of large language model (LLM) societies is not the sum of their individual outputs. It yields statistically distinct, sometimes-unpredictable phenomena, for which the tools we use to study single agents may not scale. Due to recent incidents involving autonomous agentic systems, however, understanding these systems is paramount. For that we introduce a framework for measur"
+  }
+ ],
+ "all:steganography AND all:LLM AND all:paraphrasing": [
+  {
+   "id": "2605.26537v1",
+   "title": "Conceptual Steganography",
+   "year": 2026,
+   "authors": [
+    "Zhejian Zhou",
+    "Jonathan May"
+   ],
+   "abstract": "Language Models (LMs) emit Chains-of-Thought (CoTs) that drive much of their capability. However, the same sequence that carries useful reasoning can also covertly convey messages: a misaligned model may embed covert information in its CoT that slips through human supervision, a form of steganography known as encoded reasoning. Prior LM steganography schemes operate in the token or lexical space, "
+  },
+  {
+   "id": "2504.08977v1",
+   "title": "Robust Steganography from Large Language Models",
+   "year": 2025,
+   "authors": [
+    "Neil Perry",
+    "Sanket Gupte",
+    "Nishant Pitta",
+    "Lior Rotem"
+   ],
+   "abstract": "Recent steganographic schemes, starting with Meteor (CCS'21), rely on leveraging large language models (LLMs) to resolve a historically-challenging task of disguising covert communication as ``innocent-looking'' natural-language communication. However, existing methods are vulnerable to ``re-randomization attacks,'' where slight changes to the communicated text, that might go unnoticed, completely"
+  },
+  {
+   "id": "2410.03768v2",
+   "title": "Hidden in Plain Text: Emergence & Mitigation of Steganographic Collusion in LLMs",
+   "year": 2024,
+   "authors": [
+    "Yohan Mathew",
+    "Ollie Matthews",
+    "Robert McCarthy",
+    "Joan Velja"
+   ],
+   "abstract": "The rapid proliferation of frontier model agents promises significant societal advances but also raises concerns about systemic risks arising from unsafe interactions. Collusion to the disadvantage of others has been identified as a central form of undesirable agent cooperation. The use of information hiding (steganography) in agent communications could render such collusion practically undetectab"
+  }
+ ],
+ "all:\"keyless steganography\" OR all:\"secret-key-free\"": [
+  {
+   "id": "1211.5614v5",
+   "title": "A Hash based Approach for Secure Keyless Steganography in Lossless RGB Images",
+   "year": 2012,
+   "authors": [
+    "Ankit Chaudhary",
+    "J. Vasavada",
+    "J. L. Raheja",
+    "S. Kumar"
+   ],
+   "abstract": "This paper proposes an improved steganography approach for hiding text messages in lossless RGB images. The objective of this work is to increase the security level and to improve the storage capacity with compression techniques. The security level is increased by randomly distributing the text message over the entire image instead of clustering within specific image portions. Storage capacity is "
+  }
+ ],
+ "all:\"steganographic\" AND all:\"chain-of-thought\"": [
+  {
+   "id": "2506.01926v2",
+   "title": "Large language models can learn and generalize steganographic chain-of-thought under process supervision",
+   "year": 2025,
+   "authors": [
+    "Joey Skaf",
+    "Luis Ibanez-Lissen",
+    "Robert McCarthy",
+    "Connor Watts"
+   ],
+   "abstract": "Chain-of-thought (CoT) reasoning not only enhances large language model performance but also provides critical insights into decision-making processes, marking it as a useful tool for monitoring model intent and planning. However, recent works have shown that banning the mention of a specific example of reward hacking causes obfuscation of the undesired reasoning traces but the persistence of the "
+  },
+  {
+   "id": "2609.39838v1",
+   "title": "Learning Steganography Is Easy, Learning Steganographic Reasoning Is Hard",
+   "year": 2026,
+   "authors": [
+    "Julian Schulz",
+    "Lukas F\u00fclle",
+    "Rieke Fruengel"
+   ],
+   "abstract": "Chain-of-thought monitoring as an approach for AI oversight and control is threatened by the possibility of steganographic reasoning, where LLMs conceal their reasoning inside innocuous-looking text. Two neighbouring capabilities, steganographic messaging (passing a concealed message) and encoded reasoning (reasoning in an illegible but unconcealed format), have already been shown to emerge under "
+  },
+  {
+   "id": "2602.14095v2",
+   "title": "NEST: Nascent Encoded Steganographic Thoughts",
+   "year": 2026,
+   "authors": [
+    "Artem Karpov"
+   ],
+   "abstract": "Monitoring chain-of-thought (CoT) reasoning is a foundational safety technique for large language model agents; however, this oversight is compromised if models learn to conceal their reasoning. We explore steganographic CoT--where models hide secret reasoning within innocuous text--to inform risk assessment and deployment policies. Steganographic reasoning requires two skills in a single forward "
+  },
+  {
+   "id": "2404.18988v8",
+   "title": "Markovian Transformers for Informative Language Modeling",
+   "year": 2024,
+   "authors": [
+    "Scott Viteri",
+    "Max Lamparth",
+    "Peter Chatain",
+    "Clark Barrett"
+   ],
+   "abstract": "Chain-of-Thought (CoT) reasoning often fails to faithfully reflect a language model's underlying decision process. We address this by introducing a Markovian language model framework with an autoencoder-style reasoning bottleneck: all information flowing from question to answer must pass through a bounded-length CoT, creating a bandwidth bottleneck analogous to the latent layer of an autoencoder. "
+  }
+ ],
+ "all:\"encoded reasoning\" AND all:\"language models\"": [
+  {
+   "id": "2512.01222v2",
+   "title": "Unsupervised decoding of encoded reasoning using language model interpretability",
+   "year": 2025,
+   "authors": [
+    "Ching Fang",
+    "Samuel Marks"
+   ],
+   "abstract": "As large language models become increasingly capable, there is growing concern that they may develop reasoning processes that are encoded or hidden from human oversight. To investigate whether current interpretability techniques can penetrate such encoded reasoning, we construct a controlled testbed by fine-tuning a reasoning model (DeepSeek-R1-Distill-Llama-70B) to perform chain-of-thought reason"
+  },
+  {
+   "id": "2310.18512v2",
+   "title": "Preventing Language Models From Hiding Their Reasoning",
+   "year": 2023,
+   "authors": [
+    "Fabien Roger",
+    "Ryan Greenblatt"
+   ],
+   "abstract": "Large language models (LLMs) often benefit from intermediate steps of reasoning to generate answers to complex problems. When these intermediate steps of reasoning are used to monitor the activity of the model, it is essential that this explicit reasoning is faithful, i.e. that it reflects what the model is actually reasoning about. In this work, we focus on one potential way intermediate steps of"
+  },
+  {
+   "id": "2409.14026v3",
+   "title": "Uncovering Latent Chain of Thought Vectors in Language Models",
+   "year": 2024,
+   "authors": [
+    "Jason Zhang",
+    "Scott Viteri"
+   ],
+   "abstract": "In this work, we examine how targeted perturbations in the activation space of Language Models (LMs) can encode complex reasoning patterns. We inject steering vectors, derived from LM activations, into LMs during inference time and study whether these vectors can induce Chain-of-Thought (CoT) reasoning in LMs without the need for natural language prompting. We demonstrate this approach on Llama3 8"
+  },
+  {
+   "id": "2605.02028v3",
+   "title": "A minimal probe of task modeling in language models",
+   "year": 2026,
+   "authors": [
+    "Tianxiang Dai",
+    "Jonathan Fan"
+   ],
+   "abstract": "Language models read long contexts and score well on knowledge and reasoning benchmarks, but neither shows whether a model can do work whose next step depends on everything that came before, as a long-running agent must. We call this ability task modeling and propose counting identical items as its simplest test: every item adds to the total and no item records it. We define counting capacity (CC)"
+  },
+  {
+   "id": "2507.02737v2",
+   "title": "Early Signs of Steganographic Capabilities in Frontier LLMs",
+   "year": 2025,
+   "authors": [
+    "Artur Zolkowski",
+    "Kei Nishimura-Gasparian",
+    "Robert McCarthy",
+    "Roland S. Zimmermann"
+   ],
+   "abstract": "Monitoring Large Language Model (LLM) outputs is crucial for mitigating risks from misuse and misalignment. However, LLMs could evade monitoring through steganography: Encoding hidden information within seemingly benign generations. In this paper, we evaluate the steganography capabilities in frontier LLMs to better understand the risk they pose. We focus on two types of steganography: passing enc"
+  },
+  {
+   "id": "2605.26537v1",
+   "title": "Conceptual Steganography",
+   "year": 2026,
+   "authors": [
+    "Zhejian Zhou",
+    "Jonathan May"
+   ],
+   "abstract": "Language Models (LMs) emit Chains-of-Thought (CoTs) that drive much of their capability. However, the same sequence that carries useful reasoning can also covertly convey messages: a misaligned model may embed covert information in its CoT that slips through human supervision, a form of steganography known as encoded reasoning. Prior LM steganography schemes operate in the token or lexical space, "
+  },
+  {
+   "id": "2511.23477v1",
+   "title": "Video-CoM: Interactive Video Reasoning via Chain of Manipulations",
+   "year": 2025,
+   "authors": [
+    "Hanoona Rasheed",
+    "Mohammed Zumri",
+    "Muhammad Maaz",
+    "Ming-Hsuan Yang"
+   ],
+   "abstract": "Recent multimodal large language models (MLLMs) have advanced video understanding, yet most still \"think about videos\" ie once a video is encoded, reasoning unfolds entirely in text, treating visual input as a static context. This passive paradigm creates a semantic bottleneck: models cannot rewatch, refocus, or verify evidence, leading to shallow visual reasoning on tasks requiring fine grained s"
+  },
+  {
+   "id": "2505.15257v2",
+   "title": "When Less Language is More: Language-Reasoning Disentanglement Makes LLMs Better Multilingual Reasoners",
+   "year": 2025,
+   "authors": [
+    "Weixiang Zhao",
+    "Jiahe Guo",
+    "Yang Deng",
+    "Tongtong Wu"
+   ],
+   "abstract": "Multilingual reasoning remains a significant challenge for large language models (LLMs), with performance disproportionately favoring high-resource languages. Drawing inspiration from cognitive neuroscience, which suggests that human reasoning functions largely independently of language processing, we hypothesize that LLMs similarly encode reasoning and language as separable components that can be"
+  },
+  {
+   "id": "2605.28842v1",
+   "title": "Thoughts-as-Planning: Latent World Models for Chain-of-Thoughts Optimization via Reinforcement Planning",
+   "year": 2026,
+   "authors": [
+    "Dong Liu",
+    "Yanxuan Yu",
+    "Ying Nian Wu"
+   ],
+   "abstract": "The success of large language models (LLMs) across diverse NLP tasks has elevated the importance of reasoning chain optimization as a critical step in aligning model behavior with task objectives. Existing reasoning chain tuning methods often rely on black-box heuristics or gradient-free search, which lack interpretability, generalization, and sample efficiency. In this work, we introduce \\textbf{"
+  },
+  {
+   "id": "2503.23077v3",
+   "title": "Efficient Inference for Large Reasoning Models: A Survey",
+   "year": 2025,
+   "authors": [
+    "Yue Liu",
+    "Jiaying Wu",
+    "Yufei He",
+    "Ruihan Gong"
+   ],
+   "abstract": "Large Reasoning Models (LRMs) significantly improve the reasoning ability of Large Language Models (LLMs) by learning to reason, exhibiting promising performance in solving complex tasks. However, their deliberative reasoning process leads to inefficiencies in token usage, memory consumption, and inference time. Thus, this survey provides a review of efficient inference methods designed specifical"
+  },
+  {
+   "id": "2608.26166v1",
+   "title": "Improving LLM Interpretability with User-Centric Chain-of-Thought Reasoning",
+   "year": 2026,
+   "authors": [
+    "Philipp Schr\u00f6ppel"
+   ],
+   "abstract": "Advancing reasoning capabilities allow large language models (LLMs) to tackle increasingly complex problems, while reasoning traces - intermediate steps toward solutions - open up high-stakes applications by enabling human inspection of AI decision-making. However, current approaches prioritize model performance over human interpretability, limiting effective human-AI collaboration. In this study,"
+  },
+  {
+   "id": "2510.24940v3",
+   "title": "SemCoT: Accelerating Chain-of-Thought Reasoning through Semantically-Aligned Implicit Tokens",
+   "year": 2025,
+   "authors": [
+    "Yinhan He",
+    "Wendy Zheng",
+    "Yaochen Zhu",
+    "Zaiyi Zheng"
+   ],
+   "abstract": "The verbosity of Chain-of-Thought (CoT) reasoning hinders its mass deployment in efficiency-critical applications. Recently, implicit CoT approaches have emerged, which encode reasoning steps within LLM's hidden embeddings (termed ``implicit reasoning'') rather than explicit tokens. This approach accelerates CoT by reducing the reasoning length and bypassing some LLM components. However, existing "
+  }
+ ]
+}

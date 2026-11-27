@@ -1,0 +1,143 @@
+{
+ "args": {
+  "conds": "keyless_ke",
+  "sessions": 5,
+  "k": 4,
+  "B": 32,
+  "tau": 0.0,
+  "M": 64,
+  "pbits": 64,
+  "payload": "meet at the north gate 0300",
+  "tag": "sw_k4_t0",
+  "s0": 0
+ },
+ "model": "Qwen/Qwen2.5-0.5B-Instruct",
+ "p_bits": 64,
+ "sessions": [
+  {
+   "cond": "keyless_ke",
+   "session": 0,
+   "k": 4,
+   "B": 32,
+   "tau": 0.0,
+   "ke_bit_errors_A_to_B": 0,
+   "ke_bit_errors_B_to_A": 0,
+   "key_agree": true,
+   "ke_tokens": 512,
+   "ke_msgs": 8,
+   "keygen_tries": [
+    1,
+    1
+   ],
+   "xa": "1173572460432295183",
+   "xb": "1465804515844756376",
+   "nbits": 62,
+   "tokens_total": 2240,
+   "seconds": 122.73764872550964,
+   "payload_recv": "meet at th\ufffd north gate 0300",
+   "payload_ok": false,
+   "payload_bit_errors": 1,
+   "pbits": 64
+  },
+  {
+   "cond": "keyless_ke",
+   "session": 1,
+   "k": 4,
+   "B": 32,
+   "tau": 0.0,
+   "ke_bit_errors_A_to_B": 0,
+   "ke_bit_errors_B_to_A": 0,
+   "key_agree": true,
+   "ke_tokens": 512,
+   "ke_msgs": 8,
+   "keygen_tries": [
+    1,
+    2
+   ],
+   "xa": "4016167533706166724",
+   "xb": "1213465216861954588",
+   "nbits": 62,
+   "tokens_total": 2240,
+   "seconds": 97.53198838233948,
+   "payload_recv": "meet at tx% lorth gate 0300",
+   "payload_ok": false,
+   "payload_bit_errors": 3,
+   "pbits": 64
+  },
+  {
+   "cond": "keyless_ke",
+   "session": 2,
+   "k": 4,
+   "B": 32,
+   "tau": 0.0,
+   "ke_bit_errors_A_to_B": 0,
+   "ke_bit_errors_B_to_A": 0,
+   "key_agree": true,
+   "ke_tokens": 512,
+   "ke_msgs": 8,
+   "keygen_tries": [
+    2,
+    1
+   ],
+   "xa": "4330504964758388016",
+   "xb": "1305763873517601589",
+   "nbits": 62,
+   "tokens_total": 2240,
+   "seconds": 148.40864515304565,
+   "payload_recv": "me\ufffdt!at 4he north gate 0300",
+   "payload_ok": false,
+   "payload_bit_errors": 3,
+   "pbits": 64
+  },
+  {
+   "cond": "keyless_ke",
+   "session": 3,
+   "k": 4,
+   "B": 32,
+   "tau": 0.0,
+   "ke_bit_errors_A_to_B": 1,
+   "ke_bit_errors_B_to_A": 1,
+   "key_agree": false,
+   "ke_tokens": 512,
+   "ke_msgs": 8,
+   "keygen_tries": [
+    3,
+    2
+   ],
+   "xa": "516522784741270647",
+   "xb": "83231252361223899",
+   "nbits": 62,
+   "tokens_total": 2240,
+   "seconds": 134.10989236831665,
+   "payload_recv": "\ufffd\ufffd\ufffd\u001f\u03512/c\ufffd\u0012%Mx\ufffd\b\u001d7\ufffd\ufffd\u0019\ufffd\ufffd\ufffdf\ufffd",
+   "payload_ok": false,
+   "payload_bit_errors": 99,
+   "pbits": 64
+  },
+  {
+   "cond": "keyless_ke",
+   "session": 4,
+   "k": 4,
+   "B": 32,
+   "tau": 0.0,
+   "ke_bit_errors_A_to_B": 0,
+   "ke_bit_errors_B_to_A": 0,
+   "key_agree": true,
+   "ke_tokens": 512,
+   "ke_msgs": 8,
+   "keygen_tries": [
+    1,
+    2
+   ],
+   "xa": "2501252144682398205",
+   "xb": "2702926994775002132",
+   "nbits": 62,
+   "tokens_total": 2240,
+   "seconds": 126.59174060821533,
+   "payload_recv": "meet at \ufffdie north gate 0300",
+   "payload_ok": false,
+   "payload_bit_errors": 2,
+   "pbits": 64
+  }
+ ]
+}

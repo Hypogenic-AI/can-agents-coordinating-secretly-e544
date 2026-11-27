@@ -1,0 +1,7 @@
+{
+  "error": "Paper-finder service not running at localhost:8000",
+  "fallback": true,
+  "message": "Proceeding with manual search (arXiv, Semantic Scholar, Papers with Code)"
+}
+
+Results saved to: paper_search_results/provably_secure_steganography_language_models_without_shared_key_20261126_024544.jsonl

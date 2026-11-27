@@ -1,0 +1,5216 @@
+{
+  "records": [],
+  "failures": [
+    {
+      "custom_id": "sar_map_saliency_eval__incident-036__image-v2",
+      "incident": "incident_036",
+      "incident_index": 36,
+      "image_version": "v2",
+      "custom_id_parse_error": null,
+      "error": "Gemini response text missing.",
+      "row": {
+        "response": {
+          "modelVersion": "gemini-2.5-pro",
+          "candidates": [
+            {
+              "finishReason": "MAX_TOKENS",
+              "index": 0,
+              "content": {
+                "role": "model"
+              }
+            }
+          ],
+          "usageMetadata": {
+            "serviceTier": "SERVICE_TIER_STANDARD",
+            "totalTokenCount": 882,
+            "promptTokenCount": 373,
+            "promptTokensDetails": [
+              {
+                "tokenCount": 115,
+                "modality": "TEXT"
+              },
+              {
+                "tokenCount": 258,
+                "modality": "IMAGE"
+              }
+            ],
+            "thoughtsTokenCount": 509
+          },
+          "responseId": "-6ILavmWKM2hz7IPhqqhoAM"
+        },
+        "key": "sar_map_saliency_eval__incident-036__image-v2"
+      }
+    },
+    {
+      "custom_id": "sar_map_saliency_eval__incident-037__image-v2",
+      "incident": "incident_037",
+      "incident_index": 37,
+      "image_version": "v2",
+      "custom_id_parse_error": null,
+      "error": "Gemini response text missing.",
+      "row": {
+        "response": {
+          "responseId": "_KILaq2mEM2hz7IPhqqhoAM",
+          "candidates": [
+            {
+              "finishReason": "MAX_TOKENS",
+              "index": 0,
+              "content": {
+                "role": "model"
+              }
+            }
+          ],
+          "usageMetadata": {
+            "promptTokensDetails": [
+              {
+                "tokenCount": 115,
+                "modality": "TEXT"
+              },
+              {
+                "tokenCount": 258,
+                "modality": "IMAGE"
+              }
+            ],
+            "thoughtsTokenCount": 509,
+            "serviceTier": "SERVICE_TIER_STANDARD",
+            "totalTokenCount": 882,
+            "promptTokenCount": 373
+          },
+          "modelVersion": "gemini-2.5-pro"
+        },
+        "key": "sar_map_saliency_eval__incident-037__image-v2"
+      }
+    },
+    {
+      "custom_id": "sar_map_saliency_eval__incident-038__image-v2",
+      "incident": "incident_038",
+      "incident_index": 38,
+      "image_version": "v2",
+      "custom_id_parse_error": null,
+      "error": "Gemini response text missing.",
+      "row": {
+        "response": {
+          "responseId": "-6ILaqWFN_fgz7IP1JWzwAY",
+          "candidates": [
+            {
+              "index": 0,
+              "content": {
+                "role": "model"
+              },
+              "finishReason": "MAX_TOKENS"
+            }
+          ],
+          "usageMetadata": {
+            "promptTokensDetails": [
+              {
+                "tokenCount": 115,
+                "modality": "TEXT"
+              },
+              {
+                "tokenCount": 258,
+                "modality": "IMAGE"
+              }
+            ],
+            "thoughtsTokenCount": 509,
+            "serviceTier": "SERVICE_TIER_STANDARD",
+            "totalTokenCount": 882,
+            "promptTokenCount": 373
+          },
+          "modelVersion": "gemini-2.5-pro"
+        },
+        "key": "sar_map_saliency_eval__incident-038__image-v2"
+      }
+    },
+    {
+      "custom_id": "sar_map_saliency_eval__incident-039__image-v2",
+      "incident": "incident_039",
+      "incident_index": 39,
+      "image_version": "v2",
+      "custom_id_parse_error": null,
+      "error": "Gemini response text missing.",
+      "row": {
+        "response": {
+          "modelVersion": "gemini-2.5-pro",
+          "candidates": [
+            {
+              "finishReason": "MAX_TOKENS",
+              "index": 0,
+              "content": {
+                "role": "model"
+              }
+            }
+          ],
+          "usageMetadata": {
+            "serviceTier": "SERVICE_TIER_STANDARD",
+            "totalTokenCount": 882,
+            "promptTokenCount": 373,
+            "promptTokensDetails": [
+              {
+                "tokenCount": 115,
+                "modality": "TEXT"
+              },
+              {
+                "tokenCount": 258,
+                "modality": "IMAGE"
+              }
+            ],
+            "thoughtsTokenCount": 509
+          },
+          "responseId": "_KILavj7AeKeqtsPh_jp2As"
+        },
+        "key": "sar_map_saliency_eval__incident-039__image-v2"
+      }
+    },
+    {
+      "custom_id": "sar_map_saliency_eval__incident-040__image-v2",
+      "incident": "incident_040",
+      "incident_index": 40,
+      "image_version": "v2",
+      "custom_id_parse_error": null,
+      "error": "Gemini response text missing.",
+      "row": {
+        "response": {
+          "modelVersion": "gemini-2.5-pro",
+          "candidates": [
+            {
+              "finishReason": "MAX_TOKENS",
+              "content": {
+                "role": "model"
+              },
+              "index": 0
+            }
+          ],
+          "usageMetadata": {
+            "serviceTier": "SERVICE_TIER_STANDARD",
+            "totalTokenCount": 882,
+            "promptTokenCount": 373,
+            "promptTokensDetails": [
+              {
+                "tokenCount": 115,
+                "modality": "TEXT"
+              },
+              {
+                "tokenCount": 258,
+                "modality": "IMAGE"
+              }
+            ],
+            "thoughtsTokenCount": 509
+          },
+          "responseId": "_KILap_fCM2Hz7IP847TqQ4"
+        },
+        "key": "sar_map_saliency_eval__incident-040__image-v2"
+      }
+    },
+    {
+      "custom_id": "sar_map_saliency_eval__incident-041__image-v2",
+      "incident": "incident_041",
+      "incident_index": 41,
+      "image_version": "v2",
+      "custom_id_parse_error": null,
+      "error": "Gemini response text missing.",
+      "row": {
+        "response": {
+          "modelVersion": "gemini-2.5-pro",
+          "candidates": [
+            {
+              "finishReason": "MAX_TOKENS",
+              "index": 0,
+              "content": {
+                "role": "model"
+              }
+            }
+          ],
+          "usageMetadata": {
+            "serviceTier": "SERVICE_TIER_STANDARD",
+            "totalTokenCount": 882,
+            "promptTokenCount": 373,
+            "promptTokensDetails": [
+              {
+                "tokenCount": 115,
+                "modality": "TEXT"
+              },
+              {
+                "tokenCount": 258,
+                "modality": "IMAGE"
+              }
+            ],
+            "thoughtsTokenCount": 509
+          },
+          "responseId": "_KILarjJCMXP_uMPgNnKuAU"
+        },
+        "key": "sar_map_saliency_eval__incident-041__image-v2"
+      }
+    },
+    {
+      "custom_id": "sar_map_saliency_eval__incident-042__image-v2",
+      "incident": "incident_042",
+      "incident_index": 42,
+      "image_version": "v2",
+      "custom_id_parse_error": null,
+      "error": "Gemini response text missing.",
+      "row": {
+        "response": {
+          "modelVersion": "gemini-2.5-pro",
+          "candidates": [
+            {
+              "index": 0,
+              "content": {
+                "role": "model"
+              },
+              "finishReason": "MAX_TOKENS"
+            }
+          ],
+          "usageMetadata": {
+            "serviceTier": "SERVICE_TIER_STANDARD",
+            "totalTokenCount": 882,
+            "promptTokenCount": 373,
+            "promptTokensDetails": [
+              {
+                "tokenCount": 115,
+                "modality": "TEXT"
+              },
+              {
+                "tokenCount": 258,
+                "modality": "IMAGE"
+              }
+            ],
+            "thoughtsTokenCount": 509
+          },
+          "responseId": "-6ILar--LfyMqtsP5rfUwAY"
+        },
+        "key": "sar_map_saliency_eval__incident-042__image-v2"
+      }
+    },
+    {
+      "custom_id": "sar_map_saliency_eval__incident-043__image-v2",
+      "incident": "incident_043",
+      "incident_index": 43,
+      "image_version": "v2",
+      "custom_id_parse_error": null,
+      "error": "Gemini response text missing.",
+      "row": {
+        "response": {
+          "candidates": [
+            {
+              "finishReason": "MAX_TOKENS",
+              "content": {
+                "role": "model"
+              },
+              "index": 0
+            }
+          ],
+          "usageMetadata": {
+            "promptTokensDetails": [
+              {
+                "tokenCount": 115,
+                "modality": "TEXT"
+              },
+              {
+                "tokenCount": 258,
+                "modality": "IMAGE"
+              }
+            ],
+            "thoughtsTokenCount": 509,
+            "serviceTier": "SERVICE_TIER_STANDARD",
+            "totalTokenCount": 882,
+            "promptTokenCount": 373
+          },
+          "responseId": "_KILapjzEdWsz7IPrreGMA",
+          "modelVersion": "gemini-2.5-pro"
+        },
+        "key": "sar_map_saliency_eval__incident-043__image-v2"
+      }
+    },
+    {
+      "custom_id": "sar_map_saliency_eval__incident-044__image-v2",
+      "incident": "incident_044",
+      "incident_index": 44,
+      "image_version": "v2",
+      "custom_id_parse_error": null,
+      "error": "Gemini response text missing.",
+      "row": {
+        "response": {
+          "responseId": "-6ILapyNOrmS_uMPtY6esQw",
+          "candidates": [
+            {
+              "content": {
+                "role": "model"
+              },
+              "index": 0,
+              "finishReason": "MAX_TOKENS"
+            }
+          ],
+          "usageMetadata": {
+            "serviceTier": "SERVICE_TIER_STANDARD",
+            "totalTokenCount": 882,
+            "promptTokenCount": 373,
+            "promptTokensDetails": [
+              {
+                "tokenCount": 115,
+                "modality": "TEXT"
+              },
+              {
+                "tokenCount": 258,
+                "modality": "IMAGE"
+              }
+            ],
+            "thoughtsTokenCount": 509
+          },
+          "modelVersion": "gemini-2.5-pro"
+        },
+        "key": "sar_map_saliency_eval__incident-044__image-v2"
+      }
+    },
+    {
+      "custom_id": "sar_map_saliency_eval__incident-045__image-v2",
+      "incident": "incident_045",
+      "incident_index": 45,
+      "image_version": "v2",
+      "custom_id_parse_error": null,
+      "error": "Gemini response text missing.",
+      "row": {
+        "response": {
+          "candidates": [
+            {
+              "finishReason": "MAX_TOKENS",
+              "index": 0,
+              "content": {
+                "role": "model"
+              }
+            }
+          ],
+          "usageMetadata": {
+            "serviceTier": "SERVICE_TIER_STANDARD",
+            "totalTokenCount": 882,
+            "promptTokenCount": 373,
+            "promptTokensDetails": [
+              {
+                "tokenCount": 115,
+                "modality": "TEXT"
+              },
+              {
+                "tokenCount": 258,
+                "modality": "IMAGE"
+              }
+            ],
+            "thoughtsTokenCount": 509
+          },
+          "responseId": "-6ILasyIOc2hz7IPhqqhoAM",
+          "modelVersion": "gemini-2.5-pro"
+        },
+        "key": "sar_map_saliency_eval__incident-045__image-v2"
+      }
+    },
+    {
+      "custom_id": "sar_map_saliency_eval__incident-046__image-v2",
+      "incident": "incident_046",
+      "incident_index": 46,
+      "image_version": "v2",
+      "custom_id_parse_error": null,
+      "error": "Gemini response text missing.",
+      "row": {
+        "response": {
+          "candidates": [
+            {
+              "finishReason": "MAX_TOKENS",
+              "index": 0,
+              "content": {
+                "role": "model"
+              }
+            }
+          ],
+          "usageMetadata": {
+            "serviceTier": "SERVICE_TIER_STANDARD",
+            "totalTokenCount": 882,
+            "promptTokenCount": 373,
+            "promptTokensDetails": [
+              {
+                "tokenCount": 115,
+                "modality": "TEXT"
+              },
+              {
+                "tokenCount": 258,
+                "modality": "IMAGE"
+              }
+            ],
+            "thoughtsTokenCount": 509
+          },
+          "responseId": "_KILat3xCrfUz7IPsJei0Q4",
+          "modelVersion": "gemini-2.5-pro"
+        },
+        "key": "sar_map_saliency_eval__incident-046__image-v2"
+      }
+    },
+    {
+      "custom_id": "sar_map_saliency_eval__incident-047__image-v2",
+      "incident": "incident_047",
+      "incident_index": 47,
+      "image_version": "v2",
+      "custom_id_parse_error": null,
+      "error": "Gemini response text missing.",
+      "row": {
+        "response": {
+          "modelVersion": "gemini-2.5-pro",
+          "responseId": "-6ILapvAMZyg_uMP-c_b4AQ",
+          "candidates": [
+            {
+              "index": 0,
+              "content": {
+                "role": "model"
+              },
+              "finishReason": "MAX_TOKENS"
+            }
+          ],
+          "usageMetadata": {
+            "promptTokensDetails": [
+              {
+                "tokenCount": 115,
+                "modality": "TEXT"
+              },
+              {
+                "tokenCount": 258,
+                "modality": "IMAGE"
+              }
+            ],
+            "thoughtsTokenCount": 509,
+            "serviceTier": "SERVICE_TIER_STANDARD",
+            "totalTokenCount": 882,
+            "promptTokenCount": 373
+          }
+        },
+        "key": "sar_map_saliency_eval__incident-047__image-v2"
+      }
+    },
+    {
+      "custom_id": "sar_map_saliency_eval__incident-048__image-v2",
+      "incident": "incident_048",
+      "incident_index": 48,
+      "image_version": "v2",
+      "custom_id_parse_error": null,
+      "error": "Gemini response text missing.",
+      "row": {
+        "response": {
+          "modelVersion": "gemini-2.5-pro",
+          "responseId": "_KILaoK9DPCGz7IP3Z6goQw",
+          "candidates": [
+            {
+              "content": {
+                "role": "model"
+              },
+              "index": 0,
+              "finishReason": "MAX_TOKENS"
+            }
+          ],
+          "usageMetadata": {
+            "serviceTier": "SERVICE_TIER_STANDARD",
+            "totalTokenCount": 882,
+            "promptTokenCount": 373,
+            "promptTokensDetails": [
+              {
+                "tokenCount": 115,
+                "modality": "TEXT"
+              },
+              {
+                "tokenCount": 258,
+                "modality": "IMAGE"
+              }
+            ],
+            "thoughtsTokenCount": 509
+          }
+        },
+        "key": "sar_map_saliency_eval__incident-048__image-v2"
+      }
+    },
+    {
+      "custom_id": "sar_map_saliency_eval__incident-049__image-v2",
+      "incident": "incident_049",
+      "incident_index": 49,
+      "image_version": "v2",
+      "custom_id_parse_error": null,
+      "error": "Gemini response text missing.",
+      "row": {
+        "response": {
+          "modelVersion": "gemini-2.5-pro",
+          "candidates": [
+            {
+              "content": {
+                "role": "model"
+              },
+              "index": 0,
+              "finishReason": "MAX_TOKENS"
+            }
+          ],
+          "usageMetadata": {
+            "promptTokensDetails": [
+              {
+                "tokenCount": 115,
+                "modality": "TEXT"
+              },
+              {
+                "tokenCount": 258,
+                "modality": "IMAGE"
+              }
+            ],
+            "thoughtsTokenCount": 509,
+            "serviceTier": "SERVICE_TIER_STANDARD",
+            "totalTokenCount": 882,
+            "promptTokenCount": 373
+          },
+          "responseId": "_KILauK2BNWsz7IPrreGMA"
+        },
+        "key": "sar_map_saliency_eval__incident-049__image-v2"
+      }
+    },
+    {
+      "custom_id": "sar_map_saliency_eval__incident-050__image-v2",
+      "incident": "incident_050",
+      "incident_index": 50,
+      "image_version": "v2",
+      "custom_id_parse_error": null,
+      "error": "Gemini response text missing.",
+      "row": {
+        "response": {
+          "candidates": [
+            {
+              "finishReason": "MAX_TOKENS",
+              "index": 0,
+              "content": {
+                "role": "model"
+              }
+            }
+          ],
+          "usageMetadata": {
+            "promptTokensDetails": [
+              {
+                "tokenCount": 115,
+                "modality": "TEXT"
+              },
+              {
+                "tokenCount": 258,
+                "modality": "IMAGE"
+              }
+            ],
+            "thoughtsTokenCount": 509,
+            "serviceTier": "SERVICE_TIER_STANDARD",
+            "totalTokenCount": 882,
+            "promptTokenCount": 373
+          },
+          "responseId": "_KILapTEB9Tkz7IPs4yJiQQ",
+          "modelVersion": "gemini-2.5-pro"
+        },
+        "key": "sar_map_saliency_eval__incident-050__image-v2"
+      }
+    },
+    {
+      "custom_id": "sar_map_saliency_eval__incident-051__image-v2",
+      "incident": "incident_051",
+      "incident_index": 51,
+      "image_version": "v2",
+      "custom_id_parse_error": null,
+      "error": "Gemini response text missing.",
+      "row": {
+        "response": {
+          "responseId": "_KILapfODbzqz7IPkI2soQs",
+          "candidates": [
+            {
+              "content": {
+                "role": "model"
+              },
+              "index": 0,
+              "finishReason": "MAX_TOKENS"
+            }
+          ],
+          "usageMetadata": {
+            "serviceTier": "SERVICE_TIER_STANDARD",
+            "totalTokenCount": 882,
+            "promptTokenCount": 373,
+            "promptTokensDetails": [
+              {
+                "tokenCount": 115,
+                "modality": "TEXT"
+              },
+              {
+                "tokenCount": 258,
+                "modality": "IMAGE"
+              }
+            ],
+            "thoughtsTokenCount": 509
+          },
+          "modelVersion": "gemini-2.5-pro"
+        },
+        "key": "sar_map_saliency_eval__incident-051__image-v2"
+      }
+    },
+    {
+      "custom_id": "sar_map_saliency_eval__incident-052__image-v2",
+      "incident": "incident_052",
+      "incident_index": 52,
+      "image_version": "v2",
+      "custom_id_parse_error": null,
+      "error": "Gemini response text missing.",
+      "row": {
+        "response": {
+          "modelVersion": "gemini-2.5-pro",
+          "responseId": "-6ILaoDgL8XP_uMPgNnKuAU",
+          "candidates": [
+            {
+              "index": 0,
+              "content": {
+                "role": "model"
+              },
+              "finishReason": "MAX_TOKENS"
+            }
+          ],
+          "usageMetadata": {
+            "serviceTier": "SERVICE_TIER_STANDARD",
+            "totalTokenCount": 882,
+            "promptTokenCount": 373,
+            "promptTokensDetails": [
+              {
+                "tokenCount": 115,
+                "modality": "TEXT"
+              },
+              {
+                "tokenCount": 258,
+                "modality": "IMAGE"
+              }
+            ],
+            "thoughtsTokenCount": 509
+          }
+        },
+        "key": "sar_map_saliency_eval__incident-052__image-v2"
+      }
+    },
+    {
+      "custom_id": "sar_map_saliency_eval__incident-053__image-v2",
+      "incident": "incident_053",
+      "incident_index": 53,
+      "image_version": "v2",
+      "custom_id_parse_error": null,
+      "error": "Gemini response text missing.",
+      "row": {
+        "response": {
+          "candidates": [
+            {
+              "index": 0,
+              "content": {
+                "role": "model"
+              },
+              "finishReason": "MAX_TOKENS"
+            }
+          ],
+          "usageMetadata": {
+            "serviceTier": "SERVICE_TIER_STANDARD",
+            "totalTokenCount": 882,
+            "promptTokenCount": 373,
+            "promptTokensDetails": [
+              {
+                "tokenCount": 115,
+                "modality": "TEXT"
+              },
+              {
+                "tokenCount": 258,
+                "modality": "IMAGE"
+              }
+            ],
+            "thoughtsTokenCount": 509
+          },
+          "responseId": "_KILatvaA7a7qtsPicGDwQI",
+          "modelVersion": "gemini-2.5-pro"
+        },
+        "key": "sar_map_saliency_eval__incident-053__image-v2"
+      }
+    },
+    {
+      "custom_id": "sar_map_saliency_eval__incident-054__image-v2",
+      "incident": "incident_054",
+      "incident_index": 54,
+      "image_version": "v2",
+      "custom_id_parse_error": null,
+      "error": "Gemini response text missing.",
+      "row": {
+        "response": {
+          "candidates": [
+            {
+              "finishReason": "MAX_TOKENS",
+              "index": 0,
+              "content": {
+                "role": "model"
+              }
+            }
+          ],
+          "usageMetadata": {
+            "promptTokensDetails": [
+              {
+                "tokenCount": 115,
+                "modality": "TEXT"
+              },
+              {
+                "tokenCount": 258,
+                "modality": "IMAGE"
+              }
+            ],
+            "thoughtsTokenCount": 509,
+            "serviceTier": "SERVICE_TIER_STANDARD",
+            "totalTokenCount": 882,
+            "promptTokenCount": 373
+          },
+          "responseId": "-6ILapHxN5aFz7IPuYWu2Aw",
+          "modelVersion": "gemini-2.5-pro"
+        },
+        "key": "sar_map_saliency_eval__incident-054__image-v2"
+      }
+    },
+    {
+      "custom_id": "sar_map_saliency_eval__incident-055__image-v2",
+      "incident": "incident_055",
+      "incident_index": 55,
+      "image_version": "v2",
+      "custom_id_parse_error": null,
+      "error": "Gemini response text missing.",
+      "row": {
+        "response": {
+          "modelVersion": "gemini-2.5-pro",
+          "responseId": "_KILavLwBabpz7IP9eKOyQE",
+          "candidates": [
+            {
+              "index": 0,
+              "content": {
+                "role": "model"
+              },
+              "finishReason": "MAX_TOKENS"
+            }
+          ],
+          "usageMetadata": {
+            "serviceTier": "SERVICE_TIER_STANDARD",
+            "totalTokenCount": 882,
+            "promptTokenCount": 373,
+            "promptTokensDetails": [
+              {
+                "tokenCount": 115,
+                "modality": "TEXT"
+              },
+              {
+                "tokenCount": 258,
+                "modality": "IMAGE"
+              }
+            ],
+            "thoughtsTokenCount": 509
+          }
+        },
+        "key": "sar_map_saliency_eval__incident-055__image-v2"
+      }
+    },
+    {
+      "custom_id": "sar_map_saliency_eval__incident-056__image-v2",
+      "incident": "incident_056",
+      "incident_index": 56,
+      "image_version": "v2",
+      "custom_id_parse_error": null,
+      "error": "Gemini response text missing.",
+      "row": {
+        "response": {
+          "modelVersion": "gemini-2.5-pro",
+          "responseId": "-6ILavyHPJ-A_PUPprSNsAQ",
+          "candidates": [
+            {
+              "content": {
+                "role": "model"
+              },
+              "index": 0,
+              "finishReason": "MAX_TOKENS"
+            }
+          ],
+          "usageMetadata": {
+            "promptTokensDetails": [
+              {
+                "tokenCount": 115,
+                "modality": "TEXT"
+              },
+              {
+                "tokenCount": 258,
+                "modality": "IMAGE"
+              }
+            ],
+            "thoughtsTokenCount": 509,
+            "serviceTier": "SERVICE_TIER_STANDARD",
+            "totalTokenCount": 882,
+            "promptTokenCount": 373
+          }
+        },
+        "key": "sar_map_saliency_eval__incident-056__image-v2"
+      }
+    },
+    {
+      "custom_id": "sar_map_saliency_eval__incident-057__image-v2",
+      "incident": "incident_057",
+      "incident_index": 57,
+      "image_version": "v2",
+      "custom_id_parse_error": null,
+      "error": "Gemini response text missing.",
+      "row": {
+        "response": {
+          "responseId": "-6ILatiTK6bpz7IP9eKOyQE",
+          "candidates": [
+            {
+              "content": {
+                "role": "model"
+              },
+              "index": 0,
+              "finishReason": "MAX_TOKENS"
+            }
+          ],
+          "usageMetadata": {
+            "promptTokensDetails": [
+              {
+                "tokenCount": 115,
+                "modality": "TEXT"
+              },
+              {
+                "tokenCount": 258,
+                "modality": "IMAGE"
+              }
+            ],
+            "thoughtsTokenCount": 509,
+            "serviceTier": "SERVICE_TIER_STANDARD",
+            "totalTokenCount": 882,
+            "promptTokenCount": 373
+          },
+          "modelVersion": "gemini-2.5-pro"
+        },
+        "key": "sar_map_saliency_eval__incident-057__image-v2"
+      }
+    },
+    {
+      "custom_id": "sar_map_saliency_eval__incident-058__image-v2",
+      "incident": "incident_058",
+      "incident_index": 58,
+      "image_version": "v2",
+      "custom_id_parse_error": null,
+      "error": "Gemini response text missing.",
+      "row": {
+        "response": {
+          "modelVersion": "gemini-2.5-pro",
+          "responseId": "_KILauzwDoStz7IP_falwAg",
+          "candidates": [
+            {
+              "content": {
+                "role": "model"
+              },
+              "index": 0,
+              "finishReason": "MAX_TOKENS"
+            }
+          ],
+          "usageMetadata": {
+            "serviceTier": "SERVICE_TIER_STANDARD",
+            "totalTokenCount": 882,
+            "promptTokenCount": 373,
+            "promptTokensDetails": [
+              {
+                "tokenCount": 115,
+                "modality": "TEXT"
+              },
+              {
+                "tokenCount": 258,
+                "modality": "IMAGE"
+              }
+            ],
+            "thoughtsTokenCount": 509
+          }
+        },
+        "key": "sar_map_saliency_eval__incident-058__image-v2"
+      }
+    },
+    {
+      "custom_id": "sar_map_saliency_eval__incident-059__image-v2",
+      "incident": "incident_059",
+      "incident_index": 59,
+      "image_version": "v2",
+      "custom_id_parse_error": null,
+      "error": "Gemini response text missing.",
+      "row": {
+        "response": {
+          "candidates": [
+            {
+              "finishReason": "MAX_TOKENS",
+              "index": 0,
+              "content": {
+                "role": "model"
+              }
+            }
+          ],
+          "usageMetadata": {
+            "serviceTier": "SERVICE_TIER_STANDARD",
+            "totalTokenCount": 882,
+            "promptTokenCount": 373,
+            "promptTokensDetails": [
+              {
+                "tokenCount": 115,
+                "modality": "TEXT"
+              },
+              {
+                "tokenCount": 258,
+                "modality": "IMAGE"
+              }
+            ],
+            "thoughtsTokenCount": 509
+          },
+          "responseId": "-6ILatGVMMHfz7IPmb6MwAs",
+          "modelVersion": "gemini-2.5-pro"
+        },
+        "key": "sar_map_saliency_eval__incident-059__image-v2"
+      }
+    },
+    {
+      "custom_id": "sar_map_saliency_eval__incident-060__image-v2",
+      "incident": "incident_060",
+      "incident_index": 60,
+      "image_version": "v2",
+      "custom_id_parse_error": null,
+      "error": "Gemini response text missing.",
+      "row": {
+        "response": {
+          "responseId": "-6ILauakNqGuqtsP4dS80QY",
+          "candidates": [
+            {
+              "content": {
+                "role": "model"
+              },
+              "index": 0,
+              "finishReason": "MAX_TOKENS"
+            }
+          ],
+          "usageMetadata": {
+            "serviceTier": "SERVICE_TIER_STANDARD",
+            "totalTokenCount": 882,
+            "promptTokenCount": 373,
+            "promptTokensDetails": [
+              {
+                "tokenCount": 115,
+                "modality": "TEXT"
+              },
+              {
+                "tokenCount": 258,
+                "modality": "IMAGE"
+              }
+            ],
+            "thoughtsTokenCount": 509
+          },
+          "modelVersion": "gemini-2.5-pro"
+        },
+        "key": "sar_map_saliency_eval__incident-060__image-v2"
+      }
+    },
+    {
+      "custom_id": "sar_map_saliency_eval__incident-061__image-v2",
+      "incident": "incident_061",
+      "incident_index": 61,
+      "image_version": "v2",
+      "custom_id_parse_error": null,
+      "error": "Gemini response text missing.",
+      "row": {
+        "response": {
+          "modelVersion": "gemini-2.5-pro",
+          "candidates": [
+            {
+              "finishReason": "MAX_TOKENS",
+              "content": {
+                "role": "model"
+              },
+              "index": 0
+            }
+          ],
+          "usageMetadata": {
+            "promptTokensDetails": [
+              {
+                "tokenCount": 115,
+                "modality": "TEXT"
+              },
+              {
+                "tokenCount": 258,
+                "modality": "IMAGE"
+              }
+            ],
+            "thoughtsTokenCount": 509,
+            "serviceTier": "SERVICE_TIER_STANDARD",
+            "totalTokenCount": 882,
+            "promptTokenCount": 373
+          },
+          "responseId": "-6ILapjBMtfX_uMPsZu98Q0"
+        },
+        "key": "sar_map_saliency_eval__incident-061__image-v2"
+      }
+    },
+    {
+      "custom_id": "sar_map_saliency_eval__incident-062__image-v2",
+      "incident": "incident_062",
+      "incident_index": 62,
+      "image_version": "v2",
+      "custom_id_parse_error": null,
+      "error": "Gemini response text missing.",
+      "row": {
+        "response": {
+          "responseId": "-6ILarDVLtTkz7IPs4yJiQQ",
+          "candidates": [
+            {
+              "finishReason": "MAX_TOKENS",
+              "content": {
+                "role": "model"
+              },
+              "index": 0
+            }
+          ],
+          "usageMetadata": {
+            "serviceTier": "SERVICE_TIER_STANDARD",
+            "totalTokenCount": 882,
+            "promptTokenCount": 373,
+            "promptTokensDetails": [
+              {
+                "tokenCount": 115,
+                "modality": "TEXT"
+              },
+              {
+                "tokenCount": 258,
+                "modality": "IMAGE"
+              }
+            ],
+            "thoughtsTokenCount": 509
+          },
+          "modelVersion": "gemini-2.5-pro"
+        },
+        "key": "sar_map_saliency_eval__incident-062__image-v2"
+      }
+    },
+    {
+      "custom_id": "sar_map_saliency_eval__incident-063__image-v2",
+      "incident": "incident_063",
+      "incident_index": 63,
+      "image_version": "v2",
+      "custom_id_parse_error": null,
+      "error": "Gemini response text missing.",
+      "row": {
+        "response": {
+          "modelVersion": "gemini-2.5-pro",
+          "candidates": [
+            {
+              "finishReason": "MAX_TOKENS",
+              "index": 0,
+              "content": {
+                "role": "model"
+              }
+            }
+          ],
+          "usageMetadata": {
+            "promptTokensDetails": [
+              {
+                "tokenCount": 115,
+                "modality": "TEXT"
+              },
+              {
+                "tokenCount": 258,
+                "modality": "IMAGE"
+              }
+            ],
+            "thoughtsTokenCount": 509,
+            "serviceTier": "SERVICE_TIER_STANDARD",
+            "totalTokenCount": 882,
+            "promptTokenCount": 373
+          },
+          "responseId": "-6ILaqqaPMKKqtsPwKHpaA"
+        },
+        "key": "sar_map_saliency_eval__incident-063__image-v2"
+      }
+    },
+    {
+      "custom_id": "sar_map_saliency_eval__incident-064__image-v2",
+      "incident": "incident_064",
+      "incident_index": 64,
+      "image_version": "v2",
+      "custom_id_parse_error": null,
+      "error": "Gemini response text missing.",
+      "row": {
+        "response": {
+          "modelVersion": "gemini-2.5-pro",
+          "responseId": "-6ILapPUKpyR_uMPwrW3mQQ",
+          "candidates": [
+            {
+              "index": 0,
+              "content": {
+                "role": "model"
+              },
+              "finishReason": "MAX_TOKENS"
+            }
+          ],
+          "usageMetadata": {
+            "serviceTier": "SERVICE_TIER_STANDARD",
+            "totalTokenCount": 882,
+            "promptTokenCount": 373,
+            "promptTokensDetails": [
+              {
+                "tokenCount": 115,
+                "modality": "TEXT"
+              },
+              {
+                "tokenCount": 258,
+                "modality": "IMAGE"
+              }
+            ],
+            "thoughtsTokenCount": 509
+          }
+        },
+        "key": "sar_map_saliency_eval__incident-064__image-v2"
+      }
+    },
+    {
+      "custom_id": "sar_map_saliency_eval__incident-065__image-v2",
+      "incident": "incident_065",
+      "incident_index": 65,
+      "image_version": "v2",
+      "custom_id_parse_error": null,
+      "error": "Gemini response text missing.",
+      "row": {
+        "response": {
+          "candidates": [
+            {
+              "content": {
+                "role": "model"
+              },
+              "index": 0,
+              "finishReason": "MAX_TOKENS"
+            }
+          ],
+          "usageMetadata": {
+            "serviceTier": "SERVICE_TIER_STANDARD",
+            "totalTokenCount": 882,
+            "promptTokenCount": 373,
+            "promptTokensDetails": [
+              {
+                "tokenCount": 115,
+                "modality": "TEXT"
+              },
+              {
+                "tokenCount": 258,
+                "modality": "IMAGE"
+              }
+            ],
+            "thoughtsTokenCount": 509
+          },
+          "responseId": "-6ILapqWKdWsz7IPrreGMA",
+          "modelVersion": "gemini-2.5-pro"
+        },
+        "key": "sar_map_saliency_eval__incident-065__image-v2"
+      }
+    },
+    {
+      "custom_id": "sar_map_saliency_eval__incident-001__image-v1",
+      "incident": "incident_001",
+      "incident_index": 1,
+      "image_version": "v1",
+      "custom_id_parse_error": null,
+      "error": "Gemini response text missing.",
+      "row": {
+        "response": {
+          "modelVersion": "gemini-2.5-pro",
+          "responseId": "gaILasnPCZaFz7IPuYWu2Aw",
+          "candidates": [
+            {
+              "index": 0,
+              "content": {
+                "role": "model"
+              },
+              "finishReason": "MAX_TOKENS"
+            }
+          ],
+          "usageMetadata": {
+            "totalTokenCount": 874,
+            "promptTokensDetails": [
+              {
+                "tokenCount": 107,
+                "modality": "TEXT"
+              },
+              {
+                "tokenCount": 258,
+                "modality": "IMAGE"
+              }
+            ],
+            "promptTokenCount": 365,
+            "serviceTier": "SERVICE_TIER_STANDARD",
+            "thoughtsTokenCount": 509
+          }
+        },
+        "key": "sar_map_saliency_eval__incident-001__image-v1"
+      }
+    },
+    {
+      "custom_id": "sar_map_saliency_eval__incident-002__image-v1",
+      "incident": "incident_002",
+      "incident_index": 2,
+      "image_version": "v1",
+      "custom_id_parse_error": null,
+      "error": "Gemini response text missing.",
+      "row": {
+        "response": {
+          "modelVersion": "gemini-2.5-pro",
+          "responseId": "rKYLarX6C5yR_uMPwrW3mQQ",
+          "candidates": [
+            {
+              "content": {
+                "role": "model"
+              },
+              "finishReason": "MAX_TOKENS",
+              "index": 0
+            }
+          ],
+          "usageMetadata": {
+            "promptTokensDetails": [
+              {
+                "tokenCount": 107,
+                "modality": "TEXT"
+              },
+              {
+                "tokenCount": 258,
+                "modality": "IMAGE"
+              }
+            ],
+            "totalTokenCount": 874,
+            "thoughtsTokenCount": 509,
+            "serviceTier": "SERVICE_TIER_STANDARD",
+            "promptTokenCount": 365
+          }
+        },
+        "key": "sar_map_saliency_eval__incident-002__image-v1"
+      }
+    },
+    {
+      "custom_id": "sar_map_saliency_eval__incident-003__image-v1",
+      "incident": "incident_003",
+      "incident_index": 3,
+      "image_version": "v1",
+      "custom_id_parse_error": null,
+      "error": "Gemini response text missing.",
+      "row": {
+        "response": {
+          "modelVersion": "gemini-2.5-pro",
+          "responseId": "YKQLatWWCdfX_uMPsZu98Q0",
+          "candidates": [
+            {
+              "index": 0,
+              "content": {
+                "role": "model"
+              },
+              "finishReason": "MAX_TOKENS"
+            }
+          ],
+          "usageMetadata": {
+            "promptTokenCount": 365,
+            "serviceTier": "SERVICE_TIER_STANDARD",
+            "thoughtsTokenCount": 509,
+            "totalTokenCount": 874,
+            "promptTokensDetails": [
+              {
+                "tokenCount": 107,
+                "modality": "TEXT"
+              },
+              {
+                "tokenCount": 258,
+                "modality": "IMAGE"
+              }
+            ]
+          }
+        },
+        "key": "sar_map_saliency_eval__incident-003__image-v1"
+      }
+    },
+    {
+      "custom_id": "sar_map_saliency_eval__incident-004__image-v1",
+      "incident": "incident_004",
+      "incident_index": 4,
+      "image_version": "v1",
+      "custom_id_parse_error": null,
+      "error": "Gemini response text missing.",
+      "row": {
+        "response": {
+          "usageMetadata": {
+            "promptTokensDetails": [
+              {
+                "tokenCount": 107,
+                "modality": "TEXT"
+              },
+              {
+                "tokenCount": 258,
+                "modality": "IMAGE"
+              }
+            ],
+            "totalTokenCount": 874,
+            "thoughtsTokenCount": 509,
+            "serviceTier": "SERVICE_TIER_STANDARD",
+            "promptTokenCount": 365
+          },
+          "responseId": "w6ULar3zHPCuqtsP0MWSoAg",
+          "candidates": [
+            {
+              "index": 0,
+              "content": {
+                "role": "model"
+              },
+              "finishReason": "MAX_TOKENS"
+            }
+          ],
+          "modelVersion": "gemini-2.5-pro"
+        },
+        "key": "sar_map_saliency_eval__incident-004__image-v1"
+      }
+    },
+    {
+      "custom_id": "sar_map_saliency_eval__incident-005__image-v1",
+      "incident": "incident_005",
+      "incident_index": 5,
+      "image_version": "v1",
+      "custom_id_parse_error": null,
+      "error": "Gemini response text missing.",
+      "row": {
+        "response": {
+          "usageMetadata": {
+            "thoughtsTokenCount": 509,
+            "serviceTier": "SERVICE_TIER_STANDARD",
+            "promptTokenCount": 365,
+            "promptTokensDetails": [
+              {
+                "tokenCount": 107,
+                "modality": "TEXT"
+              },
+              {
+                "tokenCount": 258,
+                "modality": "IMAGE"
+              }
+            ],
+            "totalTokenCount": 874
+          },
+          "modelVersion": "gemini-2.5-pro",
+          "responseId": "gaYLauaYD5aFz7IPuYWu2Aw",
+          "candidates": [
+            {
+              "content": {
+                "role": "model"
+              },
+              "finishReason": "MAX_TOKENS",
+              "index": 0
+            }
+          ]
+        },
+        "key": "sar_map_saliency_eval__incident-005__image-v1"
+      }
+    },
+    {
+      "custom_id": "sar_map_saliency_eval__incident-006__image-v1",
+      "incident": "incident_006",
+      "incident_index": 6,
+      "image_version": "v1",
+      "custom_id_parse_error": null,
+      "error": "Gemini response text missing.",
+      "row": {
+        "response": {
+          "usageMetadata": {
+            "promptTokensDetails": [
+              {
+                "tokenCount": 107,
+                "modality": "TEXT"
+              },
+              {
+                "tokenCount": 258,
+                "modality": "IMAGE"
+              }
+            ],
+            "totalTokenCount": 874,
+            "thoughtsTokenCount": 509,
+            "promptTokenCount": 365,
+            "serviceTier": "SERVICE_TIER_STANDARD"
+          },
+          "responseId": "r6YLasTVDbfUz7IPsJei0Q4",
+          "candidates": [
+            {
+              "index": 0,
+              "content": {
+                "role": "model"
+              },
+              "finishReason": "MAX_TOKENS"
+            }
+          ],
+          "modelVersion": "gemini-2.5-pro"
+        },
+        "key": "sar_map_saliency_eval__incident-006__image-v1"
+      }
+    },
+    {
+      "custom_id": "sar_map_saliency_eval__incident-007__image-v1",
+      "incident": "incident_007",
+      "incident_index": 7,
+      "image_version": "v1",
+      "custom_id_parse_error": null,
+      "error": "Gemini response text missing.",
+      "row": {
+        "response": {
+          "modelVersion": "gemini-2.5-pro",
+          "responseId": "rqYLavTHJ5yR_uMPwrW3mQQ",
+          "candidates": [
+            {
+              "content": {
+                "role": "model"
+              },
+              "finishReason": "MAX_TOKENS",
+              "index": 0
+            }
+          ],
+          "usageMetadata": {
+            "serviceTier": "SERVICE_TIER_STANDARD",
+            "promptTokenCount": 365,
+            "thoughtsTokenCount": 509,
+            "totalTokenCount": 874,
+            "promptTokensDetails": [
+              {
+                "tokenCount": 107,
+                "modality": "TEXT"
+              },
+              {
+                "tokenCount": 258,
+                "modality": "IMAGE"
+              }
+            ]
+          }
+        },
+        "key": "sar_map_saliency_eval__incident-007__image-v1"
+      }
+    },
+    {
+      "custom_id": "sar_map_saliency_eval__incident-008__image-v1",
+      "incident": "incident_008",
+      "incident_index": 8,
+      "image_version": "v1",
+      "custom_id_parse_error": null,
+      "error": "Gemini response text missing.",
+      "row": {
+        "response": {
+          "usageMetadata": {
+            "promptTokensDetails": [
+              {
+                "tokenCount": 107,
+                "modality": "TEXT"
+              },
+              {
+                "tokenCount": 258,
+                "modality": "IMAGE"
+              }
+            ],
+            "totalTokenCount": 874,
+            "thoughtsTokenCount": 509,
+            "promptTokenCount": 365,
+            "serviceTier": "SERVICE_TIER_STANDARD"
+          },
+          "responseId": "saYLavCUAZWvqtsPh7yh6AM",
+          "candidates": [
+            {
+              "index": 0,
+              "content": {
+                "role": "model"
+              },
+              "finishReason": "MAX_TOKENS"
+            }
+          ],
+          "modelVersion": "gemini-2.5-pro"
+        },
+        "key": "sar_map_saliency_eval__incident-008__image-v1"
+      }
+    },
+    {
+      "custom_id": "sar_map_saliency_eval__incident-009__image-v1",
+      "incident": "incident_009",
+      "incident_index": 9,
+      "image_version": "v1",
+      "custom_id_parse_error": null,
+      "error": "Gemini response text missing.",
+      "row": {
+        "response": {
+          "usageMetadata": {
+            "thoughtsTokenCount": 509,
+            "promptTokenCount": 365,
+            "serviceTier": "SERVICE_TIER_STANDARD",
+            "promptTokensDetails": [
+              {
+                "tokenCount": 107,
+                "modality": "TEXT"
+              },
+              {
+                "tokenCount": 258,
+                "modality": "IMAGE"
+              }
+            ],
+            "totalTokenCount": 874
+          },
+          "modelVersion": "gemini-2.5-pro",
+          "responseId": "rqYLas-uBbfUz7IPsJei0Q4",
+          "candidates": [
+            {
+              "index": 0,
+              "content": {
+                "role": "model"
+              },
+              "finishReason": "MAX_TOKENS"
+            }
+          ]
+        },
+        "key": "sar_map_saliency_eval__incident-009__image-v1"
+      }
+    },
+    {
+      "custom_id": "sar_map_saliency_eval__incident-010__image-v1",
+      "incident": "incident_010",
+      "incident_index": 10,
+      "image_version": "v1",
+      "custom_id_parse_error": null,
+      "error": "Gemini response text missing.",
+      "row": {
+        "response": {
+          "usageMetadata": {
+            "thoughtsTokenCount": 509,
+            "serviceTier": "SERVICE_TIER_STANDARD",
+            "promptTokenCount": 365,
+            "promptTokensDetails": [
+              {
+                "tokenCount": 107,
+                "modality": "TEXT"
+              },
+              {
+                "tokenCount": 258,
+                "modality": "IMAGE"
+              }
+            ],
+            "totalTokenCount": 874
+          },
+          "modelVersion": "gemini-2.5-pro",
+          "responseId": "sKYLavG9Cc2Hz7IP847TqQ4",
+          "candidates": [
+            {
+              "content": {
+                "role": "model"
+              },
+              "finishReason": "MAX_TOKENS",
+              "index": 0
+            }
+          ]
+        },
+        "key": "sar_map_saliency_eval__incident-010__image-v1"
+      }
+    },
+    {
+      "custom_id": "sar_map_saliency_eval__incident-011__image-v1",
+      "incident": "incident_011",
+      "incident_index": 11,
+      "image_version": "v1",
+      "custom_id_parse_error": null,
+      "error": "Gemini response text missing.",
+      "row": {
+        "response": {
+          "responseId": "rqYLapzmMLzqz7IPkI2soQs",
+          "candidates": [
+            {
+              "content": {
+                "role": "model"
+              },
+              "finishReason": "MAX_TOKENS",
+              "index": 0
+            }
+          ],
+          "modelVersion": "gemini-2.5-pro",
+          "usageMetadata": {
+            "promptTokenCount": 365,
+            "serviceTier": "SERVICE_TIER_STANDARD",
+            "thoughtsTokenCount": 509,
+            "totalTokenCount": 874,
+            "promptTokensDetails": [
+              {
+                "tokenCount": 107,
+                "modality": "TEXT"
+              },
+              {
+                "tokenCount": 258,
+                "modality": "IMAGE"
+              }
+            ]
+          }
+        },
+        "key": "sar_map_saliency_eval__incident-011__image-v1"
+      }
+    },
+    {
+      "custom_id": "sar_map_saliency_eval__incident-012__image-v1",
+      "incident": "incident_012",
+      "incident_index": 12,
+      "image_version": "v1",
+      "custom_id_parse_error": null,
+      "error": "Gemini response text missing.",
+      "row": {
+        "response": {
+          "usageMetadata": {
+            "promptTokensDetails": [
+              {
+                "tokenCount": 107,
+                "modality": "TEXT"
+              },
+              {
+                "tokenCount": 258,
+                "modality": "IMAGE"
+              }
+            ],
+            "totalTokenCount": 874,
+            "thoughtsTokenCount": 509,
+            "promptTokenCount": 365,
+            "serviceTier": "SERVICE_TIER_STANDARD"
+          },
+          "modelVersion": "gemini-2.5-pro",
+          "responseId": "sKYLapfXJ_yMqtsP5rfUwAY",
+          "candidates": [
+            {
+              "index": 0,
+              "content": {
+                "role": "model"
+              },
+              "finishReason": "MAX_TOKENS"
+            }
+          ]
+        },
+        "key": "sar_map_saliency_eval__incident-012__image-v1"
+      }
+    },
+    {
+      "custom_id": "sar_map_saliency_eval__incident-013__image-v1",
+      "incident": "incident_013",
+      "incident_index": 13,
+      "image_version": "v1",
+      "custom_id_parse_error": null,
+      "error": "Gemini response text missing.",
+      "row": {
+        "response": {
+          "responseId": "saYLaqPLCs2hz7IPhqqhoAM",
+          "candidates": [
+            {
+              "index": 0,
+              "content": {
+                "role": "model"
+              },
+              "finishReason": "MAX_TOKENS"
+            }
+          ],
+          "modelVersion": "gemini-2.5-pro",
+          "usageMetadata": {
+            "thoughtsTokenCount": 509,
+            "promptTokenCount": 365,
+            "serviceTier": "SERVICE_TIER_STANDARD",
+            "promptTokensDetails": [
+              {
+                "tokenCount": 107,
+                "modality": "TEXT"
+              },
+              {
+                "tokenCount": 258,
+                "modality": "IMAGE"
+              }
+            ],
+            "totalTokenCount": 874
+          }
+        },
+        "key": "sar_map_saliency_eval__incident-013__image-v1"
+      }
+    },
+    {
+      "custom_id": "sar_map_saliency_eval__incident-014__image-v1",
+      "incident": "incident_014",
+      "incident_index": 14,
+      "image_version": "v1",
+      "custom_id_parse_error": null,
+      "error": "Gemini response text missing.",
+      "row": {
+        "response": {
+          "modelVersion": "gemini-2.5-pro",
+          "responseId": "raYLauHtArfUz7IPsJei0Q4",
+          "candidates": [
+            {
+              "content": {
+                "role": "model"
+              },
+              "finishReason": "MAX_TOKENS",
+              "index": 0
+            }
+          ],
+          "usageMetadata": {
+            "thoughtsTokenCount": 509,
+            "serviceTier": "SERVICE_TIER_STANDARD",
+            "promptTokenCount": 365,
+            "promptTokensDetails": [
+              {
+                "tokenCount": 107,
+                "modality": "TEXT"
+              },
+              {
+                "tokenCount": 258,
+                "modality": "IMAGE"
+              }
+            ],
+            "totalTokenCount": 874
+          }
+        },
+        "key": "sar_map_saliency_eval__incident-014__image-v1"
+      }
+    },
+    {
+      "custom_id": "sar_map_saliency_eval__incident-015__image-v1",
+      "incident": "incident_015",
+      "incident_index": 15,
+      "image_version": "v1",
+      "custom_id_parse_error": null,
+      "error": "Gemini response text missing.",
+      "row": {
+        "response": {
+          "modelVersion": "gemini-2.5-pro",
+          "responseId": "r6YLao3TCMXP_uMPgNnKuAU",
+          "candidates": [
+            {
+              "index": 0,
+              "content": {
+                "role": "model"
+              },
+              "finishReason": "MAX_TOKENS"
+            }
+          ],
+          "usageMetadata": {
+            "thoughtsTokenCount": 509,
+            "promptTokenCount": 365,
+            "serviceTier": "SERVICE_TIER_STANDARD",
+            "promptTokensDetails": [
+              {
+                "tokenCount": 107,
+                "modality": "TEXT"
+              },
+              {
+                "tokenCount": 258,
+                "modality": "IMAGE"
+              }
+            ],
+            "totalTokenCount": 874
+          }
+        },
+        "key": "sar_map_saliency_eval__incident-015__image-v1"
+      }
+    },
+    {
+      "custom_id": "sar_map_saliency_eval__incident-016__image-v1",
+      "incident": "incident_016",
+      "incident_index": 16,
+      "image_version": "v1",
+      "custom_id_parse_error": null,
+      "error": "Gemini response text missing.",
+      "row": {
+        "response": {
+          "usageMetadata": {
+            "promptTokensDetails": [
+              {
+                "tokenCount": 107,
+                "modality": "TEXT"
+              },
+              {
+                "tokenCount": 258,
+                "modality": "IMAGE"
+              }
+            ],
+            "totalTokenCount": 874,
+            "thoughtsTokenCount": 509,
+            "promptTokenCount": 365,
+            "serviceTier": "SERVICE_TIER_STANDARD"
+          },
+          "modelVersion": "gemini-2.5-pro",
+          "responseId": "sKYLarDYAtTkz7IPs4yJiQQ",
+          "candidates": [
+            {
+              "content": {
+                "role": "model"
+              },
+              "finishReason": "MAX_TOKENS",
+              "index": 0
+            }
+          ]
+        },
+        "key": "sar_map_saliency_eval__incident-016__image-v1"
+      }
+    },
+    {
+      "custom_id": "sar_map_saliency_eval__incident-017__image-v1",
+      "incident": "incident_017",
+      "incident_index": 17,
+      "image_version": "v1",
+      "custom_id_parse_error": null,
+      "error": "Gemini response text missing.",
+      "row": {
+        "response": {
+          "responseId": "sKYLarLeEoCA_uMPrum98QM",
+          "candidates": [
+            {
+              "index": 0,
+              "content": {
+                "role": "model"
+              },
+              "finishReason": "MAX_TOKENS"
+            }
+          ],
+          "modelVersion": "gemini-2.5-pro",
+          "usageMetadata": {
+            "thoughtsTokenCount": 509,
+            "serviceTier": "SERVICE_TIER_STANDARD",
+            "promptTokenCount": 365,
+            "promptTokensDetails": [
+              {
+                "tokenCount": 107,
+                "modality": "TEXT"
+              },
+              {
+                "tokenCount": 258,
+                "modality": "IMAGE"
+              }
+            ],
+            "totalTokenCount": 874
+          }
+        },
+        "key": "sar_map_saliency_eval__incident-017__image-v1"
+      }
+    },
+    {
+      "custom_id": "sar_map_saliency_eval__incident-018__image-v1",
+      "incident": "incident_018",
+      "incident_index": 18,
+      "image_version": "v1",
+      "custom_id_parse_error": null,
+      "error": "Gemini response text missing.",
+      "row": {
+        "response": {
+          "modelVersion": "gemini-2.5-pro",
+          "responseId": "rKYLat7RO5GBqtsP5rikyAU",
+          "candidates": [
+            {
+              "content": {
+                "role": "model"
+              },
+              "finishReason": "MAX_TOKENS",
+              "index": 0
+            }
+          ],
+          "usageMetadata": {
+            "totalTokenCount": 874,
+            "promptTokensDetails": [
+              {
+                "tokenCount": 107,
+                "modality": "TEXT"
+              },
+              {
+                "tokenCount": 258,
+                "modality": "IMAGE"
+              }
+            ],
+            "promptTokenCount": 365,
+            "serviceTier": "SERVICE_TIER_STANDARD",
+            "thoughtsTokenCount": 509
+          }
+        },
+        "key": "sar_map_saliency_eval__incident-018__image-v1"
+      }
+    },
+    {
+      "custom_id": "sar_map_saliency_eval__incident-019__image-v1",
+      "incident": "incident_019",
+      "incident_index": 19,
+      "image_version": "v1",
+      "custom_id_parse_error": null,
+      "error": "Gemini response text missing.",
+      "row": {
+        "response": {
+          "responseId": "saYLarvYBdfX_uMPsZu98Q0",
+          "candidates": [
+            {
+              "index": 0,
+              "content": {
+                "role": "model"
+              },
+              "finishReason": "MAX_TOKENS"
+            }
+          ],
+          "modelVersion": "gemini-2.5-pro",
+          "usageMetadata": {
+            "totalTokenCount": 874,
+            "promptTokensDetails": [
+              {
+                "tokenCount": 107,
+                "modality": "TEXT"
+              },
+              {
+                "tokenCount": 258,
+                "modality": "IMAGE"
+              }
+            ],
+            "promptTokenCount": 365,
+            "serviceTier": "SERVICE_TIER_STANDARD",
+            "thoughtsTokenCount": 509
+          }
+        },
+        "key": "sar_map_saliency_eval__incident-019__image-v1"
+      }
+    },
+    {
+      "custom_id": "sar_map_saliency_eval__incident-020__image-v1",
+      "incident": "incident_020",
+      "incident_index": 20,
+      "image_version": "v1",
+      "custom_id_parse_error": null,
+      "error": "Gemini response text missing.",
+      "row": {
+        "response": {
+          "usageMetadata": {
+            "totalTokenCount": 874,
+            "promptTokensDetails": [
+              {
+                "tokenCount": 107,
+                "modality": "TEXT"
+              },
+              {
+                "tokenCount": 258,
+                "modality": "IMAGE"
+              }
+            ],
+            "serviceTier": "SERVICE_TIER_STANDARD",
+            "promptTokenCount": 365,
+            "thoughtsTokenCount": 509
+          },
+          "modelVersion": "gemini-2.5-pro",
+          "responseId": "sKYLapqlDZGBqtsP5rikyAU",
+          "candidates": [
+            {
+              "content": {
+                "role": "model"
+              },
+              "finishReason": "MAX_TOKENS",
+              "index": 0
+            }
+          ]
+        },
+        "key": "sar_map_saliency_eval__incident-020__image-v1"
+      }
+    },
+    {
+      "custom_id": "sar_map_saliency_eval__incident-021__image-v1",
+      "incident": "incident_021",
+      "incident_index": 21,
+      "image_version": "v1",
+      "custom_id_parse_error": null,
+      "error": "Gemini response text missing.",
+      "row": {
+        "response": {
+          "usageMetadata": {
+            "thoughtsTokenCount": 509,
+            "serviceTier": "SERVICE_TIER_STANDARD",
+            "promptTokenCount": 365,
+            "promptTokensDetails": [
+              {
+                "tokenCount": 107,
+                "modality": "TEXT"
+              },
+              {
+                "tokenCount": 258,
+                "modality": "IMAGE"
+              }
+            ],
+            "totalTokenCount": 874
+          },
+          "responseId": "raYLaujDC4Stz7IP_falwAg",
+          "candidates": [
+            {
+              "content": {
+                "role": "model"
+              },
+              "finishReason": "MAX_TOKENS",
+              "index": 0
+            }
+          ],
+          "modelVersion": "gemini-2.5-pro"
+        },
+        "key": "sar_map_saliency_eval__incident-021__image-v1"
+      }
+    },
+    {
+      "custom_id": "sar_map_saliency_eval__incident-022__image-v1",
+      "incident": "incident_022",
+      "incident_index": 22,
+      "image_version": "v1",
+      "custom_id_parse_error": null,
+      "error": "Gemini response text missing.",
+      "row": {
+        "response": {
+          "modelVersion": "gemini-2.5-pro",
+          "responseId": "raYLavzTKZaFz7IPuYWu2Aw",
+          "candidates": [
+            {
+              "index": 0,
+              "content": {
+                "role": "model"
+              },
+              "finishReason": "MAX_TOKENS"
+            }
+          ],
+          "usageMetadata": {
+            "thoughtsTokenCount": 509,
+            "serviceTier": "SERVICE_TIER_STANDARD",
+            "promptTokenCount": 365,
+            "promptTokensDetails": [
+              {
+                "tokenCount": 107,
+                "modality": "TEXT"
+              },
+              {
+                "tokenCount": 258,
+                "modality": "IMAGE"
+              }
+            ],
+            "totalTokenCount": 874
+          }
+        },
+        "key": "sar_map_saliency_eval__incident-022__image-v1"
+      }
+    },
+    {
+      "custom_id": "sar_map_saliency_eval__incident-023__image-v1",
+      "incident": "incident_023",
+      "incident_index": 23,
+      "image_version": "v1",
+      "custom_id_parse_error": null,
+      "error": "Gemini response text missing.",
+      "row": {
+        "response": {
+          "usageMetadata": {
+            "thoughtsTokenCount": 509,
+            "serviceTier": "SERVICE_TIER_STANDARD",
+            "promptTokenCount": 365,
+            "promptTokensDetails": [
+              {
+                "tokenCount": 107,
+                "modality": "TEXT"
+              },
+              {
+                "tokenCount": 258,
+                "modality": "IMAGE"
+              }
+            ],
+            "totalTokenCount": 874
+          },
+          "responseId": "rqYLauKtAc2Hz7IP847TqQ4",
+          "candidates": [
+            {
+              "index": 0,
+              "content": {
+                "role": "model"
+              },
+              "finishReason": "MAX_TOKENS"
+            }
+          ],
+          "modelVersion": "gemini-2.5-pro"
+        },
+        "key": "sar_map_saliency_eval__incident-023__image-v1"
+      }
+    },
+    {
+      "custom_id": "sar_map_saliency_eval__incident-024__image-v1",
+      "incident": "incident_024",
+      "incident_index": 24,
+      "image_version": "v1",
+      "custom_id_parse_error": null,
+      "error": "Gemini response text missing.",
+      "row": {
+        "response": {
+          "usageMetadata": {
+            "serviceTier": "SERVICE_TIER_STANDARD",
+            "promptTokenCount": 365,
+            "thoughtsTokenCount": 509,
+            "totalTokenCount": 874,
+            "promptTokensDetails": [
+              {
+                "tokenCount": 107,
+                "modality": "TEXT"
+              },
+              {
+                "tokenCount": 258,
+                "modality": "IMAGE"
+              }
+            ]
+          },
+          "modelVersion": "gemini-2.5-pro",
+          "responseId": "raYLavfLDpyg_uMP-c_b4AQ",
+          "candidates": [
+            {
+              "index": 0,
+              "content": {
+                "role": "model"
+              },
+              "finishReason": "MAX_TOKENS"
+            }
+          ]
+        },
+        "key": "sar_map_saliency_eval__incident-024__image-v1"
+      }
+    },
+    {
+      "custom_id": "sar_map_saliency_eval__incident-025__image-v1",
+      "incident": "incident_025",
+      "incident_index": 25,
+      "image_version": "v1",
+      "custom_id_parse_error": null,
+      "error": "Gemini response text missing.",
+      "row": {
+        "response": {
+          "modelVersion": "gemini-2.5-pro",
+          "responseId": "r6YLauXbLvfgz7IP1JWzwAY",
+          "candidates": [
+            {
+              "index": 0,
+              "content": {
+                "role": "model"
+              },
+              "finishReason": "MAX_TOKENS"
+            }
+          ],
+          "usageMetadata": {
+            "serviceTier": "SERVICE_TIER_STANDARD",
+            "promptTokenCount": 365,
+            "thoughtsTokenCount": 509,
+            "totalTokenCount": 874,
+            "promptTokensDetails": [
+              {
+                "tokenCount": 107,
+                "modality": "TEXT"
+              },
+              {
+                "tokenCount": 258,
+                "modality": "IMAGE"
+              }
+            ]
+          }
+        },
+        "key": "sar_map_saliency_eval__incident-025__image-v1"
+      }
+    },
+    {
+      "custom_id": "sar_map_saliency_eval__incident-026__image-v1",
+      "incident": "incident_026",
+      "incident_index": 26,
+      "image_version": "v1",
+      "custom_id_parse_error": null,
+      "error": "Gemini response text missing.",
+      "row": {
+        "response": {
+          "responseId": "r6YLasy2N_SS_uMP3tCl0Qk",
+          "candidates": [
+            {
+              "content": {
+                "role": "model"
+              },
+              "finishReason": "MAX_TOKENS",
+              "index": 0
+            }
+          ],
+          "modelVersion": "gemini-2.5-pro",
+          "usageMetadata": {
+            "promptTokensDetails": [
+              {
+                "tokenCount": 107,
+                "modality": "TEXT"
+              },
+              {
+                "tokenCount": 258,
+                "modality": "IMAGE"
+              }
+            ],
+            "totalTokenCount": 874,
+            "thoughtsTokenCount": 509,
+            "serviceTier": "SERVICE_TIER_STANDARD",
+            "promptTokenCount": 365
+          }
+        },
+        "key": "sar_map_saliency_eval__incident-026__image-v1"
+      }
+    },
+    {
+      "custom_id": "sar_map_saliency_eval__incident-027__image-v1",
+      "incident": "incident_027",
+      "incident_index": 27,
+      "image_version": "v1",
+      "custom_id_parse_error": null,
+      "error": "Gemini response text missing.",
+      "row": {
+        "response": {
+          "usageMetadata": {
+            "promptTokensDetails": [
+              {
+                "tokenCount": 107,
+                "modality": "TEXT"
+              },
+              {
+                "tokenCount": 258,
+                "modality": "IMAGE"
+              }
+            ],
+            "totalTokenCount": 874,
+            "thoughtsTokenCount": 509,
+            "promptTokenCount": 365,
+            "serviceTier": "SERVICE_TIER_STANDARD"
+          },
+          "responseId": "sKYLasDzDpyR_uMPwrW3mQQ",
+          "candidates": [
+            {
+              "index": 0,
+              "content": {
+                "role": "model"
+              },
+              "finishReason": "MAX_TOKENS"
+            }
+          ],
+          "modelVersion": "gemini-2.5-pro"
+        },
+        "key": "sar_map_saliency_eval__incident-027__image-v1"
+      }
+    },
+    {
+      "custom_id": "sar_map_saliency_eval__incident-028__image-v1",
+      "incident": "incident_028",
+      "incident_index": 28,
+      "image_version": "v1",
+      "custom_id_parse_error": null,
+      "error": "Gemini response text missing.",
+      "row": {
+        "response": {
+          "usageMetadata": {
+            "thoughtsTokenCount": 509,
+            "promptTokenCount": 365,
+            "serviceTier": "SERVICE_TIER_STANDARD",
+            "promptTokensDetails": [
+              {
+                "tokenCount": 107,
+                "modality": "TEXT"
+              },
+              {
+                "tokenCount": 258,
+                "modality": "IMAGE"
+              }
+            ],
+            "totalTokenCount": 874
+          },
+          "modelVersion": "gemini-2.5-pro",
+          "responseId": "raYLavn2EtfX_uMPsZu98Q0",
+          "candidates": [
+            {
+              "content": {
+                "role": "model"
+              },
+              "finishReason": "MAX_TOKENS",
+              "index": 0
+            }
+          ]
+        },
+        "key": "sar_map_saliency_eval__incident-028__image-v1"
+      }
+    },
+    {
+      "custom_id": "sar_map_saliency_eval__incident-029__image-v1",
+      "incident": "incident_029",
+      "incident_index": 29,
+      "image_version": "v1",
+      "custom_id_parse_error": null,
+      "error": "Gemini response text missing.",
+      "row": {
+        "response": {
+          "modelVersion": "gemini-2.5-pro",
+          "responseId": "saYLapDcENTkz7IPs4yJiQQ",
+          "candidates": [
+            {
+              "index": 0,
+              "content": {
+                "role": "model"
+              },
+              "finishReason": "MAX_TOKENS"
+            }
+          ],
+          "usageMetadata": {
+            "promptTokensDetails": [
+              {
+                "tokenCount": 107,
+                "modality": "TEXT"
+              },
+              {
+                "tokenCount": 258,
+                "modality": "IMAGE"
+              }
+            ],
+            "totalTokenCount": 874,
+            "thoughtsTokenCount": 509,
+            "promptTokenCount": 365,
+            "serviceTier": "SERVICE_TIER_STANDARD"
+          }
+        },
+        "key": "sar_map_saliency_eval__incident-029__image-v1"
+      }
+    },
+    {
+      "custom_id": "sar_map_saliency_eval__incident-030__image-v1",
+      "incident": "incident_030",
+      "incident_index": 30,
+      "image_version": "v1",
+      "custom_id_parse_error": null,
+      "error": "Gemini response text missing.",
+      "row": {
+        "response": {
+          "usageMetadata": {
+            "serviceTier": "SERVICE_TIER_STANDARD",
+            "promptTokenCount": 365,
+            "thoughtsTokenCount": 509,
+            "totalTokenCount": 874,
+            "promptTokensDetails": [
+              {
+                "tokenCount": 107,
+                "modality": "TEXT"
+              },
+              {
+                "tokenCount": 258,
+                "modality": "IMAGE"
+              }
+            ]
+          },
+          "modelVersion": "gemini-2.5-pro",
+          "responseId": "rqYLatbBIcHfz7IPmb6MwAs",
+          "candidates": [
+            {
+              "index": 0,
+              "content": {
+                "role": "model"
+              },
+              "finishReason": "MAX_TOKENS"
+            }
+          ]
+        },
+        "key": "sar_map_saliency_eval__incident-030__image-v1"
+      }
+    },
+    {
+      "custom_id": "sar_map_saliency_eval__incident-031__image-v1",
+      "incident": "incident_031",
+      "incident_index": 31,
+      "image_version": "v1",
+      "custom_id_parse_error": null,
+      "error": "Gemini response text missing.",
+      "row": {
+        "response": {
+          "usageMetadata": {
+            "thoughtsTokenCount": 509,
+            "promptTokenCount": 365,
+            "serviceTier": "SERVICE_TIER_STANDARD",
+            "promptTokensDetails": [
+              {
+                "tokenCount": 107,
+                "modality": "TEXT"
+              },
+              {
+                "tokenCount": 258,
+                "modality": "IMAGE"
+              }
+            ],
+            "totalTokenCount": 874
+          },
+          "responseId": "raYLar2-JbfUz7IPsJei0Q4",
+          "candidates": [
+            {
+              "content": {
+                "role": "model"
+              },
+              "finishReason": "MAX_TOKENS",
+              "index": 0
+            }
+          ],
+          "modelVersion": "gemini-2.5-pro"
+        },
+        "key": "sar_map_saliency_eval__incident-031__image-v1"
+      }
+    },
+    {
+      "custom_id": "sar_map_saliency_eval__incident-032__image-v1",
+      "incident": "incident_032",
+      "incident_index": 32,
+      "image_version": "v1",
+      "custom_id_parse_error": null,
+      "error": "Gemini response text missing.",
+      "row": {
+        "response": {
+          "modelVersion": "gemini-2.5-pro",
+          "responseId": "rKYLavbqFrfUz7IPsJei0Q4",
+          "candidates": [
+            {
+              "index": 0,
+              "content": {
+                "role": "model"
+              },
+              "finishReason": "MAX_TOKENS"
+            }
+          ],
+          "usageMetadata": {
+            "thoughtsTokenCount": 509,
+            "promptTokenCount": 365,
+            "serviceTier": "SERVICE_TIER_STANDARD",
+            "promptTokensDetails": [
+              {
+                "tokenCount": 107,
+                "modality": "TEXT"
+              },
+              {
+                "tokenCount": 258,
+                "modality": "IMAGE"
+              }
+            ],
+            "totalTokenCount": 874
+          }
+        },
+        "key": "sar_map_saliency_eval__incident-032__image-v1"
+      }
+    },
+    {
+      "custom_id": "sar_map_saliency_eval__incident-033__image-v1",
+      "incident": "incident_033",
+      "incident_index": 33,
+      "image_version": "v1",
+      "custom_id_parse_error": null,
+      "error": "Gemini response text missing.",
+      "row": {
+        "response": {
+          "responseId": "saYLaq3xDZGBqtsP5rikyAU",
+          "candidates": [
+            {
+              "content": {
+                "role": "model"
+              },
+              "finishReason": "MAX_TOKENS",
+              "index": 0
+            }
+          ],
+          "modelVersion": "gemini-2.5-pro",
+          "usageMetadata": {
+            "promptTokensDetails": [
+              {
+                "tokenCount": 107,
+                "modality": "TEXT"
+              },
+              {
+                "tokenCount": 258,
+                "modality": "IMAGE"
+              }
+            ],
+            "totalTokenCount": 874,
+            "thoughtsTokenCount": 509,
+            "promptTokenCount": 365,
+            "serviceTier": "SERVICE_TIER_STANDARD"
+          }
+        },
+        "key": "sar_map_saliency_eval__incident-033__image-v1"
+      }
+    },
+    {
+      "custom_id": "sar_map_saliency_eval__incident-034__image-v1",
+      "incident": "incident_034",
+      "incident_index": 34,
+      "image_version": "v1",
+      "custom_id_parse_error": null,
+      "error": "Gemini response text missing.",
+      "row": {
+        "response": {
+          "modelVersion": "gemini-2.5-pro",
+          "responseId": "r6YLavr6NM2hz7IPhqqhoAM",
+          "candidates": [
+            {
+              "content": {
+                "role": "model"
+              },
+              "finishReason": "MAX_TOKENS",
+              "index": 0
+            }
+          ],
+          "usageMetadata": {
+            "totalTokenCount": 874,
+            "promptTokensDetails": [
+              {
+                "tokenCount": 107,
+                "modality": "TEXT"
+              },
+              {
+                "tokenCount": 258,
+                "modality": "IMAGE"
+              }
+            ],
+            "promptTokenCount": 365,
+            "serviceTier": "SERVICE_TIER_STANDARD",
+            "thoughtsTokenCount": 509
+          }
+        },
+        "key": "sar_map_saliency_eval__incident-034__image-v1"
+      }
+    },
+    {
+      "custom_id": "sar_map_saliency_eval__incident-035__image-v1",
+      "incident": "incident_035",
+      "incident_index": 35,
+      "image_version": "v1",
+      "custom_id_parse_error": null,
+      "error": "Gemini response text missing.",
+      "row": {
+        "response": {
+          "usageMetadata": {
+            "thoughtsTokenCount": 509,
+            "serviceTier": "SERVICE_TIER_STANDARD",
+            "promptTokenCount": 365,
+            "promptTokensDetails": [
+              {
+                "tokenCount": 107,
+                "modality": "TEXT"
+              },
+              {
+                "tokenCount": 258,
+                "modality": "IMAGE"
+              }
+            ],
+            "totalTokenCount": 874
+          },
+          "modelVersion": "gemini-2.5-pro",
+          "responseId": "rqYLaum7OJaFz7IPuYWu2Aw",
+          "candidates": [
+            {
+              "content": {
+                "role": "model"
+              },
+              "finishReason": "MAX_TOKENS",
+              "index": 0
+            }
+          ]
+        },
+        "key": "sar_map_saliency_eval__incident-035__image-v1"
+      }
+    },
+    {
+      "custom_id": "sar_map_saliency_eval__incident-036__image-v1",
+      "incident": "incident_036",
+      "incident_index": 36,
+      "image_version": "v1",
+      "custom_id_parse_error": null,
+      "error": "Gemini response text missing.",
+      "row": {
+        "response": {
+          "usageMetadata": {
+            "promptTokensDetails": [
+              {
+                "tokenCount": 107,
+                "modality": "TEXT"
+              },
+              {
+                "tokenCount": 258,
+                "modality": "IMAGE"
+              }
+            ],
+            "totalTokenCount": 874,
+            "thoughtsTokenCount": 509,
+            "serviceTier": "SERVICE_TIER_STANDARD",
+            "promptTokenCount": 365
+          },
+          "modelVersion": "gemini-2.5-pro",
+          "responseId": "raYLaozdB7zqz7IPkI2soQs",
+          "candidates": [
+            {
+              "index": 0,
+              "content": {
+                "role": "model"
+              },
+              "finishReason": "MAX_TOKENS"
+            }
+          ]
+        },
+        "key": "sar_map_saliency_eval__incident-036__image-v1"
+      }
+    },
+    {
+      "custom_id": "sar_map_saliency_eval__incident-037__image-v1",
+      "incident": "incident_037",
+      "incident_index": 37,
+      "image_version": "v1",
+      "custom_id_parse_error": null,
+      "error": "Gemini response text missing.",
+      "row": {
+        "response": {
+          "modelVersion": "gemini-2.5-pro",
+          "responseId": "rKYLasL9MMXP_uMPgNnKuAU",
+          "candidates": [
+            {
+              "index": 0,
+              "content": {
+                "role": "model"
+              },
+              "finishReason": "MAX_TOKENS"
+            }
+          ],
+          "usageMetadata": {
+            "totalTokenCount": 874,
+            "promptTokensDetails": [
+              {
+                "tokenCount": 107,
+                "modality": "TEXT"
+              },
+              {
+                "tokenCount": 258,
+                "modality": "IMAGE"
+              }
+            ],
+            "serviceTier": "SERVICE_TIER_STANDARD",
+            "promptTokenCount": 365,
+            "thoughtsTokenCount": 509
+          }
+        },
+        "key": "sar_map_saliency_eval__incident-037__image-v1"
+      }
+    },
+    {
+      "custom_id": "sar_map_saliency_eval__incident-038__image-v1",
+      "incident": "incident_038",
+      "incident_index": 38,
+      "image_version": "v1",
+      "custom_id_parse_error": null,
+      "error": "Gemini response text missing.",
+      "row": {
+        "response": {
+          "usageMetadata": {
+            "totalTokenCount": 874,
+            "promptTokensDetails": [
+              {
+                "tokenCount": 107,
+                "modality": "TEXT"
+              },
+              {
+                "tokenCount": 258,
+                "modality": "IMAGE"
+              }
+            ],
+            "promptTokenCount": 365,
+            "serviceTier": "SERVICE_TIER_STANDARD",
+            "thoughtsTokenCount": 509
+          },
+          "modelVersion": "gemini-2.5-pro",
+          "responseId": "r6YLasKjHtfX_uMPsZu98Q0",
+          "candidates": [
+            {
+              "content": {
+                "role": "model"
+              },
+              "finishReason": "MAX_TOKENS",
+              "index": 0
+            }
+          ]
+        },
+        "key": "sar_map_saliency_eval__incident-038__image-v1"
+      }
+    },
+    {
+      "custom_id": "sar_map_saliency_eval__incident-039__image-v1",
+      "incident": "incident_039",
+      "incident_index": 39,
+      "image_version": "v1",
+      "custom_id_parse_error": null,
+      "error": "Gemini response text missing.",
+      "row": {
+        "response": {
+          "usageMetadata": {
+            "promptTokenCount": 365,
+            "serviceTier": "SERVICE_TIER_STANDARD",
+            "thoughtsTokenCount": 509,
+            "totalTokenCount": 874,
+            "promptTokensDetails": [
+              {
+                "tokenCount": 107,
+                "modality": "TEXT"
+              },
+              {
+                "tokenCount": 258,
+                "modality": "IMAGE"
+              }
+            ]
+          },
+          "modelVersion": "gemini-2.5-pro",
+          "responseId": "r6YLasOUIsGf_uMP3pHw6Qg",
+          "candidates": [
+            {
+              "content": {
+                "role": "model"
+              },
+              "finishReason": "MAX_TOKENS",
+              "index": 0
+            }
+          ]
+        },
+        "key": "sar_map_saliency_eval__incident-039__image-v1"
+      }
+    },
+    {
+      "custom_id": "sar_map_saliency_eval__incident-040__image-v1",
+      "incident": "incident_040",
+      "incident_index": 40,
+      "image_version": "v1",
+      "custom_id_parse_error": null,
+      "error": "Gemini response text missing.",
+      "row": {
+        "response": {
+          "usageMetadata": {
+            "thoughtsTokenCount": 509,
+            "promptTokenCount": 365,
+            "serviceTier": "SERVICE_TIER_STANDARD",
+            "promptTokensDetails": [
+              {
+                "tokenCount": 107,
+                "modality": "TEXT"
+              },
+              {
+                "tokenCount": 258,
+                "modality": "IMAGE"
+              }
+            ],
+            "totalTokenCount": 874
+          },
+          "modelVersion": "gemini-2.5-pro",
+          "responseId": "r6YLavKoHMHfz7IPmb6MwAs",
+          "candidates": [
+            {
+              "index": 0,
+              "content": {
+                "role": "model"
+              },
+              "finishReason": "MAX_TOKENS"
+            }
+          ]
+        },
+        "key": "sar_map_saliency_eval__incident-040__image-v1"
+      }
+    },
+    {
+      "custom_id": "sar_map_saliency_eval__incident-041__image-v1",
+      "incident": "incident_041",
+      "incident_index": 41,
+      "image_version": "v1",
+      "custom_id_parse_error": null,
+      "error": "Gemini response text missing.",
+      "row": {
+        "response": {
+          "usageMetadata": {
+            "promptTokensDetails": [
+              {
+                "tokenCount": 107,
+                "modality": "TEXT"
+              },
+              {
+                "tokenCount": 258,
+                "modality": "IMAGE"
+              }
+            ],
+            "totalTokenCount": 874,
+            "thoughtsTokenCount": 509,
+            "serviceTier": "SERVICE_TIER_STANDARD",
+            "promptTokenCount": 365
+          },
+          "modelVersion": "gemini-2.5-pro",
+          "responseId": "sKYLauLtGpvyqtsP6v3c8A0",
+          "candidates": [
+            {
+              "content": {
+                "role": "model"
+              },
+              "finishReason": "MAX_TOKENS",
+              "index": 0
+            }
+          ]
+        },
+        "key": "sar_map_saliency_eval__incident-041__image-v1"
+      }
+    },
+    {
+      "custom_id": "sar_map_saliency_eval__incident-042__image-v1",
+      "incident": "incident_042",
+      "incident_index": 42,
+      "image_version": "v1",
+      "custom_id_parse_error": null,
+      "error": "Gemini response text missing.",
+      "row": {
+        "response": {
+          "modelVersion": "gemini-2.5-pro",
+          "responseId": "q6YLarDvI9Tkz7IPs4yJiQQ",
+          "candidates": [
+            {
+              "content": {
+                "role": "model"
+              },
+              "finishReason": "MAX_TOKENS",
+              "index": 0
+            }
+          ],
+          "usageMetadata": {
+            "serviceTier": "SERVICE_TIER_STANDARD",
+            "promptTokenCount": 365,
+            "thoughtsTokenCount": 509,
+            "totalTokenCount": 874,
+            "promptTokensDetails": [
+              {
+                "tokenCount": 107,
+                "modality": "TEXT"
+              },
+              {
+                "tokenCount": 258,
+                "modality": "IMAGE"
+              }
+            ]
+          }
+        },
+        "key": "sar_map_saliency_eval__incident-042__image-v1"
+      }
+    },
+    {
+      "custom_id": "sar_map_saliency_eval__incident-043__image-v1",
+      "incident": "incident_043",
+      "incident_index": 43,
+      "image_version": "v1",
+      "custom_id_parse_error": null,
+      "error": "Gemini response text missing.",
+      "row": {
+        "response": {
+          "responseId": "rKYLasqLEYCA_uMPrum98QM",
+          "candidates": [
+            {
+              "content": {
+                "role": "model"
+              },
+              "finishReason": "MAX_TOKENS",
+              "index": 0
+            }
+          ],
+          "modelVersion": "gemini-2.5-pro",
+          "usageMetadata": {
+            "thoughtsTokenCount": 509,
+            "serviceTier": "SERVICE_TIER_STANDARD",
+            "promptTokenCount": 365,
+            "promptTokensDetails": [
+              {
+                "tokenCount": 107,
+                "modality": "TEXT"
+              },
+              {
+                "tokenCount": 258,
+                "modality": "IMAGE"
+              }
+            ],
+            "totalTokenCount": 874
+          }
+        },
+        "key": "sar_map_saliency_eval__incident-043__image-v1"
+      }
+    },
+    {
+      "custom_id": "sar_map_saliency_eval__incident-044__image-v1",
+      "incident": "incident_044",
+      "incident_index": 44,
+      "image_version": "v1",
+      "custom_id_parse_error": null,
+      "error": "Gemini response text missing.",
+      "row": {
+        "response": {
+          "usageMetadata": {
+            "promptTokensDetails": [
+              {
+                "tokenCount": 107,
+                "modality": "TEXT"
+              },
+              {
+                "tokenCount": 258,
+                "modality": "IMAGE"
+              }
+            ],
+            "totalTokenCount": 874,
+            "thoughtsTokenCount": 509,
+            "promptTokenCount": 365,
+            "serviceTier": "SERVICE_TIER_STANDARD"
+          },
+          "responseId": "q6YLaovgK5-A_PUPprSNsAQ",
+          "candidates": [
+            {
+              "index": 0,
+              "content": {
+                "role": "model"
+              },
+              "finishReason": "MAX_TOKENS"
+            }
+          ],
+          "modelVersion": "gemini-2.5-pro"
+        },
+        "key": "sar_map_saliency_eval__incident-044__image-v1"
+      }
+    },
+    {
+      "custom_id": "sar_map_saliency_eval__incident-045__image-v1",
+      "incident": "incident_045",
+      "incident_index": 45,
+      "image_version": "v1",
+      "custom_id_parse_error": null,
+      "error": "Gemini response text missing.",
+      "row": {
+        "response": {
+          "responseId": "raYLapn4GM2hz7IPhqqhoAM",
+          "candidates": [
+            {
+              "index": 0,
+              "content": {
+                "role": "model"
+              },
+              "finishReason": "MAX_TOKENS"
+            }
+          ],
+          "modelVersion": "gemini-2.5-pro",
+          "usageMetadata": {
+            "serviceTier": "SERVICE_TIER_STANDARD",
+            "promptTokenCount": 365,
+            "thoughtsTokenCount": 509,
+            "totalTokenCount": 874,
+            "promptTokensDetails": [
+              {
+                "tokenCount": 107,
+                "modality": "TEXT"
+              },
+              {
+                "tokenCount": 258,
+                "modality": "IMAGE"
+              }
+            ]
+          }
+        },
+        "key": "sar_map_saliency_eval__incident-045__image-v1"
+      }
+    },
+    {
+      "custom_id": "sar_map_saliency_eval__incident-046__image-v1",
+      "incident": "incident_046",
+      "incident_index": 46,
+      "image_version": "v1",
+      "custom_id_parse_error": null,
+      "error": "Gemini response text missing.",
+      "row": {
+        "response": {
+          "modelVersion": "gemini-2.5-pro",
+          "responseId": "rKYLapivLJy8_uMPtJO-4Aw",
+          "candidates": [
+            {
+              "index": 0,
+              "content": {
+                "role": "model"
+              },
+              "finishReason": "MAX_TOKENS"
+            }
+          ],
+          "usageMetadata": {
+            "serviceTier": "SERVICE_TIER_STANDARD",
+            "promptTokenCount": 365,
+            "thoughtsTokenCount": 509,
+            "totalTokenCount": 874,
+            "promptTokensDetails": [
+              {
+                "tokenCount": 107,
+                "modality": "TEXT"
+              },
+              {
+                "tokenCount": 258,
+                "modality": "IMAGE"
+              }
+            ]
+          }
+        },
+        "key": "sar_map_saliency_eval__incident-046__image-v1"
+      }
+    },
+    {
+      "custom_id": "sar_map_saliency_eval__incident-047__image-v1",
+      "incident": "incident_047",
+      "incident_index": 47,
+      "image_version": "v1",
+      "custom_id_parse_error": null,
+      "error": "Gemini response text missing.",
+      "row": {
+        "response": {
+          "modelVersion": "gemini-2.5-pro",
+          "responseId": "rqYLatWEPNTkz7IPs4yJiQQ",
+          "candidates": [
+            {
+              "index": 0,
+              "content": {
+                "role": "model"
+              },
+              "finishReason": "MAX_TOKENS"
+            }
+          ],
+          "usageMetadata": {
+            "totalTokenCount": 874,
+            "promptTokensDetails": [
+              {
+                "tokenCount": 107,
+                "modality": "TEXT"
+              },
+              {
+                "tokenCount": 258,
+                "modality": "IMAGE"
+              }
+            ],
+            "serviceTier": "SERVICE_TIER_STANDARD",
+            "promptTokenCount": 365,
+            "thoughtsTokenCount": 509
+          }
+        },
+        "key": "sar_map_saliency_eval__incident-047__image-v1"
+      }
+    },
+    {
+      "custom_id": "sar_map_saliency_eval__incident-048__image-v1",
+      "incident": "incident_048",
+      "incident_index": 48,
+      "image_version": "v1",
+      "custom_id_parse_error": null,
+      "error": "Gemini response text missing.",
+      "row": {
+        "response": {
+          "usageMetadata": {
+            "promptTokensDetails": [
+              {
+                "tokenCount": 107,
+                "modality": "TEXT"
+              },
+              {
+                "tokenCount": 258,
+                "modality": "IMAGE"
+              }
+            ],
+            "totalTokenCount": 874,
+            "thoughtsTokenCount": 509,
+            "promptTokenCount": 365,
+            "serviceTier": "SERVICE_TIER_STANDARD"
+          },
+          "modelVersion": "gemini-2.5-pro",
+          "responseId": "r6YLaovaBZy8_uMPtJO-4Aw",
+          "candidates": [
+            {
+              "content": {
+                "role": "model"
+              },
+              "finishReason": "MAX_TOKENS",
+              "index": 0
+            }
+          ]
+        },
+        "key": "sar_map_saliency_eval__incident-048__image-v1"
+      }
+    },
+    {
+      "custom_id": "sar_map_saliency_eval__incident-049__image-v1",
+      "incident": "incident_049",
+      "incident_index": 49,
+      "image_version": "v1",
+      "custom_id_parse_error": null,
+      "error": "Gemini response text missing.",
+      "row": {
+        "response": {
+          "responseId": "sKYLaozyOrfUz7IPsJei0Q4",
+          "candidates": [
+            {
+              "index": 0,
+              "content": {
+                "role": "model"
+              },
+              "finishReason": "MAX_TOKENS"
+            }
+          ],
+          "modelVersion": "gemini-2.5-pro",
+          "usageMetadata": {
+            "promptTokensDetails": [
+              {
+                "tokenCount": 107,
+                "modality": "TEXT"
+              },
+              {
+                "tokenCount": 258,
+                "modality": "IMAGE"
+              }
+            ],
+            "totalTokenCount": 874,
+            "thoughtsTokenCount": 509,
+            "serviceTier": "SERVICE_TIER_STANDARD",
+            "promptTokenCount": 365
+          }
+        },
+        "key": "sar_map_saliency_eval__incident-049__image-v1"
+      }
+    },
+    {
+      "custom_id": "sar_map_saliency_eval__incident-050__image-v1",
+      "incident": "incident_050",
+      "incident_index": 50,
+      "image_version": "v1",
+      "custom_id_parse_error": null,
+      "error": "Gemini response text missing.",
+      "row": {
+        "response": {
+          "modelVersion": "gemini-2.5-pro",
+          "responseId": "sKYLatmJJPCGz7IP3Z6goQw",
+          "candidates": [
+            {
+              "index": 0,
+              "content": {
+                "role": "model"
+              },
+              "finishReason": "MAX_TOKENS"
+            }
+          ],
+          "usageMetadata": {
+            "promptTokensDetails": [
+              {
+                "tokenCount": 107,
+                "modality": "TEXT"
+              },
+              {
+                "tokenCount": 258,
+                "modality": "IMAGE"
+              }
+            ],
+            "totalTokenCount": 874,
+            "thoughtsTokenCount": 509,
+            "promptTokenCount": 365,
+            "serviceTier": "SERVICE_TIER_STANDARD"
+          }
+        },
+        "key": "sar_map_saliency_eval__incident-050__image-v1"
+      }
+    },
+    {
+      "custom_id": "sar_map_saliency_eval__incident-051__image-v1",
+      "incident": "incident_051",
+      "incident_index": 51,
+      "image_version": "v1",
+      "custom_id_parse_error": null,
+      "error": "Gemini response text missing.",
+      "row": {
+        "response": {
+          "modelVersion": "gemini-2.5-pro",
+          "responseId": "rKYLapCjJZaFz7IPuYWu2Aw",
+          "candidates": [
+            {
+              "content": {
+                "role": "model"
+              },
+              "finishReason": "MAX_TOKENS",
+              "index": 0
+            }
+          ],
+          "usageMetadata": {
+            "thoughtsTokenCount": 509,
+            "serviceTier": "SERVICE_TIER_STANDARD",
+            "promptTokenCount": 365,
+            "promptTokensDetails": [
+              {
+                "tokenCount": 107,
+                "modality": "TEXT"
+              },
+              {
+                "tokenCount": 258,
+                "modality": "IMAGE"
+              }
+            ],
+            "totalTokenCount": 874
+          }
+        },
+        "key": "sar_map_saliency_eval__incident-051__image-v1"
+      }
+    },
+    {
+      "custom_id": "sar_map_saliency_eval__incident-052__image-v1",
+      "incident": "incident_052",
+      "incident_index": 52,
+      "image_version": "v1",
+      "custom_id_parse_error": null,
+      "error": "Gemini response text missing.",
+      "row": {
+        "response": {
+          "usageMetadata": {
+            "totalTokenCount": 874,
+            "promptTokensDetails": [
+              {
+                "tokenCount": 107,
+                "modality": "TEXT"
+              },
+              {
+                "tokenCount": 258,
+                "modality": "IMAGE"
+              }
+            ],
+            "promptTokenCount": 365,
+            "serviceTier": "SERVICE_TIER_STANDARD",
+            "thoughtsTokenCount": 509
+          },
+          "responseId": "r6YLauCDA82Hz7IP847TqQ4",
+          "candidates": [
+            {
+              "index": 0,
+              "content": {
+                "role": "model"
+              },
+              "finishReason": "MAX_TOKENS"
+            }
+          ],
+          "modelVersion": "gemini-2.5-pro"
+        },
+        "key": "sar_map_saliency_eval__incident-052__image-v1"
+      }
+    },
+    {
+      "custom_id": "sar_map_saliency_eval__incident-053__image-v1",
+      "incident": "incident_053",
+      "incident_index": 53,
+      "image_version": "v1",
+      "custom_id_parse_error": null,
+      "error": "Gemini response text missing.",
+      "row": {
+        "response": {
+          "modelVersion": "gemini-2.5-pro",
+          "responseId": "rqYLavT2D5-A_PUPprSNsAQ",
+          "candidates": [
+            {
+              "index": 0,
+              "content": {
+                "role": "model"
+              },
+              "finishReason": "MAX_TOKENS"
+            }
+          ],
+          "usageMetadata": {
+            "thoughtsTokenCount": 509,
+            "promptTokenCount": 365,
+            "serviceTier": "SERVICE_TIER_STANDARD",
+            "promptTokensDetails": [
+              {
+                "tokenCount": 107,
+                "modality": "TEXT"
+              },
+              {
+                "tokenCount": 258,
+                "modality": "IMAGE"
+              }
+            ],
+            "totalTokenCount": 874
+          }
+        },
+        "key": "sar_map_saliency_eval__incident-053__image-v1"
+      }
+    },
+    {
+      "custom_id": "sar_map_saliency_eval__incident-054__image-v1",
+      "incident": "incident_054",
+      "incident_index": 54,
+      "image_version": "v1",
+      "custom_id_parse_error": null,
+      "error": "Gemini response text missing.",
+      "row": {
+        "response": {
+          "usageMetadata": {
+            "thoughtsTokenCount": 509,
+            "promptTokenCount": 365,
+            "serviceTier": "SERVICE_TIER_STANDARD",
+            "promptTokensDetails": [
+              {
+                "tokenCount": 107,
+                "modality": "TEXT"
+              },
+              {
+                "tokenCount": 258,
+                "modality": "IMAGE"
+              }
+            ],
+            "totalTokenCount": 874
+          },
+          "responseId": "rqYLauCEJbfUz7IPsJei0Q4",
+          "candidates": [
+            {
+              "content": {
+                "role": "model"
+              },
+              "finishReason": "MAX_TOKENS",
+              "index": 0
+            }
+          ],
+          "modelVersion": "gemini-2.5-pro"
+        },
+        "key": "sar_map_saliency_eval__incident-054__image-v1"
+      }
+    },
+    {
+      "custom_id": "sar_map_saliency_eval__incident-055__image-v1",
+      "incident": "incident_055",
+      "incident_index": 55,
+      "image_version": "v1",
+      "custom_id_parse_error": null,
+      "error": "Gemini response text missing.",
+      "row": {
+        "response": {
+          "usageMetadata": {
+            "serviceTier": "SERVICE_TIER_STANDARD",
+            "promptTokenCount": 365,
+            "thoughtsTokenCount": 509,
+            "totalTokenCount": 874,
+            "promptTokensDetails": [
+              {
+                "tokenCount": 107,
+                "modality": "TEXT"
+              },
+              {
+                "tokenCount": 258,
+                "modality": "IMAGE"
+              }
+            ]
+          },
+          "responseId": "saYLatK3FM2Hz7IP847TqQ4",
+          "candidates": [
+            {
+              "content": {
+                "role": "model"
+              },
+              "finishReason": "MAX_TOKENS",
+              "index": 0
+            }
+          ],
+          "modelVersion": "gemini-2.5-pro"
+        },
+        "key": "sar_map_saliency_eval__incident-055__image-v1"
+      }
+    },
+    {
+      "custom_id": "sar_map_saliency_eval__incident-056__image-v1",
+      "incident": "incident_056",
+      "incident_index": 56,
+      "image_version": "v1",
+      "custom_id_parse_error": null,
+      "error": "Gemini response text missing.",
+      "row": {
+        "response": {
+          "responseId": "rKYLarnSN8Hfz7IPmb6MwAs",
+          "candidates": [
+            {
+              "content": {
+                "role": "model"
+              },
+              "finishReason": "MAX_TOKENS",
+              "index": 0
+            }
+          ],
+          "modelVersion": "gemini-2.5-pro",
+          "usageMetadata": {
+            "promptTokenCount": 365,
+            "serviceTier": "SERVICE_TIER_STANDARD",
+            "thoughtsTokenCount": 509,
+            "totalTokenCount": 874,
+            "promptTokensDetails": [
+              {
+                "tokenCount": 107,
+                "modality": "TEXT"
+              },
+              {
+                "tokenCount": 258,
+                "modality": "IMAGE"
+              }
+            ]
+          }
+        },
+        "key": "sar_map_saliency_eval__incident-056__image-v1"
+      }
+    },
+    {
+      "custom_id": "sar_map_saliency_eval__incident-057__image-v1",
+      "incident": "incident_057",
+      "incident_index": 57,
+      "image_version": "v1",
+      "custom_id_parse_error": null,
+      "error": "Gemini response text missing.",
+      "row": {
+        "response": {
+          "usageMetadata": {
+            "serviceTier": "SERVICE_TIER_STANDARD",
+            "promptTokenCount": 365,
+            "thoughtsTokenCount": 509,
+            "totalTokenCount": 874,
+            "promptTokensDetails": [
+              {
+                "tokenCount": 107,
+                "modality": "TEXT"
+              },
+              {
+                "tokenCount": 258,
+                "modality": "IMAGE"
+              }
+            ]
+          },
+          "modelVersion": "gemini-2.5-pro",
+          "responseId": "r6YLau7DGNWsz7IPrreGMA",
+          "candidates": [
+            {
+              "content": {
+                "role": "model"
+              },
+              "finishReason": "MAX_TOKENS",
+              "index": 0
+            }
+          ]
+        },
+        "key": "sar_map_saliency_eval__incident-057__image-v1"
+      }
+    },
+    {
+      "custom_id": "sar_map_saliency_eval__incident-058__image-v1",
+      "incident": "incident_058",
+      "incident_index": 58,
+      "image_version": "v1",
+      "custom_id_parse_error": null,
+      "error": "Gemini response text missing.",
+      "row": {
+        "response": {
+          "modelVersion": "gemini-2.5-pro",
+          "responseId": "q6YLatHbPMHfz7IPmb6MwAs",
+          "candidates": [
+            {
+              "index": 0,
+              "content": {
+                "role": "model"
+              },
+              "finishReason": "MAX_TOKENS"
+            }
+          ],
+          "usageMetadata": {
+            "thoughtsTokenCount": 509,
+            "serviceTier": "SERVICE_TIER_STANDARD",
+            "promptTokenCount": 365,
+            "promptTokensDetails": [
+              {
+                "tokenCount": 107,
+                "modality": "TEXT"
+              },
+              {
+                "tokenCount": 258,
+                "modality": "IMAGE"
+              }
+            ],
+            "totalTokenCount": 874
+          }
+        },
+        "key": "sar_map_saliency_eval__incident-058__image-v1"
+      }
+    },
+    {
+      "custom_id": "sar_map_saliency_eval__incident-059__image-v1",
+      "incident": "incident_059",
+      "incident_index": 59,
+      "image_version": "v1",
+      "custom_id_parse_error": null,
+      "error": "Gemini response text missing.",
+      "row": {
+        "response": {
+          "usageMetadata": {
+            "thoughtsTokenCount": 509,
+            "promptTokenCount": 365,
+            "serviceTier": "SERVICE_TIER_STANDARD",
+            "promptTokensDetails": [
+              {
+                "tokenCount": 107,
+                "modality": "TEXT"
+              },
+              {
+                "tokenCount": 258,
+                "modality": "IMAGE"
+              }
+            ],
+            "totalTokenCount": 874
+          },
+          "responseId": "rKYLau6fHJWvqtsPh7yh6AM",
+          "candidates": [
+            {
+              "content": {
+                "role": "model"
+              },
+              "finishReason": "MAX_TOKENS",
+              "index": 0
+            }
+          ],
+          "modelVersion": "gemini-2.5-pro"
+        },
+        "key": "sar_map_saliency_eval__incident-059__image-v1"
+      }
+    },
+    {
+      "custom_id": "sar_map_saliency_eval__incident-060__image-v1",
+      "incident": "incident_060",
+      "incident_index": 60,
+      "image_version": "v1",
+      "custom_id_parse_error": null,
+      "error": "Gemini response text missing.",
+      "row": {
+        "response": {
+          "responseId": "saYLapvUBJaFz7IPuYWu2Aw",
+          "candidates": [
+            {
+              "index": 0,
+              "content": {
+                "role": "model"
+              },
+              "finishReason": "MAX_TOKENS"
+            }
+          ],
+          "modelVersion": "gemini-2.5-pro",
+          "usageMetadata": {
+            "promptTokensDetails": [
+              {
+                "tokenCount": 107,
+                "modality": "TEXT"
+              },
+              {
+                "tokenCount": 258,
+                "modality": "IMAGE"
+              }
+            ],
+            "totalTokenCount": 874,
+            "thoughtsTokenCount": 509,
+            "promptTokenCount": 365,
+            "serviceTier": "SERVICE_TIER_STANDARD"
+          }
+        },
+        "key": "sar_map_saliency_eval__incident-060__image-v1"
+      }
+    },
+    {
+      "custom_id": "sar_map_saliency_eval__incident-061__image-v1",
+      "incident": "incident_061",
+      "incident_index": 61,
+      "image_version": "v1",
+      "custom_id_parse_error": null,
+      "error": "Gemini response text missing.",
+      "row": {
+        "response": {
+          "modelVersion": "gemini-2.5-pro",
+          "responseId": "sKYLauiCNLyY_uMP7ajA0Aw",
+          "candidates": [
+            {
+              "index": 0,
+              "content": {
+                "role": "model"
+              },
+              "finishReason": "MAX_TOKENS"
+            }
+          ],
+          "usageMetadata": {
+            "promptTokensDetails": [
+              {
+                "tokenCount": 107,
+                "modality": "TEXT"
+              },
+              {
+                "tokenCount": 258,
+                "modality": "IMAGE"
+              }
+            ],
+            "totalTokenCount": 874,
+            "thoughtsTokenCount": 509,
+            "promptTokenCount": 365,
+            "serviceTier": "SERVICE_TIER_STANDARD"
+          }
+        },
+        "key": "sar_map_saliency_eval__incident-061__image-v1"
+      }
+    },
+    {
+      "custom_id": "sar_map_saliency_eval__incident-062__image-v1",
+      "incident": "incident_062",
+      "incident_index": 62,
+      "image_version": "v1",
+      "custom_id_parse_error": null,
+      "error": "Gemini response text missing.",
+      "row": {
+        "response": {
+          "usageMetadata": {
+            "serviceTier": "SERVICE_TIER_STANDARD",
+            "promptTokenCount": 365,
+            "thoughtsTokenCount": 509,
+            "totalTokenCount": 874,
+            "promptTokensDetails": [
+              {
+                "tokenCount": 107,
+                "modality": "TEXT"
+              },
+              {
+                "tokenCount": 258,
+                "modality": "IMAGE"
+              }
+            ]
+          },
+          "modelVersion": "gemini-2.5-pro",
+          "responseId": "raYLapW3OvyMqtsP5rfUwAY",
+          "candidates": [
+            {
+              "content": {
+                "role": "model"
+              },
+              "finishReason": "MAX_TOKENS",
+              "index": 0
+            }
+          ]
+        },
+        "key": "sar_map_saliency_eval__incident-062__image-v1"
+      }
+    },
+    {
+      "custom_id": "sar_map_saliency_eval__incident-063__image-v1",
+      "incident": "incident_063",
+      "incident_index": 63,
+      "image_version": "v1",
+      "custom_id_parse_error": null,
+      "error": "Gemini response text missing.",
+      "row": {
+        "response": {
+          "responseId": "rKYLari7IPCGz7IP3Z6goQw",
+          "candidates": [
+            {
+              "index": 0,
+              "content": {
+                "role": "model"
+              },
+              "finishReason": "MAX_TOKENS"
+            }
+          ],
+          "modelVersion": "gemini-2.5-pro",
+          "usageMetadata": {
+            "promptTokensDetails": [
+              {
+                "tokenCount": 107,
+                "modality": "TEXT"
+              },
+              {
+                "tokenCount": 258,
+                "modality": "IMAGE"
+              }
+            ],
+            "totalTokenCount": 874,
+            "thoughtsTokenCount": 509,
+            "promptTokenCount": 365,
+            "serviceTier": "SERVICE_TIER_STANDARD"
+          }
+        },
+        "key": "sar_map_saliency_eval__incident-063__image-v1"
+      }
+    },
+    {
+      "custom_id": "sar_map_saliency_eval__incident-064__image-v1",
+      "incident": "incident_064",
+      "incident_index": 64,
+      "image_version": "v1",
+      "custom_id_parse_error": null,
+      "error": "Gemini response text missing.",
+      "row": {
+        "response": {
+          "usageMetadata": {
+            "promptTokensDetails": [
+              {
+                "tokenCount": 107,
+                "modality": "TEXT"
+              },
+              {
+                "tokenCount": 258,
+                "modality": "IMAGE"
+              }
+            ],
+            "totalTokenCount": 874,
+            "thoughtsTokenCount": 509,
+            "promptTokenCount": 365,
+            "serviceTier": "SERVICE_TIER_STANDARD"
+          },
+          "responseId": "rqYLasnPGZufqtsP38O36AE",
+          "candidates": [
+            {
+              "content": {
+                "role": "model"
+              },
+              "finishReason": "MAX_TOKENS",
+              "index": 0
+            }
+          ],
+          "modelVersion": "gemini-2.5-pro"
+        },
+        "key": "sar_map_saliency_eval__incident-064__image-v1"
+      }
+    },
+    {
+      "custom_id": "sar_map_saliency_eval__incident-065__image-v1",
+      "incident": "incident_065",
+      "incident_index": 65,
+      "image_version": "v1",
+      "custom_id_parse_error": null,
+      "error": "Gemini response text missing.",
+      "row": {
+        "response": {
+          "usageMetadata": {
+            "promptTokensDetails": [
+              {
+                "tokenCount": 107,
+                "modality": "TEXT"
+              },
+              {
+                "tokenCount": 258,
+                "modality": "IMAGE"
+              }
+            ],
+            "totalTokenCount": 874,
+            "thoughtsTokenCount": 509,
+            "serviceTier": "SERVICE_TIER_STANDARD",
+            "promptTokenCount": 365
+          },
+          "responseId": "r6YLasP6MZaFz7IPuYWu2Aw",
+          "candidates": [
+            {
+              "index": 0,
+              "content": {
+                "role": "model"
+              },
+              "finishReason": "MAX_TOKENS"
+            }
+          ],
+          "modelVersion": "gemini-2.5-pro"
+        },
+        "key": "sar_map_saliency_eval__incident-065__image-v1"
+      }
+    },
+    {
+      "custom_id": "sar_map_saliency_eval__incident-001__image-v2",
+      "incident": "incident_001",
+      "incident_index": 1,
+      "image_version": "v2",
+      "custom_id_parse_error": null,
+      "error": "Gemini response text missing.",
+      "row": {
+        "response": {
+          "usageMetadata": {
+            "thoughtsTokenCount": 509,
+            "serviceTier": "SERVICE_TIER_STANDARD",
+            "promptTokenCount": 373,
+            "promptTokensDetails": [
+              {
+                "tokenCount": 115,
+                "modality": "TEXT"
+              },
+              {
+                "tokenCount": 258,
+                "modality": "IMAGE"
+              }
+            ],
+            "totalTokenCount": 882
+          },
+          "responseId": "sKYLapmPLoStz7IP_falwAg",
+          "candidates": [
+            {
+              "content": {
+                "role": "model"
+              },
+              "finishReason": "MAX_TOKENS",
+              "index": 0
+            }
+          ],
+          "modelVersion": "gemini-2.5-pro"
+        },
+        "key": "sar_map_saliency_eval__incident-001__image-v2"
+      }
+    },
+    {
+      "custom_id": "sar_map_saliency_eval__incident-002__image-v2",
+      "incident": "incident_002",
+      "incident_index": 2,
+      "image_version": "v2",
+      "custom_id_parse_error": null,
+      "error": "Gemini response text missing.",
+      "row": {
+        "response": {
+          "usageMetadata": {
+            "totalTokenCount": 882,
+            "promptTokensDetails": [
+              {
+                "tokenCount": 115,
+                "modality": "TEXT"
+              },
+              {
+                "tokenCount": 258,
+                "modality": "IMAGE"
+              }
+            ],
+            "serviceTier": "SERVICE_TIER_STANDARD",
+            "promptTokenCount": 373,
+            "thoughtsTokenCount": 509
+          },
+          "modelVersion": "gemini-2.5-pro",
+          "responseId": "r6YLavOeK5PgqtsP5NSGmA4",
+          "candidates": [
+            {
+              "index": 0,
+              "content": {
+                "role": "model"
+              },
+              "finishReason": "MAX_TOKENS"
+            }
+          ]
+        },
+        "key": "sar_map_saliency_eval__incident-002__image-v2"
+      }
+    },
+    {
+      "custom_id": "sar_map_saliency_eval__incident-003__image-v2",
+      "incident": "incident_003",
+      "incident_index": 3,
+      "image_version": "v2",
+      "custom_id_parse_error": null,
+      "error": "Gemini response text missing.",
+      "row": {
+        "response": {
+          "modelVersion": "gemini-2.5-pro",
+          "responseId": "sKYLapb4NZyg_uMP-c_b4AQ",
+          "candidates": [
+            {
+              "content": {
+                "role": "model"
+              },
+              "finishReason": "MAX_TOKENS",
+              "index": 0
+            }
+          ],
+          "usageMetadata": {
+            "serviceTier": "SERVICE_TIER_STANDARD",
+            "promptTokenCount": 373,
+            "thoughtsTokenCount": 509,
+            "totalTokenCount": 882,
+            "promptTokensDetails": [
+              {
+                "tokenCount": 115,
+                "modality": "TEXT"
+              },
+              {
+                "tokenCount": 258,
+                "modality": "IMAGE"
+              }
+            ]
+          }
+        },
+        "key": "sar_map_saliency_eval__incident-003__image-v2"
+      }
+    },
+    {
+      "custom_id": "sar_map_saliency_eval__incident-004__image-v2",
+      "incident": "incident_004",
+      "incident_index": 4,
+      "image_version": "v2",
+      "custom_id_parse_error": null,
+      "error": "Gemini response text missing.",
+      "row": {
+        "response": {
+          "usageMetadata": {
+            "promptTokensDetails": [
+              {
+                "tokenCount": 115,
+                "modality": "TEXT"
+              },
+              {
+                "tokenCount": 258,
+                "modality": "IMAGE"
+              }
+            ],
+            "totalTokenCount": 882,
+            "thoughtsTokenCount": 509,
+            "promptTokenCount": 373,
+            "serviceTier": "SERVICE_TIER_STANDARD"
+          },
+          "responseId": "q6YLasKLOMKKqtsPwKHpaA",
+          "candidates": [
+            {
+              "content": {
+                "role": "model"
+              },
+              "finishReason": "MAX_TOKENS",
+              "index": 0
+            }
+          ],
+          "modelVersion": "gemini-2.5-pro"
+        },
+        "key": "sar_map_saliency_eval__incident-004__image-v2"
+      }
+    },
+    {
+      "custom_id": "sar_map_saliency_eval__incident-005__image-v2",
+      "incident": "incident_005",
+      "incident_index": 5,
+      "image_version": "v2",
+      "custom_id_parse_error": null,
+      "error": "Gemini response text missing.",
+      "row": {
+        "response": {
+          "usageMetadata": {
+            "promptTokenCount": 373,
+            "serviceTier": "SERVICE_TIER_STANDARD",
+            "thoughtsTokenCount": 509,
+            "totalTokenCount": 882,
+            "promptTokensDetails": [
+              {
+                "tokenCount": 115,
+                "modality": "TEXT"
+              },
+              {
+                "tokenCount": 258,
+                "modality": "IMAGE"
+              }
+            ]
+          },
+          "modelVersion": "gemini-2.5-pro",
+          "responseId": "r6YLapj1EeScqtsP27-IQQ",
+          "candidates": [
+            {
+              "content": {
+                "role": "model"
+              },
+              "finishReason": "MAX_TOKENS",
+              "index": 0
+            }
+          ]
+        },
+        "key": "sar_map_saliency_eval__incident-005__image-v2"
+      }
+    },
+    {
+      "custom_id": "sar_map_saliency_eval__incident-006__image-v2",
+      "incident": "incident_006",
+      "incident_index": 6,
+      "image_version": "v2",
+      "custom_id_parse_error": null,
+      "error": "Gemini response text missing.",
+      "row": {
+        "response": {
+          "usageMetadata": {
+            "promptTokensDetails": [
+              {
+                "tokenCount": 115,
+                "modality": "TEXT"
+              },
+              {
+                "tokenCount": 258,
+                "modality": "IMAGE"
+              }
+            ],
+            "totalTokenCount": 882,
+            "thoughtsTokenCount": 509,
+            "promptTokenCount": 373,
+            "serviceTier": "SERVICE_TIER_STANDARD"
+          },
+          "responseId": "raYLar2ANtTkz7IPs4yJiQQ",
+          "candidates": [
+            {
+              "index": 0,
+              "content": {
+                "role": "model"
+              },
+              "finishReason": "MAX_TOKENS"
+            }
+          ],
+          "modelVersion": "gemini-2.5-pro"
+        },
+        "key": "sar_map_saliency_eval__incident-006__image-v2"
+      }
+    },
+    {
+      "custom_id": "sar_map_saliency_eval__incident-007__image-v2",
+      "incident": "incident_007",
+      "incident_index": 7,
+      "image_version": "v2",
+      "custom_id_parse_error": null,
+      "error": "Gemini response text missing.",
+      "row": {
+        "response": {
+          "responseId": "sKYLapvcMfCuqtsP0MWSoAg",
+          "candidates": [
+            {
+              "content": {
+                "role": "model"
+              },
+              "finishReason": "MAX_TOKENS",
+              "index": 0
+            }
+          ],
+          "modelVersion": "gemini-2.5-pro",
+          "usageMetadata": {
+            "promptTokensDetails": [
+              {
+                "tokenCount": 115,
+                "modality": "TEXT"
+              },
+              {
+                "tokenCount": 258,
+                "modality": "IMAGE"
+              }
+            ],
+            "totalTokenCount": 882,
+            "thoughtsTokenCount": 509,
+            "serviceTier": "SERVICE_TIER_STANDARD",
+            "promptTokenCount": 373
+          }
+        },
+        "key": "sar_map_saliency_eval__incident-007__image-v2"
+      }
+    },
+    {
+      "custom_id": "sar_map_saliency_eval__incident-008__image-v2",
+      "incident": "incident_008",
+      "incident_index": 8,
+      "image_version": "v2",
+      "custom_id_parse_error": null,
+      "error": "Gemini response text missing.",
+      "row": {
+        "response": {
+          "modelVersion": "gemini-2.5-pro",
+          "responseId": "raYLaon8INWsz7IPrreGMA",
+          "candidates": [
+            {
+              "content": {
+                "role": "model"
+              },
+              "finishReason": "MAX_TOKENS",
+              "index": 0
+            }
+          ],
+          "usageMetadata": {
+            "promptTokensDetails": [
+              {
+                "tokenCount": 115,
+                "modality": "TEXT"
+              },
+              {
+                "tokenCount": 258,
+                "modality": "IMAGE"
+              }
+            ],
+            "totalTokenCount": 882,
+            "thoughtsTokenCount": 509,
+            "serviceTier": "SERVICE_TIER_STANDARD",
+            "promptTokenCount": 373
+          }
+        },
+        "key": "sar_map_saliency_eval__incident-008__image-v2"
+      }
+    },
+    {
+      "custom_id": "sar_map_saliency_eval__incident-009__image-v2",
+      "incident": "incident_009",
+      "incident_index": 9,
+      "image_version": "v2",
+      "custom_id_parse_error": null,
+      "error": "Gemini response text missing.",
+      "row": {
+        "response": {
+          "modelVersion": "gemini-2.5-pro",
+          "responseId": "sKYLavnlKrzqz7IPkI2soQs",
+          "candidates": [
+            {
+              "content": {
+                "role": "model"
+              },
+              "finishReason": "MAX_TOKENS",
+              "index": 0
+            }
+          ],
+          "usageMetadata": {
+            "promptTokenCount": 373,
+            "serviceTier": "SERVICE_TIER_STANDARD",
+            "thoughtsTokenCount": 509,
+            "totalTokenCount": 882,
+            "promptTokensDetails": [
+              {
+                "tokenCount": 115,
+                "modality": "TEXT"
+              },
+              {
+                "tokenCount": 258,
+                "modality": "IMAGE"
+              }
+            ]
+          }
+        },
+        "key": "sar_map_saliency_eval__incident-009__image-v2"
+      }
+    },
+    {
+      "custom_id": "sar_map_saliency_eval__incident-010__image-v2",
+      "incident": "incident_010",
+      "incident_index": 10,
+      "image_version": "v2",
+      "custom_id_parse_error": null,
+      "error": "Gemini response text missing.",
+      "row": {
+        "response": {
+          "responseId": "raYLavjFLMGf_uMP3pHw6Qg",
+          "candidates": [
+            {
+              "index": 0,
+              "content": {
+                "role": "model"
+              },
+              "finishReason": "MAX_TOKENS"
+            }
+          ],
+          "modelVersion": "gemini-2.5-pro",
+          "usageMetadata": {
+            "promptTokensDetails": [
+              {
+                "tokenCount": 115,
+                "modality": "TEXT"
+              },
+              {
+                "tokenCount": 258,
+                "modality": "IMAGE"
+              }
+            ],
+            "totalTokenCount": 882,
+            "thoughtsTokenCount": 509,
+            "promptTokenCount": 373,
+            "serviceTier": "SERVICE_TIER_STANDARD"
+          }
+        },
+        "key": "sar_map_saliency_eval__incident-010__image-v2"
+      }
+    },
+    {
+      "custom_id": "sar_map_saliency_eval__incident-011__image-v2",
+      "incident": "incident_011",
+      "incident_index": 11,
+      "image_version": "v2",
+      "custom_id_parse_error": null,
+      "error": "Gemini response text missing.",
+      "row": {
+        "response": {
+          "usageMetadata": {
+            "thoughtsTokenCount": 509,
+            "promptTokenCount": 373,
+            "serviceTier": "SERVICE_TIER_STANDARD",
+            "promptTokensDetails": [
+              {
+                "tokenCount": 115,
+                "modality": "TEXT"
+              },
+              {
+                "tokenCount": 258,
+                "modality": "IMAGE"
+              }
+            ],
+            "totalTokenCount": 882
+          },
+          "modelVersion": "gemini-2.5-pro",
+          "responseId": "sKYLat33FsHfz7IPmb6MwAs",
+          "candidates": [
+            {
+              "content": {
+                "role": "model"
+              },
+              "finishReason": "MAX_TOKENS",
+              "index": 0
+            }
+          ]
+        },
+        "key": "sar_map_saliency_eval__incident-011__image-v2"
+      }
+    },
+    {
+      "custom_id": "sar_map_saliency_eval__incident-012__image-v2",
+      "incident": "incident_012",
+      "incident_index": 12,
+      "image_version": "v2",
+      "custom_id_parse_error": null,
+      "error": "Gemini response text missing.",
+      "row": {
+        "response": {
+          "modelVersion": "gemini-2.5-pro",
+          "responseId": "r6YLatOeJ7fUz7IPsJei0Q4",
+          "candidates": [
+            {
+              "index": 0,
+              "content": {
+                "role": "model"
+              },
+              "finishReason": "MAX_TOKENS"
+            }
+          ],
+          "usageMetadata": {
+            "totalTokenCount": 882,
+            "promptTokensDetails": [
+              {
+                "tokenCount": 115,
+                "modality": "TEXT"
+              },
+              {
+                "tokenCount": 258,
+                "modality": "IMAGE"
+              }
+            ],
+            "promptTokenCount": 373,
+            "serviceTier": "SERVICE_TIER_STANDARD",
+            "thoughtsTokenCount": 509
+          }
+        },
+        "key": "sar_map_saliency_eval__incident-012__image-v2"
+      }
+    },
+    {
+      "custom_id": "sar_map_saliency_eval__incident-013__image-v2",
+      "incident": "incident_013",
+      "incident_index": 13,
+      "image_version": "v2",
+      "custom_id_parse_error": null,
+      "error": "Gemini response text missing.",
+      "row": {
+        "response": {
+          "responseId": "rqYLaof6HM2hz7IPhqqhoAM",
+          "candidates": [
+            {
+              "content": {
+                "role": "model"
+              },
+              "finishReason": "MAX_TOKENS",
+              "index": 0
+            }
+          ],
+          "modelVersion": "gemini-2.5-pro",
+          "usageMetadata": {
+            "promptTokensDetails": [
+              {
+                "tokenCount": 115,
+                "modality": "TEXT"
+              },
+              {
+                "tokenCount": 258,
+                "modality": "IMAGE"
+              }
+            ],
+            "totalTokenCount": 882,
+            "thoughtsTokenCount": 509,
+            "serviceTier": "SERVICE_TIER_STANDARD",
+            "promptTokenCount": 373
+          }
+        },
+        "key": "sar_map_saliency_eval__incident-013__image-v2"
+      }
+    },
+    {
+      "custom_id": "sar_map_saliency_eval__incident-014__image-v2",
+      "incident": "incident_014",
+      "incident_index": 14,
+      "image_version": "v2",
+      "custom_id_parse_error": null,
+      "error": "Gemini response text missing.",
+      "row": {
+        "response": {
+          "responseId": "sKYLaqzIBra7qtsPicGDwQI",
+          "candidates": [
+            {
+              "index": 0,
+              "content": {
+                "role": "model"
+              },
+              "finishReason": "MAX_TOKENS"
+            }
+          ],
+          "modelVersion": "gemini-2.5-pro",
+          "usageMetadata": {
+            "totalTokenCount": 882,
+            "promptTokensDetails": [
+              {
+                "tokenCount": 115,
+                "modality": "TEXT"
+              },
+              {
+                "tokenCount": 258,
+                "modality": "IMAGE"
+              }
+            ],
+            "promptTokenCount": 373,
+            "serviceTier": "SERVICE_TIER_STANDARD",
+            "thoughtsTokenCount": 509
+          }
+        },
+        "key": "sar_map_saliency_eval__incident-014__image-v2"
+      }
+    },
+    {
+      "custom_id": "sar_map_saliency_eval__incident-015__image-v2",
+      "incident": "incident_015",
+      "incident_index": 15,
+      "image_version": "v2",
+      "custom_id_parse_error": null,
+      "error": "Gemini response text missing.",
+      "row": {
+        "response": {
+          "usageMetadata": {
+            "thoughtsTokenCount": 509,
+            "serviceTier": "SERVICE_TIER_STANDARD",
+            "promptTokenCount": 373,
+            "promptTokensDetails": [
+              {
+                "tokenCount": 115,
+                "modality": "TEXT"
+              },
+              {
+                "tokenCount": 258,
+                "modality": "IMAGE"
+              }
+            ],
+            "totalTokenCount": 882
+          },
+          "modelVersion": "gemini-2.5-pro",
+          "responseId": "rKYLaqueKdTkz7IPs4yJiQQ",
+          "candidates": [
+            {
+              "content": {
+                "role": "model"
+              },
+              "finishReason": "MAX_TOKENS",
+              "index": 0
+            }
+          ]
+        },
+        "key": "sar_map_saliency_eval__incident-015__image-v2"
+      }
+    },
+    {
+      "custom_id": "sar_map_saliency_eval__incident-016__image-v2",
+      "incident": "incident_016",
+      "incident_index": 16,
+      "image_version": "v2",
+      "custom_id_parse_error": null,
+      "error": "Gemini response text missing.",
+      "row": {
+        "response": {
+          "modelVersion": "gemini-2.5-pro",
+          "responseId": "rqYLaqqUDLmS_uMPtY6esQw",
+          "candidates": [
+            {
+              "content": {
+                "role": "model"
+              },
+              "finishReason": "MAX_TOKENS",
+              "index": 0
+            }
+          ],
+          "usageMetadata": {
+            "serviceTier": "SERVICE_TIER_STANDARD",
+            "promptTokenCount": 373,
+            "thoughtsTokenCount": 509,
+            "totalTokenCount": 882,
+            "promptTokensDetails": [
+              {
+                "tokenCount": 115,
+                "modality": "TEXT"
+              },
+              {
+                "tokenCount": 258,
+                "modality": "IMAGE"
+              }
+            ]
+          }
+        },
+        "key": "sar_map_saliency_eval__incident-016__image-v2"
+      }
+    },
+    {
+      "custom_id": "sar_map_saliency_eval__incident-017__image-v2",
+      "incident": "incident_017",
+      "incident_index": 17,
+      "image_version": "v2",
+      "custom_id_parse_error": null,
+      "error": "Gemini response text missing.",
+      "row": {
+        "response": {
+          "usageMetadata": {
+            "thoughtsTokenCount": 509,
+            "serviceTier": "SERVICE_TIER_STANDARD",
+            "promptTokenCount": 373,
+            "promptTokensDetails": [
+              {
+                "tokenCount": 115,
+                "modality": "TEXT"
+              },
+              {
+                "tokenCount": 258,
+                "modality": "IMAGE"
+              }
+            ],
+            "totalTokenCount": 882
+          },
+          "modelVersion": "gemini-2.5-pro",
+          "responseId": "q6YLaoX5Ms2Hz7IP847TqQ4",
+          "candidates": [
+            {
+              "index": 0,
+              "content": {
+                "role": "model"
+              },
+              "finishReason": "MAX_TOKENS"
+            }
+          ]
+        },
+        "key": "sar_map_saliency_eval__incident-017__image-v2"
+      }
+    },
+    {
+      "custom_id": "sar_map_saliency_eval__incident-018__image-v2",
+      "incident": "incident_018",
+      "incident_index": 18,
+      "image_version": "v2",
+      "custom_id_parse_error": null,
+      "error": "Gemini response text missing.",
+      "row": {
+        "response": {
+          "usageMetadata": {
+            "totalTokenCount": 882,
+            "promptTokensDetails": [
+              {
+                "tokenCount": 115,
+                "modality": "TEXT"
+              },
+              {
+                "tokenCount": 258,
+                "modality": "IMAGE"
+              }
+            ],
+            "promptTokenCount": 373,
+            "serviceTier": "SERVICE_TIER_STANDARD",
+            "thoughtsTokenCount": 509
+          },
+          "modelVersion": "gemini-2.5-pro",
+          "responseId": "rqYLapWWFYStz7IP_falwAg",
+          "candidates": [
+            {
+              "index": 0,
+              "content": {
+                "role": "model"
+              },
+              "finishReason": "MAX_TOKENS"
+            }
+          ]
+        },
+        "key": "sar_map_saliency_eval__incident-018__image-v2"
+      }
+    },
+    {
+      "custom_id": "sar_map_saliency_eval__incident-019__image-v2",
+      "incident": "incident_019",
+      "incident_index": 19,
+      "image_version": "v2",
+      "custom_id_parse_error": null,
+      "error": "Gemini response text missing.",
+      "row": {
+        "response": {
+          "modelVersion": "gemini-2.5-pro",
+          "responseId": "raYLatvrMPSS_uMP3tCl0Qk",
+          "candidates": [
+            {
+              "index": 0,
+              "content": {
+                "role": "model"
+              },
+              "finishReason": "MAX_TOKENS"
+            }
+          ],
+          "usageMetadata": {
+            "thoughtsTokenCount": 509,
+            "promptTokenCount": 373,
+            "serviceTier": "SERVICE_TIER_STANDARD",
+            "promptTokensDetails": [
+              {
+                "tokenCount": 115,
+                "modality": "TEXT"
+              },
+              {
+                "tokenCount": 258,
+                "modality": "IMAGE"
+              }
+            ],
+            "totalTokenCount": 882
+          }
+        },
+        "key": "sar_map_saliency_eval__incident-019__image-v2"
+      }
+    },
+    {
+      "custom_id": "sar_map_saliency_eval__incident-020__image-v2",
+      "incident": "incident_020",
+      "incident_index": 20,
+      "image_version": "v2",
+      "custom_id_parse_error": null,
+      "error": "Gemini response text missing.",
+      "row": {
+        "response": {
+          "usageMetadata": {
+            "thoughtsTokenCount": 509,
+            "promptTokenCount": 373,
+            "serviceTier": "SERVICE_TIER_STANDARD",
+            "promptTokensDetails": [
+              {
+                "tokenCount": 115,
+                "modality": "TEXT"
+              },
+              {
+                "tokenCount": 258,
+                "modality": "IMAGE"
+              }
+            ],
+            "totalTokenCount": 882
+          },
+          "responseId": "raYLaue8HZvyqtsP6v3c8A0",
+          "candidates": [
+            {
+              "content": {
+                "role": "model"
+              },
+              "finishReason": "MAX_TOKENS",
+              "index": 0
+            }
+          ],
+          "modelVersion": "gemini-2.5-pro"
+        },
+        "key": "sar_map_saliency_eval__incident-020__image-v2"
+      }
+    },
+    {
+      "custom_id": "sar_map_saliency_eval__incident-021__image-v2",
+      "incident": "incident_021",
+      "incident_index": 21,
+      "image_version": "v2",
+      "custom_id_parse_error": null,
+      "error": "Gemini response text missing.",
+      "row": {
+        "response": {
+          "responseId": "rKYLarLPCbzqz7IPkI2soQs",
+          "candidates": [
+            {
+              "index": 0,
+              "content": {
+                "role": "model"
+              },
+              "finishReason": "MAX_TOKENS"
+            }
+          ],
+          "modelVersion": "gemini-2.5-pro",
+          "usageMetadata": {
+            "promptTokensDetails": [
+              {
+                "tokenCount": 115,
+                "modality": "TEXT"
+              },
+              {
+                "tokenCount": 258,
+                "modality": "IMAGE"
+              }
+            ],
+            "totalTokenCount": 882,
+            "thoughtsTokenCount": 509,
+            "serviceTier": "SERVICE_TIER_STANDARD",
+            "promptTokenCount": 373
+          }
+        },
+        "key": "sar_map_saliency_eval__incident-021__image-v2"
+      }
+    },
+    {
+      "custom_id": "sar_map_saliency_eval__incident-022__image-v2",
+      "incident": "incident_022",
+      "incident_index": 22,
+      "image_version": "v2",
+      "custom_id_parse_error": null,
+      "error": "Gemini response text missing.",
+      "row": {
+        "response": {
+          "usageMetadata": {
+            "serviceTier": "SERVICE_TIER_STANDARD",
+            "promptTokenCount": 373,
+            "thoughtsTokenCount": 509,
+            "totalTokenCount": 882,
+            "promptTokensDetails": [
+              {
+                "tokenCount": 115,
+                "modality": "TEXT"
+              },
+              {
+                "tokenCount": 258,
+                "modality": "IMAGE"
+              }
+            ]
+          },
+          "modelVersion": "gemini-2.5-pro",
+          "responseId": "d6MLav_2L-ScqtsP27-IQQ",
+          "candidates": [
+            {
+              "content": {
+                "role": "model"
+              },
+              "finishReason": "MAX_TOKENS",
+              "index": 0
+            }
+          ]
+        },
+        "key": "sar_map_saliency_eval__incident-022__image-v2"
+      }
+    },
+    {
+      "custom_id": "sar_map_saliency_eval__incident-023__image-v2",
+      "incident": "incident_023",
+      "incident_index": 23,
+      "image_version": "v2",
+      "custom_id_parse_error": null,
+      "error": "Gemini response text missing.",
+      "row": {
+        "response": {
+          "modelVersion": "gemini-2.5-pro",
+          "responseId": "rqYLap7ZNOKeqtsPh_jp2As",
+          "candidates": [
+            {
+              "content": {
+                "role": "model"
+              },
+              "finishReason": "MAX_TOKENS",
+              "index": 0
+            }
+          ],
+          "usageMetadata": {
+            "promptTokensDetails": [
+              {
+                "tokenCount": 115,
+                "modality": "TEXT"
+              },
+              {
+                "tokenCount": 258,
+                "modality": "IMAGE"
+              }
+            ],
+            "totalTokenCount": 882,
+            "thoughtsTokenCount": 509,
+            "serviceTier": "SERVICE_TIER_STANDARD",
+            "promptTokenCount": 373
+          }
+        },
+        "key": "sar_map_saliency_eval__incident-023__image-v2"
+      }
+    },
+    {
+      "custom_id": "sar_map_saliency_eval__incident-024__image-v2",
+      "incident": "incident_024",
+      "incident_index": 24,
+      "image_version": "v2",
+      "custom_id_parse_error": null,
+      "error": "Gemini response text missing.",
+      "row": {
+        "response": {
+          "usageMetadata": {
+            "thoughtsTokenCount": 509,
+            "promptTokenCount": 373,
+            "serviceTier": "SERVICE_TIER_STANDARD",
+            "promptTokensDetails": [
+              {
+                "tokenCount": 115,
+                "modality": "TEXT"
+              },
+              {
+                "tokenCount": 258,
+                "modality": "IMAGE"
+              }
+            ],
+            "totalTokenCount": 882
+          },
+          "responseId": "rqYLasSpLICA_uMPrum98QM",
+          "candidates": [
+            {
+              "content": {
+                "role": "model"
+              },
+              "finishReason": "MAX_TOKENS",
+              "index": 0
+            }
+          ],
+          "modelVersion": "gemini-2.5-pro"
+        },
+        "key": "sar_map_saliency_eval__incident-024__image-v2"
+      }
+    },
+    {
+      "custom_id": "sar_map_saliency_eval__incident-025__image-v2",
+      "incident": "incident_025",
+      "incident_index": 25,
+      "image_version": "v2",
+      "custom_id_parse_error": null,
+      "error": "Gemini response text missing.",
+      "row": {
+        "response": {
+          "usageMetadata": {
+            "serviceTier": "SERVICE_TIER_STANDARD",
+            "promptTokenCount": 373,
+            "thoughtsTokenCount": 509,
+            "totalTokenCount": 882,
+            "promptTokensDetails": [
+              {
+                "tokenCount": 115,
+                "modality": "TEXT"
+              },
+              {
+                "tokenCount": 258,
+                "modality": "IMAGE"
+              }
+            ]
+          },
+          "responseId": "sKYLasPxHbfUz7IPsJei0Q4",
+          "candidates": [
+            {
+              "index": 0,
+              "content": {
+                "role": "model"
+              },
+              "finishReason": "MAX_TOKENS"
+            }
+          ],
+          "modelVersion": "gemini-2.5-pro"
+        },
+        "key": "sar_map_saliency_eval__incident-025__image-v2"
+      }
+    },
+    {
+      "custom_id": "sar_map_saliency_eval__incident-026__image-v2",
+      "incident": "incident_026",
+      "incident_index": 26,
+      "image_version": "v2",
+      "custom_id_parse_error": null,
+      "error": "Gemini response text missing.",
+      "row": {
+        "response": {
+          "usageMetadata": {
+            "serviceTier": "SERVICE_TIER_STANDARD",
+            "promptTokenCount": 373,
+            "thoughtsTokenCount": 509,
+            "totalTokenCount": 882,
+            "promptTokensDetails": [
+              {
+                "tokenCount": 115,
+                "modality": "TEXT"
+              },
+              {
+                "tokenCount": 258,
+                "modality": "IMAGE"
+              }
+            ]
+          },
+          "responseId": "rKYLasGHBLfUz7IPsJei0Q4",
+          "candidates": [
+            {
+              "content": {
+                "role": "model"
+              },
+              "finishReason": "MAX_TOKENS",
+              "index": 0
+            }
+          ],
+          "modelVersion": "gemini-2.5-pro"
+        },
+        "key": "sar_map_saliency_eval__incident-026__image-v2"
+      }
+    },
+    {
+      "custom_id": "sar_map_saliency_eval__incident-027__image-v2",
+      "incident": "incident_027",
+      "incident_index": 27,
+      "image_version": "v2",
+      "custom_id_parse_error": null,
+      "error": "Gemini response text missing.",
+      "row": {
+        "response": {
+          "usageMetadata": {
+            "promptTokenCount": 373,
+            "serviceTier": "SERVICE_TIER_STANDARD",
+            "thoughtsTokenCount": 509,
+            "totalTokenCount": 882,
+            "promptTokensDetails": [
+              {
+                "tokenCount": 115,
+                "modality": "TEXT"
+              },
+              {
+                "tokenCount": 258,
+                "modality": "IMAGE"
+              }
+            ]
+          },
+          "modelVersion": "gemini-2.5-pro",
+          "responseId": "sKYLavCmH5y8_uMPtJO-4Aw",
+          "candidates": [
+            {
+              "content": {
+                "role": "model"
+              },
+              "finishReason": "MAX_TOKENS",
+              "index": 0
+            }
+          ]
+        },
+        "key": "sar_map_saliency_eval__incident-027__image-v2"
+      }
+    },
+    {
+      "custom_id": "sar_map_saliency_eval__incident-028__image-v2",
+      "incident": "incident_028",
+      "incident_index": 28,
+      "image_version": "v2",
+      "custom_id_parse_error": null,
+      "error": "Gemini response text missing.",
+      "row": {
+        "response": {
+          "responseId": "r6YLap7iOp-A_PUPprSNsAQ",
+          "candidates": [
+            {
+              "content": {
+                "role": "model"
+              },
+              "finishReason": "MAX_TOKENS",
+              "index": 0
+            }
+          ],
+          "modelVersion": "gemini-2.5-pro",
+          "usageMetadata": {
+            "promptTokenCount": 373,
+            "serviceTier": "SERVICE_TIER_STANDARD",
+            "thoughtsTokenCount": 509,
+            "totalTokenCount": 882,
+            "promptTokensDetails": [
+              {
+                "tokenCount": 115,
+                "modality": "TEXT"
+              },
+              {
+                "tokenCount": 258,
+                "modality": "IMAGE"
+              }
+            ]
+          }
+        },
+        "key": "sar_map_saliency_eval__incident-028__image-v2"
+      }
+    },
+    {
+      "custom_id": "sar_map_saliency_eval__incident-029__image-v2",
+      "incident": "incident_029",
+      "incident_index": 29,
+      "image_version": "v2",
+      "custom_id_parse_error": null,
+      "error": "Gemini response text missing.",
+      "row": {
+        "response": {
+          "responseId": "rqYLau_MCfCGz7IP3Z6goQw",
+          "candidates": [
+            {
+              "content": {
+                "role": "model"
+              },
+              "finishReason": "MAX_TOKENS",
+              "index": 0
+            }
+          ],
+          "modelVersion": "gemini-2.5-pro",
+          "usageMetadata": {
+            "serviceTier": "SERVICE_TIER_STANDARD",
+            "promptTokenCount": 373,
+            "thoughtsTokenCount": 509,
+            "totalTokenCount": 882,
+            "promptTokensDetails": [
+              {
+                "tokenCount": 115,
+                "modality": "TEXT"
+              },
+              {
+                "tokenCount": 258,
+                "modality": "IMAGE"
+              }
+            ]
+          }
+        },
+        "key": "sar_map_saliency_eval__incident-029__image-v2"
+      }
+    },
+    {
+      "custom_id": "sar_map_saliency_eval__incident-030__image-v2",
+      "incident": "incident_030",
+      "incident_index": 30,
+      "image_version": "v2",
+      "custom_id_parse_error": null,
+      "error": "Gemini response text missing.",
+      "row": {
+        "response": {
+          "usageMetadata": {
+            "promptTokenCount": 373,
+            "serviceTier": "SERVICE_TIER_STANDARD",
+            "thoughtsTokenCount": 509,
+            "totalTokenCount": 882,
+            "promptTokensDetails": [
+              {
+                "tokenCount": 115,
+                "modality": "TEXT"
+              },
+              {
+                "tokenCount": 258,
+                "modality": "IMAGE"
+              }
+            ]
+          },
+          "responseId": "uaILaon_Ora7qtsPicGDwQI",
+          "candidates": [
+            {
+              "index": 0,
+              "content": {
+                "role": "model"
+              },
+              "finishReason": "MAX_TOKENS"
+            }
+          ],
+          "modelVersion": "gemini-2.5-pro"
+        },
+        "key": "sar_map_saliency_eval__incident-030__image-v2"
+      }
+    },
+    {
+      "custom_id": "sar_map_saliency_eval__incident-031__image-v2",
+      "incident": "incident_031",
+      "incident_index": 31,
+      "image_version": "v2",
+      "custom_id_parse_error": null,
+      "error": "Gemini response text missing.",
+      "row": {
+        "response": {
+          "modelVersion": "gemini-2.5-pro",
+          "responseId": "BKYLaqC6MaGuqtsP4dS80QY",
+          "candidates": [
+            {
+              "content": {
+                "role": "model"
+              },
+              "finishReason": "MAX_TOKENS",
+              "index": 0
+            }
+          ],
+          "usageMetadata": {
+            "promptTokensDetails": [
+              {
+                "tokenCount": 115,
+                "modality": "TEXT"
+              },
+              {
+                "tokenCount": 258,
+                "modality": "IMAGE"
+              }
+            ],
+            "totalTokenCount": 882,
+            "thoughtsTokenCount": 509,
+            "serviceTier": "SERVICE_TIER_STANDARD",
+            "promptTokenCount": 373
+          }
+        },
+        "key": "sar_map_saliency_eval__incident-031__image-v2"
+      }
+    },
+    {
+      "custom_id": "sar_map_saliency_eval__incident-032__image-v2",
+      "incident": "incident_032",
+      "incident_index": 32,
+      "image_version": "v2",
+      "custom_id_parse_error": null,
+      "error": "Gemini response text missing.",
+      "row": {
+        "response": {
+          "usageMetadata": {
+            "promptTokensDetails": [
+              {
+                "tokenCount": 115,
+                "modality": "TEXT"
+              },
+              {
+                "tokenCount": 258,
+                "modality": "IMAGE"
+              }
+            ],
+            "totalTokenCount": 882,
+            "thoughtsTokenCount": 509,
+            "serviceTier": "SERVICE_TIER_STANDARD",
+            "promptTokenCount": 373
+          },
+          "responseId": "3qQLavmeMNWsz7IPrreGMA",
+          "candidates": [
+            {
+              "index": 0,
+              "content": {
+                "role": "model"
+              },
+              "finishReason": "MAX_TOKENS"
+            }
+          ],
+          "modelVersion": "gemini-2.5-pro"
+        },
+        "key": "sar_map_saliency_eval__incident-032__image-v2"
+      }
+    },
+    {
+      "custom_id": "sar_map_saliency_eval__incident-033__image-v2",
+      "incident": "incident_033",
+      "incident_index": 33,
+      "image_version": "v2",
+      "custom_id_parse_error": null,
+      "error": "Gemini response text missing.",
+      "row": {
+        "response": {
+          "usageMetadata": {
+            "promptTokensDetails": [
+              {
+                "tokenCount": 115,
+                "modality": "TEXT"
+              },
+              {
+                "tokenCount": 258,
+                "modality": "IMAGE"
+              }
+            ],
+            "totalTokenCount": 882,
+            "thoughtsTokenCount": 509,
+            "serviceTier": "SERVICE_TIER_STANDARD",
+            "promptTokenCount": 373
+          },
+          "modelVersion": "gemini-2.5-pro",
+          "responseId": "q6YLaru2J7mS_uMPtY6esQw",
+          "candidates": [
+            {
+              "index": 0,
+              "content": {
+                "role": "model"
+              },
+              "finishReason": "MAX_TOKENS"
+            }
+          ]
+        },
+        "key": "sar_map_saliency_eval__incident-033__image-v2"
+      }
+    },
+    {
+      "custom_id": "sar_map_saliency_eval__incident-034__image-v2",
+      "incident": "incident_034",
+      "incident_index": 34,
+      "image_version": "v2",
+      "custom_id_parse_error": null,
+      "error": "Gemini response text missing.",
+      "row": {
+        "response": {
+          "usageMetadata": {
+            "totalTokenCount": 882,
+            "promptTokensDetails": [
+              {
+                "tokenCount": 115,
+                "modality": "TEXT"
+              },
+              {
+                "tokenCount": 258,
+                "modality": "IMAGE"
+              }
+            ],
+            "serviceTier": "SERVICE_TIER_STANDARD",
+            "promptTokenCount": 373,
+            "thoughtsTokenCount": 509
+          },
+          "modelVersion": "gemini-2.5-pro",
+          "responseId": "76MLas_HPKbpz7IP9eKOyQE",
+          "candidates": [
+            {
+              "content": {
+                "role": "model"
+              },
+              "finishReason": "MAX_TOKENS",
+              "index": 0
+            }
+          ]
+        },
+        "key": "sar_map_saliency_eval__incident-034__image-v2"
+      }
+    },
+    {
+      "custom_id": "sar_map_saliency_eval__incident-035__image-v2",
+      "incident": "incident_035",
+      "incident_index": 35,
+      "image_version": "v2",
+      "custom_id_parse_error": null,
+      "error": "Gemini response text missing.",
+      "row": {
+        "response": {
+          "modelVersion": "gemini-2.5-pro",
+          "responseId": "r6YLauD6FIStz7IP_falwAg",
+          "candidates": [
+            {
+              "content": {
+                "role": "model"
+              },
+              "finishReason": "MAX_TOKENS",
+              "index": 0
+            }
+          ],
+          "usageMetadata": {
+            "serviceTier": "SERVICE_TIER_STANDARD",
+            "promptTokenCount": 373,
+            "thoughtsTokenCount": 509,
+            "totalTokenCount": 882,
+            "promptTokensDetails": [
+              {
+                "tokenCount": 115,
+                "modality": "TEXT"
+              },
+              {
+                "tokenCount": 258,
+                "modality": "IMAGE"
+              }
+            ]
+          }
+        },
+        "key": "sar_map_saliency_eval__incident-035__image-v2"
+      }
+    }
+  ],
+  "summary": {
+    "response_rows": 130,
+    "parsed_rows": 0,
+    "failure_rows": 130,
+    "answer_counts": {},
+    "image_version_counts": {},
+    "custom_id_parse_failures": 0
+  },
+  "source": {
+    "response_file": "data/SAR_prompts/batch_responses/gemini/gemini-2.5-pro/batch-25ulowg3aqe6793wcwebm233qojnj0gw6f7i.jsonl"
+  }
+}

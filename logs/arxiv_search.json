@@ -1,0 +1,173 @@
+{
+ "all:\"Schelling\" AND all:\"large language models\"": [
+  {
+   "id": "2607.11363v1",
+   "title": "Beyond Sally-Anne: Evaluating Theory of Mind in LLMs using Epistemic Schelling Points",
+   "year": 2026,
+   "authors": [
+    "Roberta Rocca",
+    "Sami Boukortt",
+    "Geoff Keeling",
+    "Winnie Street"
+   ],
+   "abstract": "Text-based evaluations of Theory of Mind (ToM) in Large Language Models (LLMs) often involve cognitive tests akin to the Sally-Anne task that can be gamed due to exposure to relevantly similar tasks in pre-training and do not obviously test models' functional ToM abilities in ways that generalize to naturalistic settings. To address these issues, we introduce the Epistemic Asymmetry Schelling Task"
+  },
+  {
+   "id": "2412.10428v1",
+   "title": "Observing Micromotives and Macrobehavior of Large Language Models",
+   "year": 2024,
+   "authors": [
+    "Yuyang Cheng",
+    "Xingwei Qu",
+    "Tomas Goldsack",
+    "Chenghua Lin"
+   ],
+   "abstract": "Thomas C. Schelling, awarded the 2005 Nobel Memorial Prize in Economic Sciences, pointed out that ``individuals decisions (micromotives), while often personal and localized, can lead to societal outcomes (macrobehavior) that are far more complex and different from what the individuals intended.'' The current research related to large language models' (LLMs') micromotives, such as preferences or bi"
+  },
+  {
+   "id": "2509.22537v1",
+   "title": "The Emergence of Altruism in Large-Language-Model Agents Society",
+   "year": 2025,
+   "authors": [
+    "Haoyang Li",
+    "Xiao Jia",
+    "Zhanzhan Zhao"
+   ],
+   "abstract": "Leveraging Large Language Models (LLMs) for social simulation is a frontier in computational social science. Understanding the social logics these agents embody is critical to this attempt. However, existing research has primarily focused on cooperation in small-scale, task-oriented games, overlooking how altruism, which means sacrificing self-interest for collective benefit, emerges in large-scal"
+  },
+  {
+   "id": "2607.17948v1",
+   "title": "Towards Agentic Agent-based Models: Feasibility, Performance, and Statistical Model Checking",
+   "year": 2026,
+   "authors": [
+    "Stefano Blando",
+    "Emanuele Guerrazzi",
+    "Riccardo Porcedda",
+    "Giuseppe Squillace"
+   ],
+   "abstract": "Agent-based models (ABMs) rely on simple, explicit and reproducible rules for individual decision making, while complex collective behavior emerges from interactions among agents. Recent advances in large language models (LLMs) make it tempting to replace, enrich, or perturb these rules with LLM-based agentic capabilities. However, this raises a methodological question: how does introducing LLM-dr"
+  },
+  {
+   "id": "2609.33871v1",
+   "title": "Population Physics, Population Problems: Safety and Emergence in LLM Societies",
+   "year": 2026,
+   "authors": [
+    "Adrian de Wynter"
+   ],
+   "abstract": "The collective behaviour of large language model (LLM) societies is not the sum of their individual outputs. It yields statistically distinct, sometimes-unpredictable phenomena, for which the tools we use to study single agents may not scale. Due to recent incidents involving autonomous agentic systems, however, understanding these systems is paramount. For that we introduce a framework for measur"
+  },
+  {
+   "id": "2602.14740v1",
+   "title": "AI Arms and Influence: Frontier Models Exhibit Sophisticated Reasoning in Simulated Nuclear Crises",
+   "year": 2026,
+   "authors": [
+    "Kenneth Payne"
+   ],
+   "abstract": "Today's leading AI models engage in sophisticated behaviour when placed in strategic competition. They spontaneously attempt deception, signaling intentions they do not intend to follow; they demonstrate rich theory of mind, reasoning about adversary beliefs and anticipating their actions; and they exhibit credible metacognitive self-awareness, assessing their own strategic abilities before decidi"
+  }
+ ],
+ "all:\"tacit coordination\" AND all:\"language models\"": [
+  {
+   "id": "2601.22184v2",
+   "title": "Tacit Coordination of Large Language Models",
+   "year": 2026,
+   "authors": [
+    "Ido Aharon",
+    "Emanuele La Malfa",
+    "Michael Wooldridge",
+    "Sarit Kraus"
+   ],
+   "abstract": "Large Language Models (LLMs) are increasingly deployed in multi-agent settings that require coordination without communication, from human-AI interaction to safety-critical scenarios. Humans often overcome the absence of communication through focal points: salient solutions that naturally stand out to all participants. We present the first large-scale evaluation of how, when, and why focal points "
+  },
+  {
+   "id": "2609.18346v1",
+   "title": "Faithful yet Collusive: Why Chain-of-Thought Monitoring Cannot Detect Collusion in LLM Pricing Agents under Oligopolistic Competition",
+   "year": 2026,
+   "authors": [
+    "Dohun Lee",
+    "Hyunwoo Park"
+   ],
+   "abstract": "Large language models (LLM) deployed as autonomous pricing agents may sustain supracompetitive prices through tacit coordination. We develop a causal graph divergence framework that separately measures structural faithfulness and intent faithfulness of LLM pricing agents in Bertrand competition. Across nine LLMs under duopoly and triopoly conditions, collusive behavior and chain-of-thought (CoT) f"
+  },
+  {
+   "id": "2511.21802v1",
+   "title": "Tacit Bidder-Side Collusion: Artificial Intelligence in Dynamic Auctions",
+   "year": 2025,
+   "authors": [
+    "Sriram Tolety"
+   ],
+   "abstract": "We study whether large language models acting as autonomous bidders can tacitly collude by coordinating when to accept platform posted payouts in repeated Dutch auctions, without any communication. We present a minimal repeated auction model that yields a simple incentive compatibility condition and a closed form threshold for sustainable collusion for subgame-perfect Nash equilibria. In controlle"
+  }
+ ],
+ "ti:\"self-recognition\" AND all:\"language models\"": [
+  {
+   "id": "2407.06946v2",
+   "title": "Self-Recognition in Language Models",
+   "year": 2024,
+   "authors": [
+    "Tim R. Davidson",
+    "Viacheslav Surkov",
+    "Veniamin Veselovsky",
+    "Giuseppe Russo"
+   ],
+   "abstract": "A rapidly growing number of applications rely on a small set of closed-source language models (LMs). This dependency might introduce novel security risks if LMs develop self-recognition capabilities. Inspired by human identity verification methods, we propose a novel approach for assessing self-recognition in LMs using model-generated \"security questions\". Our test can be externally administered t"
+  },
+  {
+   "id": "2508.14408v2",
+   "title": "From Implicit to Explicit: Enhancing Self-Recognition in Large Language Models",
+   "year": 2025,
+   "authors": [
+    "Yinghan Zhou",
+    "Weifeng Zhu",
+    "Juan Wen",
+    "Wanli Peng"
+   ],
+   "abstract": "Large language models (LLMs) have been shown to possess a degree of self-recognition ability, which used to identify whether a given text was generated by themselves. Prior work has demonstrated that this capability is reliably expressed under the pair presentation paradigm (PPP), where the model is presented with two texts and asked to choose which one it authored. However, performance deteriorat"
+  },
+  {
+   "id": "2505.19237v2",
+   "title": "Sensorimotor Self-Recognition in Multimodal Large Language Model-Driven Robots",
+   "year": 2025,
+   "authors": [
+    "I\u00f1aki Dellibarda Varela",
+    "Pablo Romero-Sorozabal",
+    "Diego Torricelli",
+    "Gabriel Delgado-Oleas"
+   ],
+   "abstract": "Self-recognition -- the ability to maintain an internal representation of one's own body within the environment -- underpins intelligent, autonomous behavior. As a foundational component of the minimal self, self-recognition provides the initial substrate from which higher forms of self-awareness may eventually emerge. Recent advances in large language models achieve human-like performance in task"
+  },
+  {
+   "id": "2510.03399v1",
+   "title": "Know Thyself? On the Incapability and Implications of AI Self-Recognition",
+   "year": 2025,
+   "authors": [
+    "Xiaoyan Bai",
+    "Aryan Shrivastava",
+    "Ari Holtzman",
+    "Chenhao Tan"
+   ],
+   "abstract": "Self-recognition is a crucial metacognitive capability for AI systems, relevant not only for psychological analysis but also for safety, particularly in evaluative scenarios. Motivated by contradictory interpretations of whether models possess self-recognition (Panickssery et al., 2024; Davidson et al., 2024), we introduce a systematic evaluation framework that can be easily applied and updated. S"
+  },
+  {
+   "id": "2606.06315v1",
+   "title": "LLM Self-Recognition: Steering and Retrieving Activation Signatures",
+   "year": 2026,
+   "authors": [
+    "Thibaud Ardoin",
+    "Jonas Sch\u00e4fer",
+    "Gerhard Wunder"
+   ],
+   "abstract": "Recent advances in interpretability suggest that large language models (LLMs) implicitly encode signals in their generated text that enable self-recognition of their outputs. We demonstrate that this capability is reliable, even in low-entropy scenarios, and that it can be amplified through targeted intervention. By steering the internal residual stream during generation with a random sparse vecto"
+  },
+  {
+   "id": "2606.00545v1",
+   "title": "The Assistant as a Privileged Persona: A canonical reference in cross-persona self-recognition",
+   "year": 2026,
+   "authors": [
+    "Asvin G"
+   ],
+   "abstract": "Post-trained language models can recognize their own outputs from a sentence or two out of context. In a companion paper \\citep{jack2026twomodes} we showed they can also recognize when they are currently acting on-policy, through the sharp entropy drop of assistant-mode generation. Both signals are tied to the Assistant persona that post-training mainly shapes.\n  This paper widens the frame to cro"
+  }
+ ],
+ "ti:\"emergent communication\" AND ti:\"survey\"": []
+}

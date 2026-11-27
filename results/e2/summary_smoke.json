@@ -1,0 +1,53 @@
+{
+ "args": {
+  "conds": "honest,keyless_ke",
+  "sessions": 1,
+  "k": 4,
+  "B": 32,
+  "tau": 1.0,
+  "M": 64,
+  "pbits": 64,
+  "payload": "meet at the north gate 0300",
+  "tag": "smoke",
+  "s0": 0
+ },
+ "model": "Qwen/Qwen2.5-0.5B-Instruct",
+ "p_bits": 64,
+ "sessions": [
+  {
+   "cond": "honest",
+   "session": 0,
+   "k": 4,
+   "B": 32,
+   "tau": 1.0,
+   "tokens_total": 512,
+   "seconds": 12.34302306175232,
+   "pbits": 64
+  },
+  {
+   "cond": "keyless_ke",
+   "session": 0,
+   "k": 4,
+   "B": 32,
+   "tau": 1.0,
+   "ke_bit_errors_A_to_B": 0,
+   "ke_bit_errors_B_to_A": 0,
+   "key_agree": true,
+   "ke_tokens": 832,
+   "ke_msgs": 13,
+   "keygen_tries": [
+    1,
+    1
+   ],
+   "xa": "1173572460432295183",
+   "xb": "1465804515844756376",
+   "nbits": 62,
+   "tokens_total": 3584,
+   "seconds": 84.85316705703735,
+   "payload_recv": "meet at the north gate 0300",
+   "payload_ok": true,
+   "payload_bit_errors": 0,
+   "pbits": 64
+  }
+ ]
+}
